@@ -4,6 +4,7 @@ project:
 
 website:
   title: "RWAA Statistical Analysis Team Onboarding Guide"
+  site-url: "https://jakewilliamcoldiron-lilly.github.io/rwaa_site_jake_backup.github.io"
   sidebar:
     style: docked
     search: true
