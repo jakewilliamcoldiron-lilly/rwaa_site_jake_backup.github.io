@@ -1,0 +1,954 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Important\n\n\n\n🚧 Page Under Active Development\nThis page is actively being developed. Material may be missing, incomplete or incorrect. Please check again later or email someone from the maintenance team for more information.\nWelcome to the RWAA Statistical Analysis Team Onboarding Guide.\nThis guide helps new analysts set up systems, access data environments, and complete required training.",
+    "crumbs": [
+      "Homepage"
+    ]
+  },
+  {
+    "objectID": "index.html#lilly-full-time-employees-ftes",
+    "href": "index.html#lilly-full-time-employees-ftes",
+    "title": "Home",
+    "section": "Lilly Full-Time Employees (FTEs)",
+    "text": "Lilly Full-Time Employees (FTEs)\n👉 Start with\nCommon Foundation → Step 1 – Identity Manager",
+    "crumbs": [
+      "Homepage"
+    ]
+  },
+  {
+    "objectID": "index.html#lilly-vendor-contractor",
+    "href": "index.html#lilly-vendor-contractor",
+    "title": "Home",
+    "section": "Lilly Vendor / Contractor",
+    "text": "Lilly Vendor / Contractor\n👉 Start with\nCommon Foundation → Step 2 – CLUWE Access\nThe onboarding sequence differs between FTEs and Vendors.\nSee Key Differences at a Glance for a detailed comparison of the two tracks.",
+    "crumbs": [
+      "Homepage"
+    ]
+  },
+  {
+    "objectID": "maintenance.html",
+    "href": "maintenance.html",
+    "title": "Site Maintenance, Development, and Feedback",
+    "section": "",
+    "text": "This site was reviewed on April 2026 and last updated April 2026. It is currently maintained by:\n\n\n\nName\nEmail\n\n\n\n\nJake William Coldiron\njake.coldiron@lilly.com\n\n\n\nIf there are any issues with content or function of this website, please reach out to this team using the bug report widget below.\n\n 🐛 Submit Bug Report",
+    "crumbs": [
+      "Site Maintenance"
+    ]
+  },
+  {
+    "objectID": "maintenance.html#footnotes",
+    "href": "maintenance.html#footnotes",
+    "title": "Site Maintenance, Development, and Feedback",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nTA and Functional Group at the time of first publication.↩︎",
+    "crumbs": [
+      "Site Maintenance"
+    ]
+  },
+  {
+    "objectID": "fg_rwd.html",
+    "href": "fg_rwd.html",
+    "title": "RWD - Real World Data",
+    "section": "",
+    "text": "Supporting observational database studies using claims, EHR, registry, and oncology data. Core focus on database access governance, contract checklists, and structured data analysis.",
+    "crumbs": [
+      "Functional Groups",
+      "RWD - Real World Data"
+    ]
+  },
+  {
+    "objectID": "fg_rwd.html#therapeutic-area-resources",
+    "href": "fg_rwd.html#therapeutic-area-resources",
+    "title": "RWD - Real World Data",
+    "section": "Therapeutic Area Resources",
+    "text": "Therapeutic Area Resources\nThe following sections provide data sources, reference materials, and key contacts specific to each therapeutic area (TA). These resources are intended for self-directed learning and day-to-day reference as you begin project work within your assigned TA.\n\n\nOncology\n\nOncology Data Access — Flatiron & Guardant Health\nSample data and documentation for Flatiron are available in the RWD Data Source Reference Library above (flatiron folder). For Guardant Health and other oncology-specific datasets, access must be requested separately.\nLilly FTE\nEmail Jessica R. Peachey (peachey.jessica@lilly.com), CC: Gregory Cunningham (cunningham_gregory_e@lilly.com) with project details.\nVendor / Contractor\nEmail Jessica R. Peachey (peachey.jessica@lilly.com), CC: Gregory Cunningham (cunningham_gregory_e@lilly.com) and Diane Haldane (haldane_diane_c@lilly.com). Oncology data access requires project-specific justification.\nPoint of contact: Yimei Han\n\n\nOncology Project Workflow\nProject work begins after receiving the analysis specifications and code lists from the statistician or scientist. Once the requirements are finalized, programming activities proceed through the following standard steps:\n\nCohort Selection — Identify the study population based on predefined inclusion and exclusion criteria, including:\n\nSelect data sources (e.g. claims ,EMR, Registry)\nDefine Diagnosis, procedure and code lists (e.g. ICD-10, HCPCS, NDC)\nIndex drug exposure and index date identification\nContinuous insurance enrollment and treatment duration requirements\n\nVariable Derivation — Derive analysis variables for:\n\nBaseline period (demographics, comorbidities, clinical characteristics)\nExposure identification (treatment)\n\nOutcome Definition — Construct outcome variables according to the provided specifications and code lists.\n\nAdherence/persistence\nTreatment sequence\nClinical outcomes\nEconomic outcomes\n\nAnalysis — Conduct analyses as specified, including:\n\nTime-to-Event analysis (OS, PFS, IDFS, DRFS, TTD, TTNT)\nModeling (regression model, cox model)\nSequencing Analysis (regimen distribution, treatment pattern)\nMatching-adjusted indirect comparison (MAIC)\nOther analysis (incidence, Richter’s transformation risk)\n\n\n\n\n\n\nImmunology\n\nIBD Plexus Data\nThe Crohn’s & Colitis Foundation IBD Plexus dataset is a key real-world data source for immunology studies. The README file, data dictionary, and sample data are available in the RWD Data Source Reference Library (IBD_Plexus folder).\nPoint of contact: Hanbo Qiu, Guangyong Li\n\n\nImmunology Project Workflow\nProject work begins after receiving the analysis specifications and code lists from the statistician or scientist. Once the requirements are finalized, programming activities proceed through the following standard steps:\n\nCohort Selection — Identify the study population based on predefined inclusion and exclusion criteria, including index dates and eligibility windows.\nVariable Derivation — Derive analysis variables for:\n\nBaseline period (e.g., demographics, comorbidities, clinical characteristics)\nExposure identification (treatment)\n\nOutcome Definition — Construct outcome variables according to the provided specifications and code lists.\nAnalysis — Conduct analyses as specified, including:\n\nDescriptive analyses (e.g., counts, proportions, summary statistics)\nPropensity score matching and pre/post-matching covariate balance assessment\nStatistical modelling or other inferential analyses, when applicable\nSensitivity analysis\n\n\nAll steps are implemented in alignment with the approved specifications to ensure consistency, reproducibility, and analytical validity.\n\n\n\n\nCardiometabolic Health (CMH)\nPoint of contact: Tianshu Feng\n\nCMH Project Workflow\nProject work begins after receiving the analysis specifications and code lists from the statistician or scientist. Once the requirements are finalized, programming activities proceed through the following standard steps:\n\nCohort Selection — Identify the study population from claims and/or EMR datasets, applying protocol-defined inclusion and exclusion criteria in a stepwise manner\n\nA cohort attrition table is generated to track the number of patients remaining at each stage of cohort construction.\n\nVariable Derivation — Derive analysis variables for:\n\nBaseline period (e.g., demographics, comorbidities, vital signs, laboratory test results, medication use, healthcare utilization, cost information)\n\nOutcome Definition:\n\nOutcome analytical datasets are constructed based on the predefined study outcomes in the protocol or programming specification.\nOutcome tables are then created to summarize these results by cohort, time window, or analytical subgroup as defined by the study design.\n\nAnalysis — After all required variables have been generated, the primary analysts proceeds with the outlined statistical analysis\n\nIn some cases, the project statistician may take responsibility for the modeling or advanced statistical components. Either the primary analyst or the validation analyst conducts a validation of the statistician’s programming to ensure accuracy, reproducibility, and alignment with the analysis plan.\n\n\n\n\n\n\nNeuroscience\n\nData Sources\nTwo primary real-world database are used for Neuroscience HEOR and pharmacoepidemiology studies:\nOptum Market Clarity\nThe Optum Market Clarity database integrates electronic medical records (EMR) with medical and pharmacy insurance claims, providing longitudinal patient-level data including diagnoses, laboratory results, clinical observations, and drug dispensing records.\n\nType: EHR + Claims\nTA Coverage: Broad\nStrength: Longitudinal claims data with detailed utilisation, diagnosis, and treatment patterns; large sample sizes representative of insured populations; useful for pharmacoepidemiology, health economics, and treatment pattern. analyses\nWeakness: Oversampled for populations with Type 2 diabetes, overweight, and obesity, resulting in a less representative sample of the general population; may under-represent uninsured or Medicaid-only populations.\n\nHealthVerity\nThe HealthVerity database links claims, EMR, lab, and other data sources at the patient level via de-identified IDs, supporting a wide range of lifecycle RWE applications.\n\nType: Claims + EMR + Lab + other linked data (enrollment via de-identified IDs)\nTA Coverage: Broad\nStrength: Detailed claims, lab, and EHR data linkable at the patient level; supports lifecycle RWE applications including feasibility, HEOR, safety, and market access.\nWeakness: Some data quality concerns including duplicated diagnosis and medication refill records; unusually high numbers of prescription refills across dispensing tables, including potentially duplicated refills.\n\nThe README file, data dictionary, and sample codelists are available in each project’s Documents/ folder.\nPoint of contact: Hanbo Qiu, Yunfei Wang\n\n\nNeuroscience RWD Project Workflow\nProject work begins after receiving the analysis specifications and code lists from the statistician or scientist. Once the requirements are finalized, programming activities proceed through the following standard steps:\n\nCohort Selection — Identify the study population based on predefined inclusion and exclusion criteria, including:\n\nIndex drug exposure and index date identification\nDisease confirmation (Type 2 diabetes, obesity, or MDD remission status)\nContinuous enrollment eligibility windows and treatment duration requirements\n\nVariable Derivation — Derive analysis variables for:\n\nBaseline period (e.g., demographics, BMI, HbA1c, MDD history, comorbidities, prior treatments, healthcare utilisation and costs)\nFollow-up period (e.g., treatment duration, drug discontinuation, proportion of days covered)\n\nOutcome Definition — Construct outcome variables according to the provided specifications and codelists, including:\n\nMDD relapse composite endpoint (psychiatric hospitalisation, ER visit, suicide/self-harm, non-remitted MDD, esketamine initiation)\nSecondary metabolic outcomes (BMI/weight change)\nCensoring rules (treatment discontinuation, enrollment end, death, end of follow-up)\n\nAnalysis — Conduct analyses as specified, including:\n\nPropensity score matching and pre/post-matching covariate balance assessment (SMD &lt; 0.1)\nTime-to-event analysis using Cox proportional hazards regression with piecewise hazard modelling\nSensitivity analysis (negative control outcomes, E-value, alternative censoring rules, drug class paired comparisons)",
+    "crumbs": [
+      "Functional Groups",
+      "RWD - Real World Data"
+    ]
+  },
+  {
+    "objectID": "fg_rwd.html#rwd-additional-training",
+    "href": "fg_rwd.html#rwd-additional-training",
+    "title": "RWD - Real World Data",
+    "section": "RWD — Additional Training",
+    "text": "RWD — Additional Training\n\n\n\n\n\n\n\nCourse ID\nTitle\n\n\n\n\n9317635\nMED-QUAL: Evaluation of Potential Data Integrity Issues in Approved Documents\n\n\n9143108\nLRL-CDOS: DISCLOSE — Register Trial and Post Publicly",
+    "crumbs": [
+      "Functional Groups",
+      "RWD - Real World Data"
+    ]
+  },
+  {
+    "objectID": "ci_quick_ref.html",
+    "href": "ci_quick_ref.html",
+    "title": "ci_quick_ref",
+    "section": "",
+    "text": "Quick Reference\n\n\n\nResource\nLink\n\n\n\n\nR Studio / Posit\nrstudio.am.lilly.com\n\n\nPython / Jupyter\njupyterhub.am.lilly.com\n\n\nCLUWE\ncluwe.am.lilly.com/login\n\n\nCLUWE Support\ncollab.lilly.com/sites/ModSupport\n\n\nRedshift Password Reset\ndssp.paas.am.lilly.com (FTE: local browser · Vendor: CLUWE Citrix Edge)\n\n\nMyAccess\nmyaccess.lilly.com\n\n\nServiceNow\nlilly.service-now.com\n\n\nIdentity Manager\nidmportal.rf.lilly.com (Vendor: CLUWE Citrix Edge only)\n\n\nPangaea — FTE\ngso.lightning.force.com\n\n\nPangaea — Vendor\ngso–c.vf.force.com\n\n\nHPC Support\nhpc.am.lilly.com\n\n\nVendor Email\nemail.lilly.com\n\n\n\n\n\n\nHelpful Links and Materials\n\nRWAA2 Onboarding documentation\nRequest for Hardware, Software, Accessories\nSDTM/ADaM/TFL Support\nCLUWE Support\nVault Clinical Knowledge Site\nSpotfire team site\nLilly chatbot\n\n\n\n\n\n\n\nOnboarding complete\n\n\n\nIf you encounter issues at any stage, refer to the Key Contacts table on the Homepage or ask your Lilly Lead for guidance.",
+    "crumbs": [
+      "Critical Information",
+      "Quick Reference"
+    ]
+  },
+  {
+    "objectID": "ci_difference.html",
+    "href": "ci_difference.html",
+    "title": "FTE vs. Vendor — Key Differences at a Glance",
+    "section": "",
+    "text": "Review this table before starting. It captures the most material structural differences between the two onboarding tracks.\n\n\n\nTopic\nLilly FTE\nLilly Vendor / Contractor\n\n\n\n\nSystem access on Day 1\nLilly intranet, Workday, ServiceNow, MyAccess, and Identity Manager accessible on a Lilly laptop from Day 1.\nNo system access until vendor enters you in Beeline (24–48 hrs before start). Must first receive Lilly System ID, temporary password, and PingID setup.\n\n\nOrder of first steps\nStep 1 → Step 2 → Step 3\nReversed: Step 2 → Citrix setup → Step 1 (inside Citrix) → Step 3\n\n\nMicrosoft Identity Manager\nAccess directly in local browser: idmportal.rf.lilly.com\nCannot access from vendor laptop. Must open inside CLUWE Microsoft Edge in Citrix.\n\n\nTraining platform\nInternal Workday Learning Plan (self-assign).\nVendor training platform. Cannot self-assign in Workday.\n\n\nCLUWE access request\nServiceNow → “LRL Statistical Analysis Account Requests” → select CLUWE. Mostly auto-fills.\nSame form but does not auto-fill fully. Supervisor must provide CLUWE path (e.g., lillyce:\\qa\\LY######\\folder).\n\n\nComputing environment\nCitrix via Workspace ONE. SAS EG may be installed locally.\nCitrix Workspace (Store: virtuallilly.cloud.com). All work runs inside Citrix.\n\n\nSAS Enterprise Guide\nInstalled locally via ServiceNow.\nNo local SAS EG. Use DEV/PROD CLUWE SAS EG apps.\n\n\nNetwork drive mapping\nMap STRADA FSx drives locally.\nMap inside CLUWE Windows Explorer in Citrix. Also map home drive: \\\\brick.d51.lilly.com\\[ID].\n\n\nRedshift password reset\nOpen in local browser: dssp.paas.am.lilly.com\nMust open in CLUWE Microsoft Edge in Citrix.\n\n\nPangaea URL\ngso.lightning.force.com\ngso–c.vf.force.com/apex/PANG_HomePage — different URL.\n\n\nPangaea training\n1 course: 9182923\n4 courses: 9182923, 9282629, 9282637, 9513570\n\n\nPangaea ServiceNow form\nStandard Pangaea request form\nSearch “RWE-IT BUIT Pangaea Support Consulting Request”\n\n\nRIM Vault access\nLilly Lead may submit on behalf\nVendor must submit directly. Per-study, per-compound.\n\n\nPosit / R Studio login\nStandard Lilly ID + SSO\nFirst digit replaced by “l” (e.g., l012345) + SSO via Citrix Posit app\n\n\nlillyce in Posit/R\nUsually accessible; if not: setwd('/lillyce')\nRun file.symlink(\"/lillyce\", \"~/lillyce\") in Citrix Posit\n\n\nTime entry\nPrism TimeCard (CATs)\nVendor invoicing system\n\n\nEmail access\nStandard Outlook\nemail.lilly.com or Outlook in CLUWE\n\n\nCalendar sharing\nNo extra steps\nRequires Federated Calendaring via Identity Manager\n\n\nLilly site visits\nBadge from start date\nVisitor or contractor badge (background check required)",
+    "crumbs": [
+      "Critical Information",
+      "FTE vs Vendor"
+    ]
+  },
+  {
+    "objectID": "step2_cluwe_access.html",
+    "href": "step2_cluwe_access.html",
+    "title": "Step 2 - CLUWE Access",
+    "section": "",
+    "text": "CLUWE is the secure computing environment for SAS Grid, clinical study data, and Citrix access.\nVendors must complete this step before Step 1. It is the gateway to all other Lilly systems.\n\nPre-requisite Training\n\nCourse 9174776: CLUWE Versioning (DEV-SDnA: CLUWE Training — Versioning Files)\nCourse 9174777: CLUWE Security and Directory Structure (DEV-SDnA: CLUWE Training — Projects & Security)\nSave proof of completion — you will be asked to provide this when the request is reviewed.\n\n\n\n\n🏢 Lilly FTE — Click to Expand\n\n\nComplete courses 9174776 and 9174777 in Learning Plan. Self-assign if not yet in your plan by searching the course ID.\nVisit ServiceNow → search LRL Statistical Analysis Account Requests\nSelect CLUWE Repository (lillyce) as Application. Form auto-fills — verify entries are correct. Key fields:\n\nSelect Type of Request: Add Access\nWhat access type do you require?: Contribute (Read/Write)\nDo you require CLUWE GRID/SAS Programming Access?: Yes\nRequired training completed?: Yes – Contribute: ID 9174776 and 9174777\n\nFill in: Therapeutic area, Compound name (full name, not just LY#), LY#, Study name, Lilly PS/SA requesting.\nSelect Contributor (Read/Write) and Yes for CLUWE GRID / SAS Programming Access.\nClick Order Now → Check Out. Provide course completion proof when contacted.\nAfter approval: access CLUWE login\nMap lillyce on local laptop: \\\\statsclstr\\lillyce\n\nSAS EG CLUWE Profile (local SAS EG — Version 8.2 64-bit):\nTo install SAS EG locally, submit a ticket via ServiceNow Employee Self-Service Portal. You will receive an email to schedule a remote installation session.\nAfter installation: Tools → Connections → Profiles → Add:\n\nProfile name: SAS RHEL8\nMachine: gridprodmeta2.am.lilly.com\nPort: 8564\nUser: &sysuserid\nPassword: Lilly SSO password\n\nClick Save and Set Active. Allow 3–5 business days after CLUWE approval before the connection succeeds.\nAlternatively, you may access a virtualized version of SAS via Citrix.\n\n\n\n\n🏭 Vendor / Contractor — Click to Expand\n\n\nComplete courses 9174776 and 9174777 via your vendor’s training platform. Your vendor training delegate assigns these. You cannot self-assign in Workday.\nServiceNow → search LRL Statistical Analysis Account Requests\nForm does not auto-fill fully. Ask your supervisor for:\n\nCLUWE path: e.g., lillyce:\\qa\\LY######\\folder_name\nCompound full name, LY#, study name, Lilly PS/SA justification\n\nSelect Contributor (Read/Write), Yes for CLUWE GRID access. Pick a US delivery location.\nClick Order Now → Submit. Approval: 1–2 business days.\n\nAfter CLUWE approval — Citrix setup\n\nInstall Citrix Workspace on your vendor laptop. Store URL.\nVisit CLUWE Support → click Virtual Lilly → Open in Citrix Workspace.\n\nMap Network Drives (inside CLUWE Windows Explorer in Citrix):\n\nK: → \\\\statsclstr\\lillyce (CLUWE file system)\nY: → \\\\brick.d51.lilly.com\\\n\nMap lillyce in Posit (inside Citrix console)\n\nfile.symlink(\"/lillyce\", \"~/lillyce\")\n\nSAS EG CLUWE Profile (Citrix — DEV CLUWE SAS EG app)\nClick “No profile selected” → Add. Profile: SAS CLUWE | Machine: gridmetaprd1.am.lilly.com | Port: 8564 | Password: Lilly SSO → Save and Connect.\n\n\n\n\n\n\n\n\nWhat if the request is urgent?\n\n\n\nSubmit a ticket at CLUWE Support → Submit an Issue. Describe your issue and provide the RITM number of your ticket from ServiceNow.\n\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Onboarding",
+      "Step 2 - CLUWE Access"
+    ]
+  },
+  {
+    "objectID": "fg_heor.html",
+    "href": "fg_heor.html",
+    "title": "HEOR - Health Economics & Outcomes Research",
+    "section": "",
+    "text": "Supporting cost-effectiveness analyses, budget impact models, patient-reported outcomes, disease burden studies, and payer evidence packages.\n\nHEOR — Additional Access\nHEOR analyses using RWD follow the same STRADA access (Step 3). Discuss with your Lilly Lead which schemas are needed. Ensure Pangaea access (Step 4) covers both the RWD evidence generation and the HEOR modelling components of your project.\nFor publications, dossiers, and medical communications, complete Course 9223356 (MedComms RWE and RIM Vaults Guide for HEOR/RWE Users). RIM access follows the same FTE vs. Vendor rules as Step 6.5 — vendors must submit their own request per compound.\n\n\n\nHEOR — Additional Training\n\n\n\n\n\n\n\nCourse ID\nTitle\n\n\n\n\n9223356\nDEV-HO: RWE 101 — MedComms RWE and RIM Vaults Guide for HEOR/RWE Users\n\n\n9141872\nLRL-CDOS: DISCLOSE — Developing Medical Regulatory Documents and Payer Dossiers\n\n\n9143086\nLRL-CDOS: DISCLOSE — Publications\n\n\n9143114\nLRL-CDOS: DISCLOSE — Principles of Authorship\n\n\n9317635\nMED-QUAL: Evaluation of Potential Data Integrity Issues in Approved Documents\n\n\n9143108\nLRL-CDOS: DISCLOSE — Register Trial and Post Publicly",
+    "crumbs": [
+      "Functional Groups",
+      "HEOR - Health Economics & Outcomes Research"
+    ]
+  },
+  {
+    "objectID": "ci_email.html",
+    "href": "ci_email.html",
+    "title": "Lilly Email",
+    "section": "",
+    "text": "Important\n\n\n\n🚧 Page Under Active Development\nThis page is under active development. Material may be missing, incomplete or incorrect. Please check again later or email someone from the maintenance team for more information.\n\n\n\n\n\n\n\n\nNote\n\n\n\n📋 Development Plan\n\nPlanned Content:\nAdd drop down menus to separate FTEs and Contractors.\nEnsure that contact information pull from master list\nOwner: Jake – jake.coldiron@lilly.com\nTarget Completion: 10 April 2026\n\n\n\n\n\n\n\n\n\nBefore You Begin — Verify Your Email Configuration\n\n\n\nBefore initiating any access requests, please verify that the email address associated with your Lilly account is correct. An incorrect or duplicate email address is one of the most common causes of Redshift account provisioning failures, which in turn blocks access to AWS STRADA data. Resolving email-related issues can take up to one month — early verification prevents significant onboarding delays.\n\n\n\n\nLilly FTE — Check for Duplicate Email Addresses\nSome FTE accounts may have two Lilly email addresses associated with them. This can cause access provisioning to fail silently.\nAction required:\n\nVerify whether your account has more than one Lilly email address on file.\nIf a duplicate exists, contact the Lilly IT team immediately and request that only your current, valid Lilly email address be retained.\nConfirm the correction is complete before proceeding with Step 3 (AWS / STRADA Access).\n\n\n\n\nVendor / Contractor — Confirm Your Lilly-Issued Email Address\n\n\n\n\n\n\n🚩 Critical — Do Not Skip This Step\n\n\n\nVendor accounts must be associated with your Lilly-issued email address (typically in the form firstname_lastname@network.lilly.com). Your vendor company email address (e.g., name@vendorcompany.com) must not be the primary email on your Lilly account.\nIf the wrong email address is associated with your account, your Redshift account will fail to provision, blocking access to all AWS STRADA data. This issue often takes up to one month to resolve and is the single most common cause of extended onboarding delays for vendors.\n\n\nAction required:\n\nContact your vendor company IT and confirm which email address is registered in Lilly systems for your account.\nContact Lilly IT to verify the email on file matches your Lilly-issued @network.lilly.com address.\nIf the email is incorrect, work with both your vendor IT and Lilly IT to correct it before submitting any access requests.\nNotify your vendor supervisor if you encounter any discrepancies so they can escalate as needed.\n\n\n\n\nVendor / Contractor — Ensure Lilly Email Forwarding Is Configured\n\n\n\n\n\n\n🚩 Verify That All Lilly Platform Emails Reach Your Inbox\n\n\n\nVendors must ensure that emails sent to their Lilly address (@network.lilly.com) are properly forwarded to and received in their vendor company mailbox. If email forwarding is not correctly configured, you may fail to receive critical notifications — including verification codes from Lilly platforms such as Pangaea (Salesforce), ServiceNow, MyAccess, and other provisioning systems. Missing these emails can silently block your onboarding progress.\n\n\nAction required:\n\nContact your vendor company IT department and request confirmation that your Lilly-issued email (@network.lilly.com) is properly configured to forward all incoming messages to your vendor inbox.\nAsk your vendor IT to verify that no email filtering rules or spam policies are blocking messages from Lilly domains, including @lilly.com, @network.lilly.com, @salesforce.com, and @service-now.com.\nIf you are not receiving expected verification or notification emails, request your vendor IT to review and reset your mailbox forwarding rules — including any exemptions needed for automated platform emails.\nConfirm receipt by sending a test email from your Lilly account to your vendor mailbox, and verify it arrives without delay.\nIf the issue persists, escalate through your vendor supervisor and contact Lilly IT for further investigation.\n\n\n\n\nContacts for Email and Redshift Issues\n\n\n\n\n\n\n\n\nContact\nRole\nEmail\n\n\n\n\nRedshift IT Support Team\nRedshift account provisioning and troubleshooting\nTCS_DM_DSSP@lists.lilly.com\n\n\nRateen Kumar\nAWS Redshift / IT support\nkumar_rateen@network.lilly.com\n\n\nTina Ruth\nVendor Supervisor (RM90740)\nruth_tina_d@lilly.com\n\n\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Critical Information",
+      "Lilly Email"
+    ]
+  },
+  {
+    "objectID": "step5_personal_folder.html",
+    "href": "step5_personal_folder.html",
+    "title": "Step 5 - Personal Folder Under FSx",
+    "section": "",
+    "text": "Your personal folder on the STRADA FSx file system is used for storing work outputs. Complete after your Redshift account is created (Step 3).\n\n\nLilly FTE\n\nServiceNow → search “BUIT GSS IT Access Request”.\nFill the form with by inputing the following text in the select fields:Access Request | Application: RWE STRADA Data Platform | Request Type: Other | Description: Personal Folder creation | User Type: Business user | Description field: “Please get the personal folder created with the name YOUR FULL NAME inside the rwe_all_personal_folder on FSx”\n\n\n\n\n\n\n\nFolder Naming Convention\n\n\n\nUse the format Firstname_Lastname (e.g., Lili_Huang). This is the standard naming convention for personal folders under rwe_all_personal_folder.\n\n\n\nOrder Now → Check Out.\n\nFolder path: \\\\veo_fsx_prod.aws.lilly.com\\veo_fsx\\strada\\rwe_all_personal_folder\\[Firstname_Lastname]\n\n\n\nVendor / Contractor\n\nServiceNow → search “BUIT GSS IT Access Request”.\nFill the form identically: What to do: Access Request | Application: RWE STRADA Data Platform | Request Type: Other | Description: Personal Folder creation | User Type: Business user | Description: “Please get the personal folder created with the name YOUR FULL NAME inside the rwe_all_personal_folder on FSx”\n\nUse the Firstname_Lastname format (e.g., Lili_Huang) for your folder name.\n\nOrder Now → Check Out.\n\nFolder path: \\\\veo_fsx_prod.aws.lilly.com\\veo_fsx\\strada\\rwe_all_personal_folder\\[Firstname_Lastname]\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Onboarding",
+      "Step 5 - Personal Folder Under FSx"
+    ]
+  },
+  {
+    "objectID": "at_access.html",
+    "href": "at_access.html",
+    "title": "Accessing Analytical Tools",
+    "section": "",
+    "text": "Important\n\n\n\n🚧 Page Under Active Development\nThis page is still being built out. Material may be missing, incomplete or incorrect. Please check again later or email someone from the maintenance team for more information.\n\n\n\n\n\n\n\n\nNote\n\n\n\n📋 Development Plan\n\nPlanned Content: Citrix, Positworkbench, Juypter Notebook, On-device\nOwner: Jake – jake.coldiron@lilly.com\nTarget Completion: 10 April 2026",
+    "crumbs": [
+      "Analytical Tools",
+      "Accessing Analytical Tools"
+    ]
+  },
+  {
+    "objectID": "step7_core_training.html",
+    "href": "step7_core_training.html",
+    "title": "Step 7 - Core Training",
+    "section": "",
+    "text": "Curriculum C0160034: DEV-TPO: RWE Statistician & Analyst.\n\nLilly FTE\nAll courses in Learning Plan. Self-assign by searching course ID if not yet in your plan. Completion is tracked automatically. Administrative training time → General Administration in Prism TimeCard.\n\n\nVendor / Contractor\nAssigned and tracked via your vendor’s training platform (e.g., TechData Secure Depot). Your vendor training delegate is responsible for assignment — you cannot self-assign in Workday. If enrolled in SuccessFactors, the Lilly Lead takes responsibility. Confirm with your Lilly Lead and SDnA Sourcing which path applies.\n\n\n\nRequired Courses\n\n\n\n\n\n\n\n\nCourse ID\nTitle\nAudience\n\n\n\n\n9058907\nDEV-HO: RWE 101-ODM — What is Real World Evidence (RWE)?\nAll\n\n\n9277801\nEC-PROC: Global Developing Real World Evidence\nAll\n\n\n9367693\nDEV-HO: RWE 101-ALGOR — RWE Algorithms 101\nAll\n\n\n9183089\nDEV-HO: RWE 201-ODM — Applying RWD for RWE Generation\nAll\n\n\n9049927\nDEV-HO: RWE 301-ODM — Conducting Observational Studies\nAll\n\n\n9219012\nDEV-HO: RWE 301a-ODM — PROCEDURE FOR Observational Studies\nAll\n\n\n9334085\nGL-QUAL: Data Integrity Fundamentals\nAll\n\n\n435007\nMT 12145: PR-Privacy of Personal Information in Medical Research\nAll\n\n\n9179755\nLRL-CDOS: DDA — End-to-End Overview: Data & Analysis Planning & Delivery\nAll\n\n\n9181200\nLRL-CDOS: DDA — Data and Analysis Delivery Procedure\nAll\n\n\n9181203\nLRL-CDOS: DDA — Data and Analysis Planning Procedure\nAll\n\n\n9181209\nLRL-CDOS: DDA — Develop, Validate & Execute Code Procedure\nAll\n\n\n9179756\nLRL-CDOS: DDA — Overview of Develop, Validate & Execute Code\nAll\n\n\n424075\nLRLi367: Leo Overview Training\nAll\n\n\n9352650\nLRL: Exploring Data Integrity Fundamentals in Clin Dev & Research\nAll\n\n\n9295008\nLRL: Vault Clinical Foundations\nAll\n\n\n9143086\nLRL-CDOS: DISCLOSE — Publications\nAll\n\n\n9143114\nLRL-CDOS: DISCLOSE — Principles of Authorship\nAll\n\n\n9141872\nLRL-CDOS: DISCLOSE — Developing Medical Regulatory Documents and Payer Dossiers\nAll\n\n\n9116900\nLRL-CDOS: Clinical Development Operating System Overview\nAll\n\n\n426818\nMT12063: PR-Use of Data on File\nAll\n\n\n9223356\nDEV-HO: RWE 101 — MedComms RWE and RIM Vaults Guide for HEOR/RWE Users\nAll\n\n\n9317635\nMED-QUAL: Evaluation of Potential Data Integrity Issues in Approved Documents\nAll\n\n\nC0052054\nDEV-TPO-GSS Statistical Analyst\nVendors only\n\n\n9330445\nGRA-RIM: Vault RIM Basics (Access)\nVendors + RIM users\n\n\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Onboarding",
+      "Step 7 - Core Training"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html",
+    "href": "cardiometabolic_health.html",
+    "title": "Cardiometabolic Health",
+    "section": "",
+    "text": "Cardiometabolic Health (CMH) is one of Eli Lilly’s core Therapeutic Areas, encompassing a portfolio of medicines and pipeline programs that address cardiovascular disease, type 2 diabetes, obesity, and related metabolic conditions. These diseases are deeply interconnected — sharing pathophysiology, risk factors, and patient populations — and represent a significant and growing global health burden.\nLilly’s CMH strategy is anchored in a commitment to treating the whole patient: not just individual risk factors, but the full spectrum of cardiometabolic disease from prevention through advanced illness.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html#overview",
+    "href": "cardiometabolic_health.html#overview",
+    "title": "Cardiometabolic Health",
+    "section": "",
+    "text": "Cardiometabolic Health (CMH) is one of Eli Lilly’s core Therapeutic Areas, encompassing a portfolio of medicines and pipeline programs that address cardiovascular disease, type 2 diabetes, obesity, and related metabolic conditions. These diseases are deeply interconnected — sharing pathophysiology, risk factors, and patient populations — and represent a significant and growing global health burden.\nLilly’s CMH strategy is anchored in a commitment to treating the whole patient: not just individual risk factors, but the full spectrum of cardiometabolic disease from prevention through advanced illness.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html#disease-areas",
+    "href": "cardiometabolic_health.html#disease-areas",
+    "title": "Cardiometabolic Health",
+    "section": "Disease Areas",
+    "text": "Disease Areas\n\nType 2 Diabetes (T2D)\nType 2 diabetes affects more than 500 million people worldwide and is a leading driver of cardiovascular disease, kidney failure, and premature death. Lilly has been a pioneer in diabetes care for over a century — dating back to the commercialization of the first insulin in 1923.\nKey focus areas include:\n\nGlycemic control with reduced hypoglycemia risk\nCardiovascular risk reduction in patients with T2D\nWeight management as a component of diabetes care\nCombination and simplified dosing regimens\n\n\n\nObesity\nObesity is now recognized as a chronic, complex disease — not a lifestyle choice — affecting more than 1 billion people globally. It is a root cause of type 2 diabetes, heart disease, sleep apnea, certain cancers, and reduced quality of life.\nLilly’s obesity program leverages cutting-edge incretin biology to deliver meaningful, sustained weight reduction while addressing associated metabolic complications.\n\n\nCardiovascular Disease (CVD)\nCardiovascular disease remains the #1 cause of death worldwide. Many patients with diabetes or obesity carry substantially elevated CV risk. Lilly’s CMH portfolio is designed to deliver cardiovascular outcomes benefits alongside metabolic improvements — a “two-for-one” value proposition for patients and payers.\n\n\nHeart Failure\nHeart failure, particularly heart failure with preserved ejection fraction (HFpEF), is an area of significant unmet need and growing scientific interest within CMH. GLP-1-based therapies have shown promising signals in this population.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html#key-pipeline-portfolio-highlights",
+    "href": "cardiometabolic_health.html#key-pipeline-portfolio-highlights",
+    "title": "Cardiometabolic Health",
+    "section": "Key Pipeline & Portfolio Highlights",
+    "text": "Key Pipeline & Portfolio Highlights\n\nCMH Pipeline Summary\n\n\n\n\n\n\n\n\nAsset\nMechanism\nIndication(s)\nStage\n\n\n\n\nTirzepatide (Mounjaro® / Zepbound®)\nGIP/GLP-1 dual agonist\nT2D, Obesity, HFpEF\nApproved + Phase III\n\n\nOrforglipron\nSmall molecule GLP-1 RA\nT2D, Obesity\nPhase III\n\n\nRetatrutide\nGIP/GLP-1/Glucagon triple agonist\nObesity, MASH\nPhase III\n\n\nLY3849891\nGLP-1/FGF21 dual agonist\nObesity, Dyslipidemia\nPhase II",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html#science-innovation",
+    "href": "cardiometabolic_health.html#science-innovation",
+    "title": "Cardiometabolic Health",
+    "section": "Science & Innovation",
+    "text": "Science & Innovation\nLilly’s CMH research is built on a foundation of incretin biology — the study of gut-derived hormones (GIP and GLP-1) that regulate glucose, appetite, and metabolism. This platform has enabled Lilly to move beyond single-target approaches to design molecules that simultaneously address multiple aspects of cardiometabolic disease.\n\nThe Incretin Platform\n\n\n\n\n\nflowchart LR\n  A[GIP Receptor\\nAgonism] --&gt; D[Tirzepatide\\nDual Agonist]\n  B[GLP-1 Receptor\\nAgonism] --&gt; D\n  D --&gt; E1[Glycemic Control]\n  D --&gt; E2[Weight Reduction]\n  D --&gt; E3[CV Risk Reduction]\n  D --&gt; E4[Organ Protection]\n  B --&gt; F[Orforglipron\\nOral GLP-1]\n  A --&gt; G[Retatrutide\\nTriple Agonist]\n  C[Glucagon Receptor\\nAgonism] --&gt; G\n\n\n\n\n\n\n\n\nDifferentiation Strategy\nLilly’s CMH differentiation rests on three pillars:\n\nEfficacy depth — achieving meaningful weight loss and glycemic targets beyond what was previously possible\nMechanism diversity — building a portfolio across single, dual, and triple agonism to address different patient needs\nModality breadth — injectable and oral formulations (orforglipron) to expand access and patient preference",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html#patient-market-context",
+    "href": "cardiometabolic_health.html#patient-market-context",
+    "title": "Cardiometabolic Health",
+    "section": "Patient & Market Context",
+    "text": "Patient & Market Context\n\nEpidemiology\n\n~537 million adults with diabetes globally (IDF, 2021); projected to reach 783 million by 2045\n\n1 billion adults living with obesity (WHO)\n\nCardiovascular disease causes ~17.9 million deaths per year globally\nEstimated $1+ trillion annual economic burden from obesity-related conditions in the US alone\n\n\n\nUnmet Need\nDespite decades of treatment advances, large gaps remain:\n\nMajority of T2D patients do not reach individualized A1C targets\nWeight loss durability remains a challenge — most patients regain weight after stopping medication\nCV outcomes remain poor for patients with obesity + T2D\nOral, convenient options have been limited",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html#heor-value-narrative",
+    "href": "cardiometabolic_health.html#heor-value-narrative",
+    "title": "Cardiometabolic Health",
+    "section": "HEOR & Value Narrative",
+    "text": "HEOR & Value Narrative\nHealth Economics and Outcomes Research (HEOR) plays a critical role in demonstrating the value of CMH therapies to payers, HTA bodies, and health systems. Key themes include:\n\nReal-world evidence demonstrating outcomes in broader patient populations\nCost-effectiveness modeling for obesity interventions (QALY-based and beyond)\nBudget impact analysis — especially as GLP-1 therapies face formulary access challenges\nPatient-reported outcomes (PROs) capturing quality of life, functional status, and treatment satisfaction\n\n\n\n\n\n\n\nHEOR & HTA Collaboration\n\n\n\nGiven coverage challenges across payers and HTA bodies (particularly NICE, G-BA, HAS), CMH is one of the highest-priority TAs for HEOR and HTA engagement at Lilly.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html#strategic-priorities",
+    "href": "cardiometabolic_health.html#strategic-priorities",
+    "title": "Cardiometabolic Health",
+    "section": "Strategic Priorities",
+    "text": "Strategic Priorities\n\n\n\n\n\n\nFY2025–2027 CMH Focus Areas\n\n\n\n\nMaximize tirzepatide across approved and new indications (HFpEF, MASH, OSA)\nAdvance orforglipron to regulatory submission — establishing oral GLP-1 leadership\nBuild retatrutide data package — differentiate in severe obesity and metabolic liver disease\nStrengthen access & affordability narrative in collaboration with Market Access and HEOR\nInvest in precision medicine approaches to identify patients most likely to benefit",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html#key-stakeholders-cross-functional-partners",
+    "href": "cardiometabolic_health.html#key-stakeholders-cross-functional-partners",
+    "title": "Cardiometabolic Health",
+    "section": "Key Stakeholders & Cross-Functional Partners",
+    "text": "Key Stakeholders & Cross-Functional Partners\n\n\n\n\n\n\n\nFunction\nRole in CMH\n\n\n\n\nHEOR\nValue evidence generation, RWE, cost-effectiveness\n\n\nHTA\nEarly scientific advice, dossier development, HTA submissions\n\n\nGPS (Global Patient Safety)\nSafety surveillance, pharmacovigilance\n\n\nMarket Access\nPayer strategy, formulary negotiations\n\n\nMedical Affairs\nKOL engagement, publication strategy, MSL deployment\n\n\nRegulatory\nIND/NDA/BLA submissions, label negotiations",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "cardiometabolic_health.html#resources-links",
+    "href": "cardiometabolic_health.html#resources-links",
+    "title": "Cardiometabolic Health",
+    "section": "Resources & Links",
+    "text": "Resources & Links\n\nLilly CMH Pipeline\nTirzepatide Clinical Data Hub\nHEOR Evidence Library (Internal)\nCMH Publication Strategy (Internal)\nIDF Diabetes Atlas\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "REF ONLY - DELETE ME"
+    ]
+  },
+  {
+    "objectID": "post_onboarding.html",
+    "href": "post_onboarding.html",
+    "title": "Time Entry & Quick Reference",
+    "section": "",
+    "text": "Use Prism TimeCard (CATs) for project hours. See Appendix 7.1 and 7.2 in the FTE onboarding document.\nFour categories: Molecule time · Multi-molecule time · General Administration · Vacation/Out of Office.\nLog daily; submit weekly. Compliance training → General Administration.\nCompound not in CATs? Email usmail_lrl_project_esg@lilly.com.\nTrack vacation in Workday: now.lilly.com/page/US-entering-time-off.\n\n\n\n\n\nUse your vendor’s own time entry / invoicing system — not Prism TimeCard.\nYour Lilly Lead provides the compound name, study name, and LY# required for billing.\nLilly shutdown periods: Week of July 4th and December 26–31. Coordinate with vendor management and your Lilly Lead.\nEmail access: email.lilly.com or Outlook in CLUWE Citrix (avoids 20-min timeout).",
+    "crumbs": [
+      "Analytical Tools",
+      "Pangaea"
+    ]
+  },
+  {
+    "objectID": "post_onboarding.html#time-entry",
+    "href": "post_onboarding.html#time-entry",
+    "title": "Time Entry & Quick Reference",
+    "section": "",
+    "text": "Use Prism TimeCard (CATs) for project hours. See Appendix 7.1 and 7.2 in the FTE onboarding document.\nFour categories: Molecule time · Multi-molecule time · General Administration · Vacation/Out of Office.\nLog daily; submit weekly. Compliance training → General Administration.\nCompound not in CATs? Email usmail_lrl_project_esg@lilly.com.\nTrack vacation in Workday: now.lilly.com/page/US-entering-time-off.\n\n\n\n\n\nUse your vendor’s own time entry / invoicing system — not Prism TimeCard.\nYour Lilly Lead provides the compound name, study name, and LY# required for billing.\nLilly shutdown periods: Week of July 4th and December 26–31. Coordinate with vendor management and your Lilly Lead.\nEmail access: email.lilly.com or Outlook in CLUWE Citrix (avoids 20-min timeout).",
+    "crumbs": [
+      "Analytical Tools",
+      "Pangaea"
+    ]
+  },
+  {
+    "objectID": "post_onboarding.html#quick-reference",
+    "href": "post_onboarding.html#quick-reference",
+    "title": "Time Entry & Quick Reference",
+    "section": "Quick Reference",
+    "text": "Quick Reference\n\n\n\nResource\nLink\n\n\n\n\nR Studio / Posit\nrstudio.am.lilly.com\n\n\nPython / Jupyter\njupyterhub.am.lilly.com\n\n\nCLUWE\ncluwe.am.lilly.com/login\n\n\nCLUWE Support\ncollab.lilly.com/sites/ModSupport\n\n\nRedshift Password Reset\ndssp.paas.am.lilly.com (FTE: local browser · Vendor: CLUWE Citrix Edge)\n\n\nMyAccess\nmyaccess.lilly.com\n\n\nServiceNow\nlilly.service-now.com\n\n\nIdentity Manager\nidmportal.rf.lilly.com (Vendor: CLUWE Citrix Edge only)\n\n\nPangaea — FTE\ngso.lightning.force.com\n\n\nPangaea — Vendor\ngso–c.vf.force.com\n\n\nHPC Support\nhpc.am.lilly.com\n\n\nVendor Email\nemail.lilly.com",
+    "crumbs": [
+      "Analytical Tools",
+      "Pangaea"
+    ]
+  },
+  {
+    "objectID": "post_onboarding.html#helpful-links-and-materials",
+    "href": "post_onboarding.html#helpful-links-and-materials",
+    "title": "Time Entry & Quick Reference",
+    "section": "Helpful Links and Materials",
+    "text": "Helpful Links and Materials\n\nRWAA2 Onboarding documentation\nRequest for Hardware, Software, Accessories\nSDTM/ADaM/TFL Support\nCLUWE Support\nVault Clinical Knowledge Site\nSpotfire team site\nLilly chatbot\n\n\n\n\n\n\n\nOnboarding complete\n\n\n\nIf you encounter issues at any stage, refer to the Key Contacts table on the Homepage or ask your Lilly Lead for guidance.",
+    "crumbs": [
+      "Analytical Tools",
+      "Pangaea"
+    ]
+  },
+  {
+    "objectID": "step4_pangaea.html",
+    "href": "step4_pangaea.html",
+    "title": "Step 4 - Pangaea",
+    "section": "",
+    "text": "Pangaea is Lilly’s RWE/RWD knowledge management system. Note the different URLs, training requirements, and ServiceNow form names between FTEs and Vendors.\n\n\nPre-requisite Training\nLilly FTE\n\n9182923 — Pangaea Overview & Getting Started.\n\nVendor / Contractor\n\n9182923 — Pangaea Overview & Getting Started\n9282629 — Working with Pangaea REQUESTS\n9282637 — Working with Pangaea PROJECTS\n9513570 — RWD: STRADA Platform — Analyzing Data\n\n\n\n\nPangaea Support Team\n\n\n\n\n\n\n\n\nContact\nRole\nEmail\n\n\n\n\nLisa Grey\nGeneral Information/System Owner, Operations, Reporting, Training\ngrey_lisa_m@lilly.com\n\n\nHeidi Cline\nProject/Study Support, RIM/MedComms Vault\ndavis_heidi@lilly.com\n\n\nPrix Berry\nHEOR TPO Management\nberry_prix@lilly.com\n\n\nDavid Ott\nHEOR Project Management, HEOR Financials\ndavid.ott@lilly.com\n\n\nKaren Morgan\nHEOR Business Operations\nmorgan_karen_sue@lilly.com\n\n\n\n\n\nLilly FTE\n\nServiceNow → search Pangaea request form. Do not request Manager access.\nSelect Contributing User and STRADA Member under RWE Request Related Roles.\nOrder Now → Check Out.\nAfter approval: gso.lightning.force.com\n\n\n\n\nVendor / Contractor\n\nServiceNow → search “RWE-IT BUIT Pangaea Support Consulting Request” (different form from FTE).\nComplete all four courses before submitting.\nAfter approval: gso–c.vf.force.com/apex/PANG_HomePage → click Log in with GSO.\n\n\n\n\n\n\n\nNote\n\n\n\nVendor Pangaea URL differs from the FTE URL. Bookmarking the wrong link is a common source of confusion.\n\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Onboarding",
+      "Step 4 - Pangaea"
+    ]
+  },
+  {
+    "objectID": "step6_analytics_tools.html",
+    "href": "step6_analytics_tools.html",
+    "title": "Step 6 - Analytics Tools Setup",
+    "section": "",
+    "text": "⏱ Time: 60 minutes (immediate) | ⏳ Approval: None\n\n\n\n\n\n\nPrerequisites\n\n\n\nPrerequisites: Steps 1–5 completed, Redshift password set.\n\n\n\n6.1 R Studio / Posit Workbench\nLilly FTE\n\nAccess at rstudio.am.lilly.com in local browser.\nLogin: standard Lilly ID + SSO password.\nRequires Brainiac-Compute group (Step 1) to be approved.\nIssues: submit HPC Incident at hpc.am.lilly.com.\n\nAlternatively, you may access R Studio in Citrix.\nVendor / Contractor\n\nOpen Posit Workbench app in Citrix (server migrated from RStudio — use Posit).\nLogin: Global Lilly ID with first digit replaced by ‘l’ (e.g., l012345) + SSO password.\nMap lillyce in Posit console: file.symlink(\"/lillyce\", \"~/lillyce\")\nIf lillyce not visible in Files pane: run setwd('/lillyce') → Go To Working Directory.\n\n\nConnect R/Posit to AWS Redshift (both tracks)\n\nlibrary(DBI)\ncon &lt;- dbConnect(odbc::odbc(),\n  .connection_string = \"Driver={Redshift};\n  Server=edb-redshift-prod-01.carpdwnmaayt.us-east-2.redshift.amazonaws.com;\n  Database=rwe_databases; UID=&lt;Lilly SSO ID lower case&gt;;\n  PWD=&lt;Redshift password&gt;; Port=5439\"\n)\nlibrary(RPostgres)\nmy_data &lt;- dbGetQuery(con, \"SELECT * FROM &lt;schema&gt;.&lt;table&gt;\")\n\n\n\nPosit Workbench Access to STRADA (Veo_fsx)\n\n\n\n\n\n\nConnection In Progress\n\n\n\nThe direct STRADA connection from Posit is still being set up. Once complete, you can use setwd() to change working directory directly to STRADA. For now, please use the workaround below.\n\n\nRead in files from STRADA: Use the File Exporter to copy files over to /lrlhps/ or /home/ on Posit.\nSave code files to STRADA:\n\nWrite your results to /home/&lt;your system id&gt;/&lt;project name&gt; or /lrlhps/users/&lt;your system id&gt;/&lt;project name&gt;\nExport from the Posit environment: Select file → click More → Export… If you already have veo_fsx mapped to your computer, it will appear as a destination in the file explorer.\n\n\n\n\n\n6.2 Python / Jupyter Notebook\nLilly FTE\n\nAccess at jupyterhub.am.lilly.com in local browser with standard Lilly credentials.\n\nVendor / Contractor\n\nOpen JupyterHub app in Citrix, or navigate to jupyterhub.am.lilly.com in CLUWE Microsoft Edge in Citrix. Login: l[ID] + SSO password.\n\n\n\n\n6.3 SAS Enterprise Guide\nLilly FTE\n\nRequest SAS EG installation via ServiceNow → install from Software Center after approval.\nCLUWE profile: Tools → Connections → Add. Machine: gridprodmeta2.am.lilly.com | Port: 8564 | Password: Lilly SSO.\nAWS PROD profile: Machine: gridrpmeta1.aws.lilly.com | Port: 8561 | Password: Lilly SSO.\n\nContacts:\nPriyanka Tiwari · Diane L. Hintz\nVendor / Contractor\n\n\n\n\n\n\nNote\n\n\n\nNo local SAS EG installation. Use Citrix apps only.\n\n\n\nCLUWE SAS Enterprise Guide 8 (Citrix) — supports both clinical and RWAA server connections. Default profile: gridprodmeta2.am.lilly.com | Port: 8564\nSAS_EG-PROD (Citrix) — primary app for RWAA / STRADA work. Default profile: gridrp9meta1.aws.lilly.com | Port: 8561\n\nHow to add a profile?\nTools → Connections → Add Profile → fill in Name, Machine, and Port → enter Lilly ID + Lilly SSO password → Save and Connect. See Step 3 for the full list of available server profiles.\nContacts:\nPriyanka Tiwari · Diane L. Hintz\n\n\n\n6.4 DBeaver / SQL Workbench\n\n\nThis is far too short. We should assume that individuals do not know how to bulid a connection in DBeaver or SQL Workbench. We should follow old guide and/or reach out to Rateen for add’l guidence.\nConnection parameters (both tracks, via Citrix):\n\nHost: edb-redshift-prod-01.carpdwnmaayt.us-east-2.redshift.amazonaws.com\nPort: 5439\nDatabase: rwe_databases\nDriver: Amazon Redshift JDBC from C:\\Program Files\\Amazon Redshift ODBC Driver\\\nUsername: Lilly SSO ID (lower case)\nPassword: Your Redshift password\n\n\n\n6.5 RIM Vault Access (when required)\nLilly FTE\nComplete courses 9330445, 9330442, 9335358. Submit via ServiceNow → “RIM Account Request”. A Lilly Lead may submit on behalf of the FTE.\nVendor / Contractor\n\n\n\n\n\n\nMust be submitted by vendor directly\n\n\n\nLilly Lead submissions are rejected. Specify compound per study. Access is per-study, not global.\n\n\nRequired courses (vendor platform): 9330445 (Vault RIM Basics Access) · 9330442 (Intro to Vault RIM) · 9335358 (RIM Operations).\nSubmit via ServiceNow → “RIM Account Request”.\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Onboarding",
+      "Step 6 - Analytics Tools Setup"
+    ]
+  },
+  {
+    "objectID": "ci_rwaa_org_v2.html",
+    "href": "ci_rwaa_org_v2.html",
+    "title": "ci_rwaa_org_v2",
+    "section": "",
+    "text": "RWAA SA Organizational Chart and Expertise Explorer\n\n\n\nRWAA SA Organizational Chart and Expertise Explorer\n\n  \n    Employment:\n    All\n    Full-Time\n    Part-Time\n    Contractors\n    Persistent Employment Badge?: On\n  \n  \n    Databases:\n    AllOptumHealthVerityIBD PlexusKomodoTruvetaFlatironIQVIATriNetXNHISWellDocMEPSNHANESCPRD\n  \n  \n    Tools:\n    AllIHDAetionSASR\n  \n  \n    Proficiency:\n    All\n    User\n    Professional\n  \n\nImmunology – HEORHanbo QiuSrilatha YelamanchiliYun FangGuangyong LiZhuowei WangMohammed RahmanChaoyi ZhengNeurology – HEORHanbo QiuXueqing HuangYixun WuXinran (Flora) LuoYunfei WangYiyun MaMax LyuCMH – HEOR & GPSTianshu FengChristi KaoDongju LiuMelody DehghanFrank CaoPedram AzimzadehAlice LiDebbie TinsleyAlexandra (Zan) MeeksSean HeZheng GuXutong LiLian DuanPart-TimeOncology – HEOR & GPSYimei HanXiaohong (Ivy) LiBaoyi FengPatrick LiZhenhui XuTomoko SugiharaCapabilities – All & GPSAndy DangAndy DangYifei ZhangJake William ColdironContractorDan HeMax Lyu\nImmunology – HTALili HuangFei XuNeurology – HTA & GPSCarol QiaoYing JingPeggy LinXuan WeiCMH – HTASteve ZhengYing FangYeran TongJunyuan ZhengThomas HuangBo MaElaine LuiPeng DuZbigniew KadziolaPart-TimeXiaoliu XuOncology – HTA & GPSYimei HanFrank TianZiwei ZhangNoah SeethalerYueyi XueGuangyu XuQuan Yuan\n\n   Immunology\n   CMH\n   Neurology\n   Oncology\n   Capabilities\n   GPS-aligned head\n\n\n\n\n\n\n\n\n\n“The people who make up this company are its most valuable assets.” J.K. Lilly, Jr., 1950 (approx.)",
+    "crumbs": [
+      "Critical Information",
+      "RWAA Org Chart v2"
+    ]
+  },
+  {
+    "objectID": "fg_gps.html",
+    "href": "fg_gps.html",
+    "title": "GPS - Global Patient Safety",
+    "section": "",
+    "text": "Supporting pharmacovigilance, PASS, DSUR/PSUR/PBRER safety reporting, and signal detection analyses.\n\n\n\n\n\n\nGPS Schema Restriction\n\n\n\nGPS analysts have read-only access to rwe_strada_wrk. Use rwe_strada_gps_wrk as the working schema in all SAS and SQL programs.\n\n\n\nGPS — CLUWE for Safety Data\n\nLilly FTE\nRequest CLUWE access (Step 2) with the compound safety study folder path from your Lilly Lead. On the CLUWE/RHEL8 SAS profile (port 8564), use dsn=Access_Redshift (not Access_Redshift_Prod).\n\n\nVendor / Contractor\nSame CLUWE request process as Step 2, but compound safety folder details must come from your Lilly Lead. Safety study folders are per-compound — request access separately for each compound you support. All CLUWE work runs inside Citrix.\n\n\n\n\nGPS — DSUR / PSUR Statistical Tables\n\nTables EXPOS1, DEMOG1, DEMOG2 required for DSUR are also required for PSUR. If reporting periods align, the same tables may serve both reports.\nIf DSUR and PSUR are on differing schedules, PSUR deliverables follow the DSUR process — but reports on deaths and discontinuations due to adverse events are not required for PSUR.\n\n\n\n\nGPS — Additional Training\n\n\n\n\n\n\n\nCourse ID\nTitle\n\n\n\n\n9295008\nLRL: Vault Clinical Foundations\n\n\n9352650\nLRL: Exploring Data Integrity Fundamentals in Clin Dev & Research\n\n\n9317635\nMED-QUAL: Evaluation of Potential Data Integrity Issues in Approved Documents\n\n\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Functional Groups",
+      "GPS - Global Patient Safety"
+    ]
+  },
+  {
+    "objectID": "ci_rwaa_org.html",
+    "href": "ci_rwaa_org.html",
+    "title": "RWAA Organizational Chart",
+    "section": "",
+    "text": "RWAA SA Team Org Chart\n\n\n\n\nRWAA SA Team\n\n\n  56 analysts total\n  19 FTEs\n  37 contractors\n  45 MS in Stat/Biostat\n  51 certified SAS programmers\n  9 certified IHD users\n  8 Aetion users\n  52 active R users\n\n\n\n  \n    Employment:\n    All\n    FTEs only\n    Contractors only\n  \n  \n    Databases:\n    All\n    Optum Users\n    Optum Professionals\n    HealthVerity Users\n    HealthVerity Professionals\n    Flatiron Users\n    Flatiron Professionals\n    IQVIA Users\n    IQVIA Professionals\n    TriNetX Users\n    TriNetX Professionals\n    Komodo Users\n    Komodo Professionals\n    Truveta Users\n    Truveta Professionals\n    IBD Plexus Users\n    IBD Plexus Professionals\n    MEPS Users\n    MEPS Professionals\n    NHANES Users\n    NHANES Professionals\n    CPRD Users\n    CPRD Professionals\n    WellDoc Users\n    WellDoc Professionals\n  \n  \n    Tools:\n    All\n    IHD Users\n    IHD Professionals\n    Aetion Users\n    Aetion Professionals\n    SAS Users\n    SAS Professionals\n    R Users\n    R Professionals\n  \n\n\n\n\n  \n  \n    Immunology – HEOR\n    Hanbo Qiu\n    \n      Srilatha Yelamanchili\n      Yun Fang\n      Guangyong Li\n      Zhuowei Wang\n      Mohammed Rahman\n      Chaoyi Zheng\n    \n  \n\n  \n    Neuroscience – HEOR\n    Xueqing Huang\n    \n      Yixun Wu\n      Xinran (Flora) Luo\n      Yunfei Wang\n      Yiyun Ma\n      Max Lyu\n    \n  \n\n  \n    CMH – HEOR & GPS\n    Tianshu Feng\n    \n      Christi Kao\n      Dongju Liu\n      Melody Dehghan\n      Frank Cao\n      Pedram Azimzadeh\n      Alice Li\n      Debbie Tinsley\n      Alexandra (Zan) Meeks\n      Sean He\n      Zheng Gu\n      Xutong Li\n      Lian Duan (part time)\n    \n  \n\n  \n    Oncology – HEOR, HTA, GPS\n    Yimei Han\n    \n      Baoyi Feng\n      Tomoko Sugihara\n      Patrick Li\n      Frank Tian\n      Ziwei Zhang\n      Yueyi Xue\n      Guangyu Xu\n      Noah Seethaler\n      Quan Yuan\n    \n  \n\n  \n    Capability – All & GPS\n    Andy Dang\n    \n      Yifei Zhang\n      Jake William Coldiron\n      Dan He\n      Max Lyu\n    \n  \n\n  \n  \n    Immunology – HTA\n    Lili Huang\n    \n      Fei Xu\n    \n  \n\n  \n    Neuroscience – HTA & GPS\n    Carol Qiao\n    \n      Ying Jing\n      Peggy Lin\n      Xuan Wei\n    \n  \n\n  \n    CMH – HTA\n    Steve Zheng\n    \n      Ying Fang\n      Yeran Tong\n      Junyuan Zheng\n      Thomas Huang\n      Bo Ma\n      Elaine Lui\n      Peng Du\n      Zbigniew Kadziola (part time)\n      Xiaoliu Xu\n    \n  \n\n  \n\n\n\n\n   Immunology\n   CMH\n   Neurology\n   Oncology\n   Capabilities\n   FTE\n   Contractor\n   GPS-aligned lead\n   User (level 2)\n   Professional (level 3)",
+    "crumbs": [
+      "Critical Information",
+      "RWAA Org Chart"
+    ]
+  },
+  {
+    "objectID": "ta_neurology.html",
+    "href": "ta_neurology.html",
+    "title": "Neurology",
+    "section": "",
+    "text": "Neurology is an emerging and strategically important Therapeutic Area for Lilly, anchored by a growing portfolio in Alzheimer’s disease, migraine, and pain — with a pipeline extending into additional neurological conditions. The neurology RWD landscape presents unique challenges: neurological diagnoses are often delayed or imprecise in administrative data, disease progression is difficult to capture outside of clinical settings, and biomarker-defined patient populations (particularly in Alzheimer’s) are not well-represented in traditional claims or EHR sources.\nRWAA supports Neurology across the full evidence lifecycle — from characterizing the burden of disease and current treatment landscape, through post-approval effectiveness and safety studies, to generating evidence that supports payer access and HTA decisions in a rapidly evolving market.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Neurology"
+    ]
+  },
+  {
+    "objectID": "ta_neurology.html#why-neurology-matters-to-rwaa",
+    "href": "ta_neurology.html#why-neurology-matters-to-rwaa",
+    "title": "Neurology",
+    "section": "",
+    "text": "Neurology is an emerging and strategically important Therapeutic Area for Lilly, anchored by a growing portfolio in Alzheimer’s disease, migraine, and pain — with a pipeline extending into additional neurological conditions. The neurology RWD landscape presents unique challenges: neurological diagnoses are often delayed or imprecise in administrative data, disease progression is difficult to capture outside of clinical settings, and biomarker-defined patient populations (particularly in Alzheimer’s) are not well-represented in traditional claims or EHR sources.\nRWAA supports Neurology across the full evidence lifecycle — from characterizing the burden of disease and current treatment landscape, through post-approval effectiveness and safety studies, to generating evidence that supports payer access and HTA decisions in a rapidly evolving market.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Neurology"
+    ]
+  },
+  {
+    "objectID": "ta_neurology.html#disease-areas-rwd-landscape",
+    "href": "ta_neurology.html#disease-areas-rwd-landscape",
+    "title": "Neurology",
+    "section": "Disease Areas & RWD Landscape",
+    "text": "Disease Areas & RWD Landscape\n\nAlzheimer’s Disease (AD)\nAlzheimer’s disease is Lilly’s highest-profile neurology investment, anchored by donanemab (Kisunla®), a targeted amyloid-clearing therapy for early symptomatic AD. RWD in Alzheimer’s is significantly less mature than in other TAs — largely because biomarker confirmation (amyloid PET, CSF testing) is required for diagnosis and treatment eligibility but is rarely captured in administrative data.\nKey RWD considerations:\n\nClaims-based AD identification (ICD-10: G30, F02) captures diagnosed dementia but cannot distinguish amyloid-confirmed AD from other dementias — significant misclassification risk\nAmyloid biomarker data (PET imaging, CSF Aβ42/tau) are not available in standard claims or EHR; specialty registries or linked imaging databases are required\nDisease staging (preclinical, MCI, mild dementia, moderate dementia) requires cognitive assessments (MMSE, CDR) captured only in structured clinical or registry data\nCaregiver and care setting data are important for burden-of-illness analyses; linkage to long-term care databases (e.g., MDS) may be needed\nAPOE ε4 genotype is a key risk modifier and treatment response predictor — available only in biobank-linked or research cohort data\nThe ARIA (amyloid-related imaging abnormalities) safety signal requires MRI monitoring data not present in claims\n\n\n\nMigraine\nMigraine is the most commercially mature area in Lilly’s neurology portfolio, anchored by lasmiditan (Reyvow®) for acute treatment and galcanezumab (Emgality®) for prevention. Claims data are relatively well-suited for migraine research given reliable ICD-10 coding and established treatment algorithms.\nKey RWD considerations:\n\nMigraine diagnosis is reasonably well-coded in claims (ICD-10: G43); episodic vs. chronic migraine differentiation requires frequency proxies (headache days, acute medication use)\nChronic migraine (≥15 headache days/month) is difficult to ascertain from claims alone — EHR with structured visit notes or patient-reported data needed for precision\nAcute vs. preventive treatment analyses are distinct; triptans, gepants, and ditans for acute care vs. CGRP monoclonal antibodies and other agents for prevention\nMedication overuse headache (MOH) is a common comorbidity and confounder — requires careful operationalization using acute medication fill frequency\nTreatment patterns, adherence, and switching among preventive therapies are high-priority for Medical Affairs and Market Access\n\n\n\nPain\nPain — including diabetic peripheral neuropathy (DPN), musculoskeletal pain, and other chronic pain conditions — represents a growing area within Lilly’s neurology and broader portfolio. RWD in pain is challenging due to heterogeneity of the patient population and subjective nature of the primary endpoint.\nKey RWD considerations:\n\nDPN is identifiable in claims (ICD-10: E11.40–E11.49) and is particularly relevant given CMH/Neurology overlap in the T2D population\nPain severity and numeric rating scales are not available in claims; EHR with structured pain assessments or PRO-linked data required for outcome measurement\nOpioid use patterns, opioid use disorder comorbidity, and concomitant medication use are important covariates and safety endpoints\nChronic pain conditions are frequently undercoded or inconsistently coded — algorithm validation is recommended before cohort construction",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Neurology"
+    ]
+  },
+  {
+    "objectID": "ta_neurology.html#common-rwaa-study-types-in-neurology",
+    "href": "ta_neurology.html#common-rwaa-study-types-in-neurology",
+    "title": "Neurology",
+    "section": "Common RWAA Study Types in Neurology",
+    "text": "Common RWAA Study Types in Neurology\n\nCommon Neurology Study Types\n\n\n\n\n\n\n\n\nStudy Type\nTypical Requestor\nData Source(s)\nNotes\n\n\n\n\nTreatment pattern analysis\nMedical Affairs, HEOR\nClaims, EHR\nSwitching, persistence, LOT for migraine & pain\n\n\nComparative effectiveness (CER)\nHEOR, HTA\nClaims, EHR, registry\nActive comparator design; small AD populations a challenge\n\n\nSafety / pharmacovigilance\nGPS\nClaims, EHR, registries\nARIA monitoring for donanemab; CV events in migraine\n\n\nEpidemiology / disease burden\nPipeline teams, Medical Affairs\nClaims, EHR, registry\nIncidence, prevalence, healthcare utilization\n\n\nBiomarker testing patterns\nMedical Affairs, Regulatory\nSpecialty registries, imaging DBs\nAmyloid PET uptake, CSF testing rates\n\n\nUnmet need characterization\nPipeline teams, Medical Affairs\nClaims, EHR\nDiagnosis delays, treatment gaps, care setting\n\n\nBudget impact / cost analyses\nMarket Access, HEOR\nClaims\nAD total cost of care is a major payer concern\n\n\nPRO / patient & caregiver experience\nHEOR\nSurvey, registry\nCognitive outcomes, caregiver burden, QoL\n\n\nReal-world effectiveness (RWE)\nRegulatory, HEOR\nRegistry, EHR\nEmerging; AD registry data critical",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Neurology"
+    ]
+  },
+  {
+    "objectID": "ta_neurology.html#key-data-sources-for-neurology",
+    "href": "ta_neurology.html#key-data-sources-for-neurology",
+    "title": "Neurology",
+    "section": "Key Data Sources for Neurology",
+    "text": "Key Data Sources for Neurology\n\nClaims Databases\n\nOptum Clinformatics — useful for migraine and pain treatment patterns, HCRU, and cost analyses; AD identification limited to diagnosed dementia without biomarker confirmation\nIBM MarketScan — well-suited for working-age migraine population; employer-sponsored coverage\nIQVIA PharMetrics Plus — broad commercial; strong pharmacy data for acute and preventive migraine therapy analyses\nCMS Medicare — essential for AD and dementia populations; older age skew aligns with AD epidemiology; linkable to MDS for care setting data\n\n\n\nEHR Databases\n\nOptum EHR — includes cognitive assessments in some structured fields; useful for dementia staging proxies and DPN with linked lab data\nTriNetX — federated EHR network; useful for feasibility and cohort sizing across neurology indications\nKomodo Health — longitudinal patient journey data with strong neurology coverage; useful for diagnosis delay and care pathway analyses\n\n\n\nSpecialty Registries & Research Cohorts\n\nAlzheimer’s Disease Neuroimaging Initiative (ADNI) — longitudinal research cohort with amyloid PET, CSF biomarkers, MRI, cognitive assessments; gold standard for AD biomarker research but limited generalizability\nNational Alzheimer’s Coordinating Center (NACC) — multi-site clinical registry with harmonized cognitive and neuropathologic data\nAlzheimer’s Disease Research Centers (ADRCs) — NIA-funded network; useful for biomarker-confirmed cohort studies\nFORWARD (migraine registry) — AHS-supported registry with clinical depth for migraine characterization and PROs\nCorEvitas Neurology Registry — growing registry for neurological conditions including MS and migraine\n\n\n\nLinked & Specialty Sources\n\nMDS (Minimum Data Set) — CMS long-term care assessment data; linkable to Medicare claims for AD patients in nursing home settings\nMedicare OASIS — home health assessment data; useful for AD care setting and functional status analyses\nAmyloid PET imaging databases — emerging sources for biomarker-confirmed AD cohorts; access typically requires research partnerships\n\n\n\n\n\n\n\nData Source Selection Tip\n\n\n\nNeurology studies vary dramatically by indication. Migraine and pain analyses can often be conducted in claims with high confidence. Alzheimer’s disease studies almost always require specialty registry, research cohort, or linked imaging data to appropriately characterize biomarker-confirmed populations — claims alone will substantially misclassify the AD population and should be used only for broad burden-of-illness or HCRU analyses with explicit acknowledgment of this limitation.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Neurology"
+    ]
+  },
+  {
+    "objectID": "ta_neurology.html#analytic-considerations",
+    "href": "ta_neurology.html#analytic-considerations",
+    "title": "Neurology",
+    "section": "Analytic Considerations",
+    "text": "Analytic Considerations\n\nCohort Design\n\nAD cohort construction is the most complex in Neurology — absent biomarker data, claims-based dementia cohorts will include non-AD dementias (vascular, Lewy body, frontotemporal); sensitivity analyses with narrower ICD-10 code sets are recommended\nMigraine cohort entry is typically anchored to first diagnosis code or first preventive therapy initiation; episodic vs. chronic migraine stratification should be pre-specified\nDisease duration and prior treatment history are critical for neurology cohorts — long washout periods (12+ months) are often needed given infrequent diagnosis coding\nCare setting (outpatient neurology, primary care, memory care center) is an important variable for AD studies and should be captured where possible\n\n\n\nConfounding Control\n\nNeurology populations present strong confounding by indication — particularly in AD, where disease severity, caregiver support, and care setting all influence treatment decisions\nCognitive status proxies (prior dementia-related HCRU, neuropsychiatric medication use, care setting) are essential covariates in claims-based AD studies\nFor migraine CER, headache frequency proxies, prior preventive therapy failure, and comorbid psychiatric conditions are key confounders\nPropensity score methods apply; small sample sizes in biomarker-confirmed AD populations may limit their utility\n\n\n\nEndpoint Ascertainment\n\nCognitive outcomes (MMSE, CDR, ADAS-Cog) are not available in claims and have limited structured capture in EHR — registry data required\nARIA (amyloid-related imaging abnormalities) monitoring is a donanemab-specific safety endpoint requiring MRI data; not capturable in claims\nMigraine frequency reduction requires patient-reported headache diary data or structured EHR entries; not ascertainable from claims alone\nHealthcare utilization (ED visits, hospitalizations, neurology visits) is reliably captured in claims and is a common proxy outcome for disease burden and treatment effectiveness\nMortality in AD is well-captured via Social Security Death Master File linkage in claims databases\n\n\n\nRegulatory-Grade RWE\nRegulatory use of RWE in Neurology is earlier-stage than in Oncology but growing, particularly for:\n\nPost-market safety commitments for donanemab (ARIA monitoring, longer-term safety)\nLabel expansion studies in earlier AD populations (preclinical, MCI)\nReal-world treatment effectiveness in populations underrepresented in clinical trials (older patients, those with vascular comorbidities)\nPre-specified SAPs and protocol registration are required; early engagement with Regulatory Affairs is essential",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Neurology"
+    ]
+  },
+  {
+    "objectID": "ta_neurology.html#rwaas-role-across-neurology-functions",
+    "href": "ta_neurology.html#rwaas-role-across-neurology-functions",
+    "title": "Neurology",
+    "section": "RWAA’s Role Across Neurology Functions",
+    "text": "RWAA’s Role Across Neurology Functions\n\n\n\n\n\nflowchart TD\n    RWAA[RWAA]\n\n    RWAA --&gt; HEOR[HEOR\\nDisease burden & cost of care\\nCognitive outcome proxies\\nCaregiver burden evidence]\n    RWAA --&gt; HTA[HTA\\nComparative effectiveness\\nAD dossier evidence\\nCost-effectiveness inputs]\n    RWAA --&gt; GPS[GPS\\nARIA safety surveillance\\nLong-term donanemab safety\\nMigraine CV safety monitoring]\n    RWAA --&gt; MA[Medical Affairs\\nTreatment patterns & gaps\\nBiomarker testing uptake\\nPublications]\n    RWAA --&gt; REG[Regulatory\\nPost-market RWE commitments\\nLabel expansion support\\nSafety study execution]\n    RWAA --&gt; MKT[Market Access\\nAD total cost of care\\nBudget impact models\\nPayer-facing analyses]",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Neurology"
+    ]
+  },
+  {
+    "objectID": "ta_neurology.html#key-collaborators-contacts",
+    "href": "ta_neurology.html#key-collaborators-contacts",
+    "title": "Neurology",
+    "section": "Key Collaborators & Contacts",
+    "text": "Key Collaborators & Contacts\n\n\n\n\n\n\n\n\nFunction\nTypical Ask to RWAA\nNotes\n\n\n\n\nHEOR\nDisease burden, caregiver burden, CER inputs\nClosest collaboration; AD cost of care is a major focus\n\n\nHTA\nComparative effectiveness, NMA data inputs\nAD HTA submissions are high-complexity and high-stakes\n\n\nGPS\nARIA safety surveillance, long-term donanemab safety\nNovel safety endpoint requiring non-claims data sources\n\n\nMedical Affairs\nTreatment patterns, biomarker testing uptake, unmet need\nOften publication-oriented; migraine and AD both active\n\n\nMarket Access\nAD total cost of care, payer analyses, formulary support\nPayer access for donanemab is a major strategic focus\n\n\nRegulatory\nPost-market RWE, label expansion support\nEngage early; AD registry data partnerships may be needed",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Neurology"
+    ]
+  },
+  {
+    "objectID": "ta_neurology.html#resources-links",
+    "href": "ta_neurology.html#resources-links",
+    "title": "Neurology",
+    "section": "Resources & Links",
+    "text": "Resources & Links\n\nLilly Neurology Pipeline\nHEOR Evidence Library (Internal)\nRWD Source Catalog (Internal)\nRWAA Study Request Process (Internal)\nFDA RWE Framework\nAlzheimer’s Disease Neuroimaging Initiative (ADNI)\nNational Alzheimer’s Coordinating Center (NACC)\nAmerican Headache Society (AHS)\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Neurology"
+    ]
+  },
+  {
+    "objectID": "fg_capabilities.html",
+    "href": "fg_capabilities.html",
+    "title": "Statistical Analysis Capabilities",
+    "section": "",
+    "text": "The Statistical Analysis Capabilities group within RWAA builds and maintains the technical infrastructure, dashboards, and analytical tools that power real-world evidence generation across all Therapeutic Areas. The group translates complex RWD pipelines into scalable, reproducible, and user-facing products — enabling internal stakeholders to access, explore, and act on real-world insights efficiently.",
+    "crumbs": [
+      "Functional Groups",
+      "Capabilities"
+    ]
+  },
+  {
+    "objectID": "fg_capabilities.html#overview",
+    "href": "fg_capabilities.html#overview",
+    "title": "Statistical Analysis Capabilities",
+    "section": "",
+    "text": "The Statistical Analysis Capabilities group within RWAA builds and maintains the technical infrastructure, dashboards, and analytical tools that power real-world evidence generation across all Therapeutic Areas. The group translates complex RWD pipelines into scalable, reproducible, and user-facing products — enabling internal stakeholders to access, explore, and act on real-world insights efficiently.",
+    "crumbs": [
+      "Functional Groups",
+      "Capabilities"
+    ]
+  },
+  {
+    "objectID": "fg_capabilities.html#core-responsibilities",
+    "href": "fg_capabilities.html#core-responsibilities",
+    "title": "Statistical Analysis Capabilities",
+    "section": "Core Responsibilities",
+    "text": "Core Responsibilities\n\nDesigning and developing interactive dashboards for internal stakeholders across TAs and functions\nBuilding and maintaining reusable analytical pipelines and code libraries for RWD processing\nCreating self-service tools that allow HEOR, Medical Affairs, and Market Access teams to explore data without requiring bespoke analyses\nAutomating recurring analyses and report generation to reduce turnaround time\nManaging version control and deployment of analytical tools across RWAA’s cloud environment\nEnsuring reproducibility and documentation standards across all tool and dashboard outputs",
+    "crumbs": [
+      "Functional Groups",
+      "Capabilities"
+    ]
+  },
+  {
+    "objectID": "fg_capabilities.html#key-tools-technologies",
+    "href": "fg_capabilities.html#key-tools-technologies",
+    "title": "Statistical Analysis Capabilities",
+    "section": "Key Tools & Technologies",
+    "text": "Key Tools & Technologies\n\n\n\n\n\n\n\nArea\nTools / Technologies\n\n\n\n\nDashboard development\nR Shiny, Quarto, Power BI\n\n\nProgramming languages\nR, Python, SQL\n\n\nCloud & compute\nAWS, STRADA\n\n\nVersion control\nGit, internal code repositories\n\n\nData access & wrangling\nSpark, dbt, internal data lake connections\n\n\nVisualization libraries\nggplot2, Plotly, Highcharter",
+    "crumbs": [
+      "Functional Groups",
+      "Capabilities"
+    ]
+  },
+  {
+    "objectID": "fg_capabilities.html#how-to-engage",
+    "href": "fg_capabilities.html#how-to-engage",
+    "title": "Statistical Analysis Capabilities",
+    "section": "How to Engage",
+    "text": "How to Engage\nStatistical Analysis Capabilities is the right team to engage when a repeatable, scalable, or interactive output is needed — rather than a one-time study deliverable. Common engagement triggers include recurring reporting needs, multi-TA data exploration tools, and automation of manual analytical workflows.\n\n\n\n\n\n\nWhen to Engage This Team\n\n\n\nReach out to Statistical Analysis Capabilities when you need a dashboard, a reusable analytical tool, or an automated pipeline — rather than a single study analysis. The earlier they are engaged in scoping, the better the final product can be designed for the end user.",
+    "crumbs": [
+      "Functional Groups",
+      "Capabilities"
+    ]
+  },
+  {
+    "objectID": "fg_capabilities.html#resources-links",
+    "href": "fg_capabilities.html#resources-links",
+    "title": "Statistical Analysis Capabilities",
+    "section": "Resources & Links",
+    "text": "Resources & Links\n\nRWAA Study Request Process (Internal)\nTool & Dashboard Catalog (Internal)\nSTRADA / AWS Access Guide (Internal)\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Functional Groups",
+      "Capabilities"
+    ]
+  },
+  {
+    "objectID": "fg_hta.html",
+    "href": "fg_hta.html",
+    "title": "HTA - Health Technology Assessment",
+    "section": "",
+    "text": "Supporting payer and regulatory evidence submissions including indirect treatment comparisons, network meta-analyses, systematic reviews, and value dossier statistical inputs.",
+    "crumbs": [
+      "Functional Groups",
+      "HTA - Health Technology Assessment"
+    ]
+  },
+  {
+    "objectID": "fg_hta.html#hta-learning-progression-guide",
+    "href": "fg_hta.html#hta-learning-progression-guide",
+    "title": "HTA - Health Technology Assessment",
+    "section": "HTA Learning Progression Guide",
+    "text": "HTA Learning Progression Guide\nThe following resources are drawn from the SDnA Role-Based Learning Progression Guide (LPG) for HTA. Work through these with your supervisor or coach to build foundational knowledge in health technology assessment and economic modelling.\n\n\nMonth One — HTA Introduction\n\n\n\nTopic\nDetails\nComments\nResources\n\n\n\n\nReview resources for market access introduction\nMeet with Supervisor/Coach to identify relevant introductory materials\n\n\n\n\nSelect resources based on assigned projects\nMeet with Supervisor/Coach to tailor learning to your project scope\n\n\n\n\nHTA Toolkit\nThe HTA Toolkit summarises the clinical, humanistic, and economic body of evidence for a Lilly compound and relevant comparators.\nSupervisor/coach to assess which material is relevant depending on the stage of launch of the compound\nGPORWE · Introduction to Dossiers and HTAs #9100995\n\n\n\n\n\n\nMonth Two — Economic Modelling\n\n\n\nTopic\nDetails\nCurriculum\nComments\nResources\n\n\n\n\nEconomic modelling onboarding\nSeries of seminars developed by GPORWE as a high-level introduction to the topic\nDEV-HO: RWE 301-MOD: Working with Health Economic Models\nExtensive training available in the GPORWE Learning and Development link. Supervisor/coach to assess what material is relevant for the employee.\nEconomic Modeling Onboarding\n\n\nWhat are utilities?\nReview this video with your coach to better understand an important component of economic modelling\n\n\nUtilities in Cost-Utility Analysis (CUA)\n\n\nEconomic modelling in practice\nDiscuss with your supervisor/coach what literature or previous models to review. Depending on the type of support, review adaptations and country/payer requirements (such as ICER or NICE).\n\nFind relevant economic model for the same or similar indication/therapeutic area\nThe Elk Test\n\n\n\n\n\n\nMonth Three — SLR, ITC, and NMA\n\n\n\nTopic\nDetails\nResources\nCurriculum\n\n\n\n\nMeta-Analysis training series\nSeries of seminars developed by Meta-analysis Community of Practice. Contains a wide variety of useful information regarding meta-analysis.\nMeta-analysis — Continued Education — All Documents\nSupervisor/coach to assess what material is relevant for the employee\n\n\nReview a SLR/NMA protocol for a compound similar to yours\nRead the protocol and discuss with supervisor and coach, so the training on NMA can be framed\n\n\n\n\nReview published NMAs, if possible on the same therapeutic area\nRead the publication and discuss with supervisor and coach, so the training on NMA can be framed\n\n\n\n\nIntro to NMA\n\nNetwork Meta-Analysis (NMA)\n\n\n\nSLR & NMA process map\n\nNMA PROTOCOL, ANALYSIS & REPORTING\nConducting Literature Reviews & Meta-Analysis/Data Synthesis ID C0027420 · Course #9068330 · PROCEDURE FOR Systematic Literature Reviews #9256308 (supplement to #9068330) · PROCEDURE FOR Literature Reviews for Health Outcomes Research #9259287 (supplement to #9068330)\n\n\nIntro to ITC\n\nIndirect_Comparisons.pptx\n\n\n\nIntro to Matching Adjusted Indirect Comparison (MAIC)\n\nMatching adjusted Indirect comparisons.pptx\n\n\n\n\n\n\nMonth Four — HTA Market Access\n\nHTA Market Access | Review Guidelines\n\n\n\nTopic\nDetails\n\n\n\n\nReview Country requirements/guidelines for HTA\nAccording to the work that the employee will be facing select relevant guidelines to be reviewed: • Cochrane Handbook for Systematic Review of Interventions (https://training.cochrane.org/handbook) • IQWiG General Methods (https://www.iqwig.de/en/about-us/methods/methods-paper/) • GRADE recommendations (https://www.gradeworkinggroup.org/)\n\n\n\n\n\n\nHTA Market Access | Literature Review\n\n\n\n\n\n\n\nTopic\nDetails\n\n\n\n\nReview Existing data\nReview protocols, CSRs, past payer interactions (hta advice, past requests/responses)\n\n\nReview competitive landscape\nReview published NMAs to understand competitive landscape\n\n\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Functional Groups",
+      "HTA - Health Technology Assessment"
+    ]
+  },
+  {
+    "objectID": "ta_oncology.html",
+    "href": "ta_oncology.html",
+    "title": "Oncology",
+    "section": "",
+    "text": "Oncology is one of Lilly’s fastest-growing Therapeutic Areas, anchored by a portfolio of targeted therapies and a pipeline spanning breast cancer, lung cancer, colorectal cancer, biliary tract cancer, and other solid tumors. The oncology RWD landscape is distinct from other TAs — driven by rapid treatment evolution, biomarker-defined patient subgroups, and a regulatory environment increasingly receptive to real-world evidence for label support and post-market commitments.\nRWAA supports Oncology across the full evidence lifecycle — from epidemiologic characterization of biomarker-defined populations, through treatment pattern and sequencing analyses in a fast-moving competitive market, to regulatory-grade RWE studies supporting label maintenance and expansion.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Oncology"
+    ]
+  },
+  {
+    "objectID": "ta_oncology.html#why-oncology-matters-to-rwaa",
+    "href": "ta_oncology.html#why-oncology-matters-to-rwaa",
+    "title": "Oncology",
+    "section": "",
+    "text": "Oncology is one of Lilly’s fastest-growing Therapeutic Areas, anchored by a portfolio of targeted therapies and a pipeline spanning breast cancer, lung cancer, colorectal cancer, biliary tract cancer, and other solid tumors. The oncology RWD landscape is distinct from other TAs — driven by rapid treatment evolution, biomarker-defined patient subgroups, and a regulatory environment increasingly receptive to real-world evidence for label support and post-market commitments.\nRWAA supports Oncology across the full evidence lifecycle — from epidemiologic characterization of biomarker-defined populations, through treatment pattern and sequencing analyses in a fast-moving competitive market, to regulatory-grade RWE studies supporting label maintenance and expansion.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Oncology"
+    ]
+  },
+  {
+    "objectID": "ta_oncology.html#disease-areas-rwd-landscape",
+    "href": "ta_oncology.html#disease-areas-rwd-landscape",
+    "title": "Oncology",
+    "section": "Disease Areas & RWD Landscape",
+    "text": "Disease Areas & RWD Landscape\n\nBreast Cancer\nBreast cancer is Lilly’s largest oncology franchise, anchored by CDK4/6 inhibitors (abemaciclib, Verzenio®) in HR+/HER2- disease. RWD in breast cancer is relatively mature, with strong claims and oncology-specific EHR databases available.\nKey RWD considerations:\n\nHR/HER2 biomarker status is not reliably captured in claims; oncology EHR databases (Flatiron) with structured pathology data are required for biomarker-stratified analyses\nStage at diagnosis (early vs. metastatic) is critical for cohort construction; claims-based staging algorithms have limited accuracy — Flatiron or SEER linkage preferred\nLine of therapy (LOT) construction in metastatic breast cancer requires careful rules for gap allowances and combination regimens\nAdjuvant vs. metastatic settings have distinct data needs; adjuvant analyses benefit from longer follow-up and cancer registry linkage for recurrence endpoints\n\n\n\nLung Cancer\nLung cancer — particularly non-small cell lung cancer (NSCLC) — is a high-priority area driven by biomarker-directed therapies. Lilly’s selpercatinib (Retevmo®) targets RET-altered NSCLC and thyroid cancer.\nKey RWD considerations:\n\nRET, EGFR, ALK, KRAS and other driver mutation data are not available in claims; Flatiron and similar oncology EHR databases with structured genomic data are essential\nBiomarker testing patterns and turnaround time are themselves high-value research questions for Medical Affairs\nSmall, biomarker-defined populations limit sample sizes — multi-database or registry approaches may be needed\nNSCLC staging (I–IV) requires structured EHR or registry; claims-based proxies are insufficient\n\n\n\nColorectal Cancer (CRC)\nColorectal cancer is a growing area within Lilly’s oncology portfolio. RWD in CRC is increasingly important for characterizing treatment patterns and unmet need across lines of therapy.\nKey RWD considerations:\n\nMSI/MMR and RAS/BRAF mutation status are critical for treatment eligibility and cohort definition; require oncology EHR with structured molecular data\nMetastatic CRC (mCRC) LOT analyses are complex — regimens frequently include combinations of chemotherapy backbones with targeted agents\nLiver metastasis status and resectability are clinically important but not well-captured in claims\nSidedness (right vs. left colon primary) is prognostically important but requires pathology or structured EHR data\n\n\n\nBiliary Tract Cancer (BTC)\nBiliary tract cancer — including cholangiocarcinoma and gallbladder cancer — represents a rare tumor type with high unmet need. Lilly’s portfolio includes therapies targeting FGFR and IDH alterations.\nKey RWD considerations:\n\nSmall patient populations require multi-database pooling or cancer registry linkage (SEER, NCDB) to achieve adequate sample sizes\nBTC subtypes (intrahepatic vs. extrahepatic cholangiocarcinoma vs. gallbladder cancer) are differentiable by ICD-10 but require careful algorithm validation\nFGFR2 fusion and IDH1 mutation data are not in claims; Flatiron or Foundation Medicine genomic linkages are typically required\nTreatment patterns in BTC are rapidly evolving — historical RWD may not reflect current standard of care\n\n\n\nOther Solid Tumors\nLilly’s oncology pipeline continues to expand into additional tumor types. Common RWD challenges across rare and emerging indications include small sample sizes, evolving treatment standards, and limited biomarker data availability in traditional data sources.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Oncology"
+    ]
+  },
+  {
+    "objectID": "ta_oncology.html#common-rwaa-study-types-in-oncology",
+    "href": "ta_oncology.html#common-rwaa-study-types-in-oncology",
+    "title": "Oncology",
+    "section": "Common RWAA Study Types in Oncology",
+    "text": "Common RWAA Study Types in Oncology\n\nCommon Oncology Study Types\n\n\n\n\n\n\n\n\nStudy Type\nTypical Requestor\nData Source(s)\nNotes\n\n\n\n\nTreatment pattern / LOT analysis\nMedical Affairs, HEOR\nFlatiron, claims\nLine of therapy, sequencing, time on treatment\n\n\nComparative effectiveness (CER)\nHEOR, HTA\nFlatiron, claims\nExternal control arms increasingly common\n\n\nSafety / pharmacovigilance\nGPS\nClaims, Flatiron\nAEs, dose modifications, treatment discontinuation\n\n\nEpidemiology / disease burden\nPipeline teams, Medical Affairs\nSEER, claims, Flatiron\nIncidence, prevalence, biomarker prevalence\n\n\nBiomarker testing patterns\nMedical Affairs, Regulatory\nFlatiron, Foundation Medicine\nTesting rates, turnaround, result utilization\n\n\nExternal control arm (ECA)\nRegulatory, Clinical\nFlatiron, registries\nSupports single-arm trials; high regulatory scrutiny\n\n\nBudget impact / cost analyses\nMarket Access, HEOR\nClaims\nPayer-facing; total cost of care in oncology\n\n\nPRO / patient experience\nHEOR\nSurvey, registry\nHRQoL, symptom burden, treatment tolerability\n\n\nReal-world effectiveness (RWE)\nRegulatory, HEOR\nFlatiron, claims\nLabel support, post-market commitments",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Oncology"
+    ]
+  },
+  {
+    "objectID": "ta_oncology.html#key-data-sources-for-oncology",
+    "href": "ta_oncology.html#key-data-sources-for-oncology",
+    "title": "Oncology",
+    "section": "Key Data Sources for Oncology",
+    "text": "Key Data Sources for Oncology\n\nOncology-Specific EHR Databases\n\nFlatiron Health — the primary oncology RWD source at Lilly; structured EHR from ~280 oncology practices; includes LOT, biomarker results, staging, ECOG, and mortality data; Lilly has a data access agreement\nConcertAI — oncology EHR platform with structured clinical data; growing alternative to Flatiron for select tumor types\nVeeva Oncology — structured oncology EHR; useful for certain tumor types and geographies\n\n\n\nGenomic & Biomarker Databases\n\nFoundation Medicine (FMI) — comprehensive genomic profiling (CGP) data; linkable to Flatiron for biomarker-stratified analyses\nTempus — AI-enabled genomic and clinical data; useful for rare biomarker-defined populations\nAACR GENIE — multi-institutional genomic registry; useful for biomarker prevalence and genomic landscape studies\n\n\n\nCancer Registries\n\nSEER (NCI) — population-based cancer registry; gold standard for incidence, prevalence, and survival; linkable to Medicare claims\nNCDB (ACS/CoC) — hospital-based registry with staging, treatment, and facility-level data; broader than SEER but no claims linkage\nNPCR (CDC) — complements SEER for population-level epidemiology\n\n\n\nClaims Databases\n\nOptum Clinformatics — useful for HCRU, cost, and treatment patterns when biomarker data not required\nSEER-Medicare — linked registry-claims database; excellent for elderly cancer populations with longitudinal follow-up\nCMS Medicare — important for older oncology populations; linkable to SEER for outcomes research\n\n\n\n\n\n\n\nData Source Selection Tip\n\n\n\nOncology studies almost always require biomarker, staging, or LOT data not available in claims. Flatiron Health is the default starting point for most Lilly oncology RWD studies. Claims are supplementary — primarily useful for HCRU, cost analyses, and populations not well-captured in Flatiron (e.g., community settings outside Flatiron’s network).",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Oncology"
+    ]
+  },
+  {
+    "objectID": "ta_oncology.html#analytic-considerations",
+    "href": "ta_oncology.html#analytic-considerations",
+    "title": "Oncology",
+    "section": "Analytic Considerations",
+    "text": "Analytic Considerations\n\nCohort Design\n\nBiomarker-defined cohorts are the norm in oncology; cohort entry should be anchored to biomarker test result date or treatment initiation, with careful handling of patients tested at different points in their disease course\nMetastatic vs. early-stage analyses have fundamentally different data requirements and analytic designs — these should not be conflated\nLOT construction requires pre-specified rules for: gap allowances between cycles, combination vs. sequential regimens, maintenance therapy, and rechallenge\nIndex date selection (diagnosis, metastatic diagnosis, LOT initiation) has major implications for bias — must be pre-specified and clinically justified\n\n\n\nConfounding Control\n\nOncology populations are highly heterogeneous — ECOG performance status, prior lines of therapy, metastatic sites, and biomarker profile are critical covariates\nTraditional propensity score methods apply, but small sample sizes in biomarker-defined populations often limit their use\nInverse probability of treatment weighting (IPTW) with stabilized weights is preferred when sample sizes allow\nFor external control arms, FDA guidance recommends pre-specification of estimand, covariate selection, and sensitivity analyses\n\n\n\nEndpoint Ascertainment\n\nOverall survival (OS) is the most reliable endpoint in oncology RWD; Flatiron uses a validated electronic death record linkage algorithm\nProgression-free survival (PFS) and time to next treatment (TTNT) are common surrogates; TTNT is more reliable in claims, PFS requires structured EHR\nResponse rates (ORR, CR, PR) require structured oncologist-recorded data; available in Flatiron but with variable completeness\nAdverse events are systematically undercaptured in EHR — claims-based AE algorithms or dedicated safety databases may supplement\n\n\n\nExternal Control Arms (ECAs)\nECAs are a growing priority in Oncology RWAA, particularly for rare tumor types and single-arm trials seeking regulatory support. Key considerations:\n\nFDA has issued specific guidance on ECAs — study design must be pre-specified and align with the estimand of the interventional trial\nFlatiron is the most commonly accepted ECA data source by FDA for solid tumors\nContemporaneous controls (matched by calendar time to trial enrollment window) are strongly preferred\nRWAA should engage Regulatory and Biostatistics early when ECAs are being considered\n\n\n\nRegulatory-Grade RWE\nOncology is the most active TA for regulatory use of RWE at Lilly. Key requirements:\n\nPre-specified protocols and SAPs registered prior to data access\nTransparent reporting per RECORD, STROBE, or FDA-recommended templates\nData quality documentation for Flatiron or other sources\nClose collaboration with Regulatory Affairs and Global Statistical Sciences (GSS)",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Oncology"
+    ]
+  },
+  {
+    "objectID": "ta_oncology.html#rwaas-role-across-oncology-functions",
+    "href": "ta_oncology.html#rwaas-role-across-oncology-functions",
+    "title": "Oncology",
+    "section": "RWAA’s Role Across Oncology Functions",
+    "text": "RWAA’s Role Across Oncology Functions\n\n\n\n\n\nflowchart TD\n    RWAA[RWAA]\n\n    RWAA --&gt; HEOR[HEOR\\nCost-effectiveness inputs\\nDisease burden & epidemiology\\nPRO & HRQoL linkage]\n    RWAA --&gt; HTA[HTA\\nComparative effectiveness\\nExternal control arm evidence\\nDossier support]\n    RWAA --&gt; GPS[GPS\\nSafety surveillance\\nAE & dose modification patterns\\nPost-market commitments]\n    RWAA --&gt; MA[Medical Affairs\\nTreatment patterns & LOT\\nBiomarker testing rates\\nPublications]\n    RWAA --&gt; REG[Regulatory\\nExternal control arms\\nRWE for label support\\nPost-market study commitments]\n    RWAA --&gt; MKT[Market Access\\nTotal cost of care\\nBudget impact models\\nPayer-facing analyses]",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Oncology"
+    ]
+  },
+  {
+    "objectID": "ta_oncology.html#key-collaborators-contacts",
+    "href": "ta_oncology.html#key-collaborators-contacts",
+    "title": "Oncology",
+    "section": "Key Collaborators & Contacts",
+    "text": "Key Collaborators & Contacts\n\n\n\n\n\n\n\n\nFunction\nTypical Ask to RWAA\nNotes\n\n\n\n\nHEOR\nDisease burden, CER inputs, HRQoL linkage\nClosest collaboration; often co-lead studies\n\n\nHTA\nComparative effectiveness, ECA evidence, NMA inputs\nHigh demand as oncology portfolio expands\n\n\nGPS\nAE patterns, safety signal evaluation, dose modifications\nPost-market commitments common in oncology\n\n\nMedical Affairs\nLOT analyses, biomarker testing patterns, unmet need\nFrequently publication-oriented\n\n\nMarket Access\nTotal cost of care, payer analyses, formulary support\nOncology cost burden is a key payer concern\n\n\nRegulatory\nECA design and execution, RWE for label support\nHighest-rigor studies; engage early\n\n\nGlobal Statistical Sciences\nECA methodology, SAP review, regulatory alignment\nRequired collaborator for regulatory-grade studies",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Oncology"
+    ]
+  },
+  {
+    "objectID": "ta_oncology.html#resources-links",
+    "href": "ta_oncology.html#resources-links",
+    "title": "Oncology",
+    "section": "Resources & Links",
+    "text": "Resources & Links\n\nLilly Oncology Pipeline\nFlatiron Data Access Portal (Internal)\nHEOR Evidence Library (Internal)\nRWD Source Catalog (Internal)\nRWAA Study Request Process (Internal)\nFDA RWE Framework\nFDA Guidance on External Control Arms\nNCI SEER Database\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Oncology"
+    ]
+  },
+  {
+    "objectID": "step3_aws_strada.html",
+    "href": "step3_aws_strada.html",
+    "title": "Step 3 - AWS / STRADA Access",
+    "section": "",
+    "text": "⏱ Time: 45 minutes | ⏳ Approval: 10–14 business days\n\nAWS STRADA is the cloud-based data warehouse hosting all RWE databases. All analysts require access.\n\nPre-requisite Training\nComplete all four before requesting access:\n\nCourse 9049927: DEV-HO: RWE 301-ODM — Conducting Observational Studies\nCourse 9219012: DEV-HO: RWE 301a-ODM — PROCEDURE FOR Observational Studies (supplement)\nCourse 9277801: EC-PROC: Global Developing Real World Evidence (required specifically for AWS approval)\nCourse 9183089: DEV-HO: RWE 201-ODM — Applying RWD for RWE Generation\n\n\n\n\nLilly FTE\n\nComplete all four training courses via Learning Plan.\nEmail Courtney Vehling (vehling_courtney_michelle@lilly.com), CC: Diane Haldane (haldane_diane_c@lilly.com) for the Database Contract Checklists link. Return completed checklist screenshot to Courtney.\nLog in to MyAccess@Lilly → Manage User Access → check that RWE STRADA PRD Data Assets – RWE has been assigned automatically. If not found, email Gregory Edward Cunningham (cunningham_gregory_e@lilly.com) to request.\nFor RESTRICTED data: submit a separate request for “RWE STRADA PRD Data Assets – RESTRICTED”.\nAfter receiving Redshift account creation email, map network drives on local laptop:\n\n\n\\\\veo_fsx_prod.aws.lilly.com\\veo_fsx\\strada (primary)\n\\\\ix1strdec2p4.aws.lilly.com\\strada (backup)\n\n\nReset Redshift password: Open DSSP Application in local browser → click DSS → AWS DB Account Password Management → Redshift. Fill in:\n\n\nAWS Account Number: 346644684160\nAWS Region: us-east-2\nTechnology: Redshift\nCluster: edb-redshift-prod-01\nDatabase Name: rwe_databases\nRequest Type: Individual User Password Reset\nIndividual User: your Lilly system ID (upper case)\nEnter and confirm your new password.\n\n\nIf account is locked later: ServiceNow → unlock/reset. Search cluster “edb” and select prod.\n\n\n\nThis seems a bit out of place. Maybe we should provide more clarity here or move to a different section.\nSAS EG AWS PROD Profile: Machine: gridrpmeta1.aws.lilly.com | Port: 8561 | Password: Lilly SSO.\nDSN note: Use Access_Redshift_Prod on AWS GRID (port 8561). Use Access_Redshift on CLUWE/RHEL8 (port 8564). Note: /lillyce is not mounted on the AWS GRID server.\nEncrypted Password File: Open Create_and_Store_Redshift_Password.sas from the STRADA FSx folder, enter your Redshift password in Step 2, run, then close without saving. Creates /home/&sysuserid/pswd/MyEncryptedPwd.sas.\n\n\nVendor / Contractor\n\nComplete all four training courses via your vendor’s training platform.\nEmail Courtney Vehling (vehling_courtney_michelle@lilly.com) and Gregory Cunningham (cunningham_gregory_e@lilly.com) stating you need STRADA access. CC: Diane Haldane. Include Course 9277801 completion screenshot.\nComplete the RWD Contract Checklist Form.\nMyAccess@Lilly → Manage My Access (different button label from FTE) → search “RWE STRADA PRD Data Assets – RWE” → check → Review and Submit.\nAfter Redshift account email, map FSx drives in CLUWE Windows Explorer in Citrix: right-click “This PC” → Map Network Drive → \\\\veo_fsx_prod.aws.lilly.com\\veo_fsx\\strada\nReset Redshift password: Open https://dssp.paas.am.lilly.com/awsRedshiftPassManagement inside CLUWE Microsoft Edge in Citrix (not local browser).\n\nSAS EG AWS PROD Profile (Citrix — SAS EG PROD app):\nClick “No profile selected” → Add. Machine: gridrp9meta1.aws.lilly.com | Port: 8561 | Password: Lilly SSO → Save and Connect.\nEncrypted Password File (Citrix — SAS EG PROD): File → Open → Browse → paste path:\n\\\\veo_fsx_prod.aws.lilly.com\\veo_fsx\\strada\\rwe_all_personal_folder\\Gregory_Cunningham\\STRADA User Documentation\\New Documents\\create_and_Store_Redshift_Password.sas\nEnter Redshift password in Step 2, run, close without saving.\nCreate Encrypted Password File and Test Connection:\nOpen the file at the path above (or download here), enter your Redshift password where indicated, run all steps, then close without saving.\nThis creates two files in /home/&sysuserid/pswd/:\n\nencrypted_redshift_pw.txt — your encrypted Redshift password, stored in SAS-encrypted format\nMyEncryptedPwd.sas — a SAS macro file that reads the encrypted password and assigns it to a macro variable (by default, &rspw)\n\n\n\n\n\n\n\nMacro Variable Naming\n\n\n\nThe macro variable name rspw used in MyEncryptedPwd.sas is a user-defined convention, not a system requirement. You may rename it to any valid SAS macro variable name (e.g., &redshift_pw, &my_pwd). However, the name used in the password generation program must match exactly in all subsequent programs that reference it. For example, if your encrypted password file assigns the password to &rspw, then every %include and libname or connect to statement must also use &rspw. Inconsistent naming will cause authentication failures at runtime.\n\n\nTest the connection:\n\n# SAS Code - run in SAS Enterprise Guide, not R\n# %include \"/home/&sysuserid/pswd/MyEncryptedPwd.sas\";\n# proc sql;\n#   connect to ODBC as Redshift\n#     (dsn=Access_Redshift_Prod password=\"&rspw\" user=&sysuserid);\n#   create table Redshift_schemas_I_can_see as\n#     SELECT * from connection to Redshift\n#     (select distinct schemaname from pg_catalog.pg_tables\n#      where schemaname like 'rwe_strada_%'\n#      union\n#      select distinct schemaname from svv_external_schemas\n#      where schemaname like 'rwe_strada_%');\n# quit;\n\n\n\nSAS Enterprise Guide — Citrix Apps and Profiles\nTwo SAS Enterprise Guide applications are available in Citrix, each serving a different primary purpose:\n\n\n\n\n\n\n\n\nCitrix App\nPrimary Use\nNotes\n\n\n\n\nSAS_EG-PROD\nRWAA / STRADA analysis\nDefault app for all RWAA real-world data work.\n\n\nCLUWE SAS Enterprise Guide 8\nClinical development\nMore stable release; can also be configured for RWAA server connections.\n\n\n\n\nSAS_EG-PROD — Server Profiles (RWAA Default)\nThe following profiles are pre-configured or should be added in SAS_EG-PROD:\n\n\n\n\n\n\n\n\n\nProfile Name\nServer\nPort\nUse\n\n\n\n\nSAS_AWS_PROD\ngridrp9meta1.aws.lilly.com\n8561\nAWS STRADA production — primary RWAA work\n\n\nSAS RHEL8\ngridmetaprd1.am.lilly.com\n8564\nCLUWE / RHEL8 — RWAA and CLUWE data\n\n\nSAS RHEL9\ngridrp9mgr01.aws.lilly.com\n8561\nAWS RHEL9 environment\n\n\n\n\n\nCLUWE SAS Enterprise Guide 8 — Server Profiles (Clinical + Fallback)\nThe following profiles are pre-configured or should be added in CLUWE SAS Enterprise Guide 8:\n\n\n\n\n\n\n\n\n\nProfile Name\nServer\nPort\nUse\n\n\n\n\nSAS Grid in AWS Cloud PROD\ngridrp9meta1.aws.lilly.com\n8561\nAWS STRADA — same server as SAS_EG-PROD\n\n\nSAS RHEL9\ngridrp9mgr01.aws.lilly.com\n8561\nAWS RHEL9 environment\n\n\n\n\n\n\n\n\n\nFallback — Use CLUWE SAS EG 8 If SAS_EG-PROD Is Unavailable\n\n\n\nIf SAS_EG-PROD encounters connectivity issues or fails to launch, you can use CLUWE SAS Enterprise Guide 8 as an alternative. Because SAS Enterprise Guide supports multiple server profiles, the RWAA servers (e.g., gridrp9meta1.aws.lilly.com:8561) can be added to this app as well. This provides a reliable fallback without waiting for SAS_EG-PROD to be restored.\n\n\n\n\n\n\n\n\nDSN Reminder\n\n\n\nUse dsn=Access_Redshift_Prod when connected to an AWS server (port 8561). Use dsn=Access_Redshift when connected to a CLUWE/RHEL8 server (port 8564). These are not interchangeable.\n\n\nSetting the STRADA path in SAS:\n\n# SAS Code - run in SAS Enterprise Guide\n# %let PROGPATH = /veo_fsx/strada/projects/rwe_all/&lt;your_project_folder&gt;;\n# libname val \"&PROGPATH./Validation\";\n\n\n\n\n\n\n\nGPS Users\n\n\n\nYou have read-only access to rwe_strada_wrk. Use rwe_strada_gps_wrk schema instead. On CLUWE profile (not AWS PROD), use dsn=Access_Redshift instead of Access_Redshift_Prod.\n\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Onboarding",
+      "Step 3 - AWS / STRADA Access"
+    ]
+  },
+  {
+    "objectID": "ta_cardiometabolic_health.html",
+    "href": "ta_cardiometabolic_health.html",
+    "title": "Cardiometabolic Health v2",
+    "section": "",
+    "text": "Cardiometabolic Health (CMH) is one of the highest-volume and highest-priority Therapeutic Areas for real-world analytics at Lilly. The combination of large, well-established patient populations, mature real-world data (RWD) sources, and intense payer and HTA scrutiny makes CMH a primary driver of RWAA’s workload and strategic impact.\nRWAA supports CMH across the full evidence lifecycle — from early pipeline characterization of treatment patterns and unmet need, through post-approval effectiveness and safety studies, to ongoing payer and HTA submissions.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Cardiometabolic Health"
+    ]
+  },
+  {
+    "objectID": "ta_cardiometabolic_health.html#why-cmh-matters-to-rwaa",
+    "href": "ta_cardiometabolic_health.html#why-cmh-matters-to-rwaa",
+    "title": "Cardiometabolic Health v2",
+    "section": "",
+    "text": "Cardiometabolic Health (CMH) is one of the highest-volume and highest-priority Therapeutic Areas for real-world analytics at Lilly. The combination of large, well-established patient populations, mature real-world data (RWD) sources, and intense payer and HTA scrutiny makes CMH a primary driver of RWAA’s workload and strategic impact.\nRWAA supports CMH across the full evidence lifecycle — from early pipeline characterization of treatment patterns and unmet need, through post-approval effectiveness and safety studies, to ongoing payer and HTA submissions.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Cardiometabolic Health"
+    ]
+  },
+  {
+    "objectID": "ta_cardiometabolic_health.html#disease-areas-rwd-landscape",
+    "href": "ta_cardiometabolic_health.html#disease-areas-rwd-landscape",
+    "title": "Cardiometabolic Health v2",
+    "section": "Disease Areas & RWD Landscape",
+    "text": "Disease Areas & RWD Landscape\n\nType 2 Diabetes (T2D)\nT2D is one of the best-characterized disease areas in real-world data. Large, longitudinal claims and EHR datasets provide rich opportunity for treatment pattern analyses, adherence studies, and comparative effectiveness research.\nKey RWD considerations:\n\nClaims data (Optum, MarketScan, IQVIA): Strong for treatment patterns, adherence, switching, and CV event rates\nEHR data (Optum EHR, TriNetX): Adds lab values (A1C, eGFR, lipids) critical for endpoint ascertainment\nRegistry data: Useful for long-term outcomes and patient-reported data\nLinkage opportunities: CMS Medicare/Medicaid linkages important for older and dual-eligible populations\n\n\n\nObesity\nObesity as a standalone indication is a newer RWD challenge. Diagnosis codes are historically undercoded in claims — BMI-based cohort identification using EHR data is often preferred over ICD-10 codes alone.\nKey RWD considerations:\n\nBMI and weight trajectories require EHR or registry sources; claims alone are insufficient\nTreatment discontinuation and regain patterns are high-priority for HEOR and payers\nComorbidity burden (T2D, HFpEF, OSA, MASH) is critical for characterizing the treated population\nWeight loss as a primary endpoint requires careful validation in RWD settings\n\n\n\nCardiovascular Disease (CVD) & Heart Failure\nCV outcomes are among the most important — and most complex — endpoints to ascertain from RWD. MACE (major adverse cardiovascular events) and HHF (hospitalization for heart failure) are common primary endpoints requiring validated algorithms.\nKey RWD considerations:\n\nMACE ascertainment: Validated ICD-10 algorithms exist but require careful adaptation by data source\nHFpEF vs HFrEF differentiation: Challenging in claims; EHR + echocardiogram data often needed\nCardiovascular event adjudication: May be required for regulatory-grade RWE studies",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Cardiometabolic Health"
+    ]
+  },
+  {
+    "objectID": "ta_cardiometabolic_health.html#common-rwaa-study-types-in-cmh",
+    "href": "ta_cardiometabolic_health.html#common-rwaa-study-types-in-cmh",
+    "title": "Cardiometabolic Health v2",
+    "section": "Common RWAA Study Types in CMH",
+    "text": "Common RWAA Study Types in CMH\n\nCommon CMH Study Types\n\n\n\n\n\n\n\n\nStudy Type\nTypical Requestor\nData Source(s)\nNotes\n\n\n\n\nTreatment pattern analysis\nMedical Affairs, HEOR\nClaims, EHR\nLine of therapy, switching, persistence\n\n\nComparative effectiveness (CER)\nHEOR, HTA\nClaims, EHR\nActive comparator new-user design preferred\n\n\nSafety/pharmacovigilance\nGPS\nClaims, EHR, registries\nOften GPS-initiated; may be regulatory commitment\n\n\nUnmet need / disease burden\nPipeline teams, Medical Affairs\nClaims, EHR\nSupports label expansion or pipeline asset\n\n\nBudget impact / cost analyses\nMarket Access, HEOR\nClaims\nPayer-facing; may feed HTA dossiers\n\n\nPRO / patient experience\nHEOR\nSurvey, registry\nLinked to claims when possible\n\n\nReal-world effectiveness (RWE)\nRegulatory, HEOR\nClaims, EHR\nIncreasing regulatory use; requires protocol rigor",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Cardiometabolic Health"
+    ]
+  },
+  {
+    "objectID": "ta_cardiometabolic_health.html#key-data-sources-for-cmh",
+    "href": "ta_cardiometabolic_health.html#key-data-sources-for-cmh",
+    "title": "Cardiometabolic Health v2",
+    "section": "Key Data Sources for CMH",
+    "text": "Key Data Sources for CMH\n\nClaims Databases\n\nOptum Clinformatics — large commercially insured + Medicare Advantage population; good for CV events\nIBM MarketScan — employer-sponsored insurance; useful for working-age T2D population\nIQVIA PharMetrics Plus — broad commercial; strong pharmacy linkage\nCMS Medicare / Medicaid — essential for elderly and low-income populations with high cardiometabolic burden\n\n\n\nEHR Databases\n\nOptum EHR — large de-identified EHR; includes labs (A1C, BMI, lipids), vital signs, structured notes\nTriNetX — federated EHR network; useful for feasibility and rapid cohort sizing\nFlatiron — oncology-focused but used for comorbidity analyses in CMH/oncology overlap patients\n\n\n\nSpecialty / Linked Sources\n\nPINNACLE Registry (ACC) — cardiovascular registry with clinical depth for HF and CVD\nLinked Claims + EHR — preferred design when lab data or weight is needed alongside utilization/cost\n\n\n\n\n\n\n\nData Source Selection Tip\n\n\n\nFor CMH studies requiring both clinical endpoints (A1C, BMI, eGFR) and utilization/cost outcomes, linked claims-EHR datasets are strongly preferred. Pure claims studies are adequate for treatment patterns and event-based endpoints with validated algorithms.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Cardiometabolic Health"
+    ]
+  },
+  {
+    "objectID": "ta_cardiometabolic_health.html#analytic-considerations",
+    "href": "ta_cardiometabolic_health.html#analytic-considerations",
+    "title": "Cardiometabolic Health v2",
+    "section": "Analytic Considerations",
+    "text": "Analytic Considerations\n\nCohort Design\n\nNew-user active comparator design is the gold standard for CER in CMH; reduces channeling and indication bias\nT2D cohort entry is typically anchored to first dispensing of index therapy with a washout period (commonly 6–12 months)\nObesity cohorts require careful BMI eligibility criteria; consider sensitivity analyses with and without diagnosis code inclusion\n\n\n\nConfounding Control\n\nCMH populations have high comorbidity burden — propensity score methods (IPTW, matching) are standard\nHigh-dimensional propensity scores (hdPS) are used when variable lists are large\nDisease severity proxies (prior A1C levels, insulin use, prior CV events) are critical covariates\n\n\n\nEndpoint Ascertainment\n\nMACE and HHF algorithms should be pre-specified and cite published validation literature\nHypoglycemia ascertainment in claims is known to be underestimated — sensitivity analyses recommended\nWeight change as an endpoint requires EHR or linked data; cannot be derived from claims alone\n\n\n\nRegulatory-Grade RWE\nRWAA is increasingly involved in studies intended to support or supplement regulatory submissions. For CMH assets (particularly tirzepatide indications), this means:\n\nPre-specified statistical analysis plans (SAPs)\nTransparent protocol registration (e.g., EU PAS Register, ClinicalTrials.gov)\nAdherence to FDA RWE frameworks and EMA guidance on RWD/RWE",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Cardiometabolic Health"
+    ]
+  },
+  {
+    "objectID": "ta_cardiometabolic_health.html#rwaas-role-across-cmh-functions",
+    "href": "ta_cardiometabolic_health.html#rwaas-role-across-cmh-functions",
+    "title": "Cardiometabolic Health v2",
+    "section": "RWAA’s Role Across CMH Functions",
+    "text": "RWAA’s Role Across CMH Functions\n\n\n\n\n\nflowchart TD\n    RWAA[RWAA]\n\n    RWAA --&gt; HEOR[HEOR\\nCost-effectiveness inputs\\nBurden of disease\\nPRO linkage]\n    RWAA --&gt; HTA[HTA\\nComparative effectiveness\\nIndirect treatment comparisons\\nDossier evidence]\n    RWAA --&gt; GPS[GPS\\nSafety surveillance\\nPharmacovigilance studies\\nRisk management]\n    RWAA --&gt; MA[Medical Affairs\\nTreatment patterns\\nKOL data generation\\nPublications]\n    RWAA --&gt; REG[Regulatory\\nRWE for label support\\nPost-market commitments]\n    RWAA --&gt; MKT[Market Access\\nBudget impact models\\nPayer-facing analyses]",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Cardiometabolic Health"
+    ]
+  },
+  {
+    "objectID": "ta_cardiometabolic_health.html#key-collaborators-contacts",
+    "href": "ta_cardiometabolic_health.html#key-collaborators-contacts",
+    "title": "Cardiometabolic Health v2",
+    "section": "Key Collaborators & Contacts",
+    "text": "Key Collaborators & Contacts\n\n\n\n\n\n\n\n\nFunction\nTypical Ask to RWAA\nNotes\n\n\n\n\nHEOR\nDisease burden, CER inputs, PRO linkage\nClosest collaboration; often co-lead studies\n\n\nHTA\nComparative effectiveness, NMA data inputs\nIncreasing demand as GLP-1 market matures\n\n\nGPS\nPharmacovigilance, safety signal evaluation\nMay involve regulatory timelines\n\n\nMedical Affairs\nTreatment patterns, adherence, unmet need\nOften publication-oriented\n\n\nMarket Access\nPayer analyses, formulary support\nShorter turnaround often expected\n\n\nRegulatory\nRWE study design and execution\nHigh rigor; protocol registration required",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Cardiometabolic Health"
+    ]
+  },
+  {
+    "objectID": "ta_cardiometabolic_health.html#resources-links",
+    "href": "ta_cardiometabolic_health.html#resources-links",
+    "title": "Cardiometabolic Health v2",
+    "section": "Resources & Links",
+    "text": "Resources & Links\n\nLilly CMH Pipeline\nHEOR Evidence Library (Internal)\nRWD Source Catalog (Internal)\nRWAA Study Request Process (Internal)\nFDA RWE Framework\nIDF Diabetes Atlas\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Cardiometabolic Health"
+    ]
+  },
+  {
+    "objectID": "ta_immunology.html",
+    "href": "ta_immunology.html",
+    "title": "Immunology",
+    "section": "",
+    "text": "Immunology is one of Lilly’s most dynamic and rapidly expanding Therapeutic Areas, encompassing treatments for immune-mediated inflammatory diseases (IMIDs) including rheumatoid arthritis, psoriatic arthritis, axial spondyloarthritis, psoriasis, atopic dermatitis, and inflammatory bowel disease. These conditions share dysregulated immune pathways and frequently overlap in patient populations, creating rich opportunities for cross-indication real-world research.\nRWAA supports Immunology across the full evidence lifecycle — from characterizing treatment patterns in a highly competitive biologic market, through comparative effectiveness and safety studies, to generating evidence that informs payer and HTA decisions in an increasingly crowded therapeutic landscape.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Immunology"
+    ]
+  },
+  {
+    "objectID": "ta_immunology.html#why-immunology-matters-to-rwaa",
+    "href": "ta_immunology.html#why-immunology-matters-to-rwaa",
+    "title": "Immunology",
+    "section": "",
+    "text": "Immunology is one of Lilly’s most dynamic and rapidly expanding Therapeutic Areas, encompassing treatments for immune-mediated inflammatory diseases (IMIDs) including rheumatoid arthritis, psoriatic arthritis, axial spondyloarthritis, psoriasis, atopic dermatitis, and inflammatory bowel disease. These conditions share dysregulated immune pathways and frequently overlap in patient populations, creating rich opportunities for cross-indication real-world research.\nRWAA supports Immunology across the full evidence lifecycle — from characterizing treatment patterns in a highly competitive biologic market, through comparative effectiveness and safety studies, to generating evidence that informs payer and HTA decisions in an increasingly crowded therapeutic landscape.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Immunology"
+    ]
+  },
+  {
+    "objectID": "ta_immunology.html#disease-areas-rwd-landscape",
+    "href": "ta_immunology.html#disease-areas-rwd-landscape",
+    "title": "Immunology",
+    "section": "Disease Areas & RWD Landscape",
+    "text": "Disease Areas & RWD Landscape\n\nRheumatoid Arthritis (RA)\nRA is among the most mature disease areas in real-world data, with well-established disease registries, validated claims-based algorithms, and decades of longitudinal data available. The competitive biologic and JAK inhibitor market makes treatment sequencing and switching analyses particularly high-value.\nKey RWD considerations:\n\nClaims data (Optum, MarketScan, IQVIA): Strong for treatment patterns, biologic cycling, adherence, and HCRU\nEHR data (Optum EHR, TriNetX): Adds lab values (CRP, ESR, RF, anti-CCP) and disease activity proxies\nSpecialty registries (CORRONA/Adelphi): Clinical depth including DAS28, HAQ scores, and patient-reported outcomes\nLinkage opportunities: Registry-claims linkages provide the richest evidence base for CER in RA\n\n\n\nPsoriasis & Psoriatic Arthritis (PsO / PsA)\nPsoriasis and psoriatic arthritis frequently co-occur and share treatment pathways, making joint analyses common. Dermatology and rheumatology data sources differ, and studies often need to span both specialties.\nKey RWD considerations:\n\nDiagnosis code algorithms for PsO are reliable in claims; PsA requires additional specificity criteria\nSkin clearance outcomes (PASI, IGA) are not captured in claims — EHR or registry data required\nJoint disease activity in PsA (tender/swollen joint counts) requires specialty registry or structured EHR\nBiologic sequencing analyses are high-priority given multiple approved IL-17, IL-23, and TNF inhibitors\n\n\n\nAxial Spondyloarthritis (axSpA)\naxSpA, including ankylosing spondylitis (AS) and non-radiographic axSpA (nr-axSpA), presents unique RWD challenges due to diagnostic delays and undercoding of nr-axSpA in administrative data.\nKey RWD considerations:\n\nAS is well-coded in claims (ICD-10: M45); nr-axSpA is significantly undercoded and hard to identify without imaging data\nSymptom onset-to-diagnosis delay (often 7–10 years) complicates cohort construction and washout design\nMRI findings, HLA-B27 status, and BASDAI/ASDAS scores require registry or structured EHR linkage\nTime-to-diagnosis and healthcare journey analyses are high-value for this indication\n\n\n\nAtopic Dermatitis (AD)\nAD is a growing priority within Immunology, with increasing biologic and JAK inhibitor options entering the market. RWD in AD is less mature than in RA, and endpoint ascertainment presents unique challenges.\nKey RWD considerations:\n\nClaims-based AD cohort identification is reliable (ICD-10: L20); moderate-to-severe classification requires additional proxies (e.g., systemic therapy use, specialist visits)\nSkin outcome measures (EASI, IGA, SCORAD) are not available in claims — registry or EHR required\nItch and sleep disruption PROs are important for patient-centered evidence; require survey or registry linkage\nDupilumab entry has reshaped the treatment landscape — biologic naïve vs. experienced analyses are common\n\n\n\nInflammatory Bowel Disease (IBD)\nIBD — encompassing Crohn’s disease (CD) and ulcerative colitis (UC) — is a complex area with high unmet need, frequent treatment cycling, and growing regulatory interest in RWE to support label expansions.\nKey RWD considerations:\n\nCD and UC are reliably identified in claims (ICD-10: K50, K51); disease severity proxies require hospitalization, steroid use, or biologic history\nEndoscopic outcomes (mucosal healing) are not available in claims — EHR or registry linkage needed\nFistulizing CD and extraintestinal manifestations require additional code-based algorithms with validation\nBiosimilar uptake and switching analyses are increasingly requested",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Immunology"
+    ]
+  },
+  {
+    "objectID": "ta_immunology.html#common-rwaa-study-types-in-immunology",
+    "href": "ta_immunology.html#common-rwaa-study-types-in-immunology",
+    "title": "Immunology",
+    "section": "Common RWAA Study Types in Immunology",
+    "text": "Common RWAA Study Types in Immunology\n\nCommon Immunology Study Types\n\n\n\n\n\n\n\n\nStudy Type\nTypical Requestor\nData Source(s)\nNotes\n\n\n\n\nTreatment pattern analysis\nMedical Affairs, HEOR\nClaims, EHR\nBiologic cycling, switching, persistence, LOT\n\n\nComparative effectiveness (CER)\nHEOR, HTA\nClaims, EHR, registry\nActive comparator new-user design preferred\n\n\nSafety/pharmacovigilance\nGPS\nClaims, EHR, registries\nInfections, malignancies, CV events\n\n\nUnmet need / disease burden\nPipeline teams, Medical Affairs\nClaims, EHR\nSupports label expansion or pipeline asset\n\n\nBudget impact / cost analyses\nMarket Access, HEOR\nClaims\nPayer-facing; may feed HTA dossiers\n\n\nPRO / patient experience\nHEOR\nSurvey, registry\nDisease activity, QoL, itch, fatigue\n\n\nReal-world effectiveness (RWE)\nRegulatory, HEOR\nClaims, EHR\nIncreasing regulatory use; requires protocol rigor\n\n\nBiologic sequencing / LOT\nMedical Affairs, Market Access\nClaims\nHigh demand given crowded competitive landscape",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Immunology"
+    ]
+  },
+  {
+    "objectID": "ta_immunology.html#key-data-sources-for-immunology",
+    "href": "ta_immunology.html#key-data-sources-for-immunology",
+    "title": "Immunology",
+    "section": "Key Data Sources for Immunology",
+    "text": "Key Data Sources for Immunology\n\nClaims Databases\n\nOptum Clinformatics — large commercially insured + Medicare Advantage population; good for HCRU and biologic utilization\nIBM MarketScan — employer-sponsored insurance; well-suited for working-age RA, PsO, and AD populations\nIQVIA PharMetrics Plus — broad commercial; strong for specialty pharmacy linkage and biologic dispensing\nCMS Medicare / Medicaid — important for elderly RA patients and Medicaid-covered IBD populations\n\n\n\nEHR Databases\n\nOptum EHR — includes labs (CRP, ESR), vital signs, and some structured disease activity data\nTriNetX — federated EHR network; useful for feasibility, cohort sizing, and rapid turnaround studies\nVeeva Iqvia — structured EHR with specialty focus; useful for rheumatology and dermatology practices\n\n\n\nSpecialty Registries\n\nCORRONA (Adelphi) RA Registry — gold standard for RA RWD; includes DAS28, HAQ, and biologic history\nCORRONA PsA/SpA Registry — clinical depth for joint disease activity and biologic sequencing\nCorEvitas AD Registry — growing registry with EASI, IGA, PROs for atopic dermatitis\nTREAT Registry (Crohn’s disease) — long-term CD outcomes with endoscopic and clinical data\n\n\n\nSpecialty / Linked Sources\n\nSpecialty Pharmacy Data — critical for biologics dispensed outside retail; Accredo, CVS Specialty\nLinked Claims + Registry — preferred for CER when clinical endpoints (disease activity scores) are needed alongside utilization\n\n\n\n\n\n\n\nData Source Selection Tip\n\n\n\nImmunology studies frequently require disease activity scores and clinical endpoints not available in claims. When these are primary endpoints (e.g., DAS28 remission, PASI 90, mucosal healing), specialty registries or linked EHR sources are required. Claims alone are sufficient for treatment patterns, HCRU, and event-based safety endpoints.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Immunology"
+    ]
+  },
+  {
+    "objectID": "ta_immunology.html#analytic-considerations",
+    "href": "ta_immunology.html#analytic-considerations",
+    "title": "Immunology",
+    "section": "Analytic Considerations",
+    "text": "Analytic Considerations\n\nCohort Design\n\nNew-user active comparator design is the gold standard for CER across all Immunology indications; reduces channeling bias in a market with many available biologics\nBiologic-naïve vs. biologic-experienced analyses are often requested separately given differences in prognosis and treatment response\nLine of therapy (LOT) construction requires careful rules for gaps in therapy, switching, and add-on therapies\nWashout periods should account for long half-lives of biologic therapies (typically 6–12 months)\n\n\n\nConfounding Control\n\nImmunology populations have complex channeling — disease severity, prior biologic history, comorbidities, and prescriber specialty all drive treatment selection\nPropensity score methods (IPTW, matching) are standard; include biologic history and disease severity proxies as key covariates\nPrescriber-level clustering should be accounted for (biologics are specialty-prescribed; practice patterns vary)\n\n\n\nEndpoint Ascertainment\n\nInfection endpoints (serious infections, opportunistic infections, herpes zoster) are high-priority for JAK inhibitor safety studies; validated claims algorithms exist\nMalignancy endpoints require extended follow-up and cancer registry linkage where possible\nJoint replacement surgery is a useful long-term disease progression endpoint in RA and PsA — well-captured in claims\nFlare ascertainment (steroid bursts, ER visits, hospitalizations) is the most common claims-based disease activity proxy\n\n\n\nRegulatory-Grade RWE\nImmunology is seeing growing regulatory interest in RWE, particularly for:\n\nPost-market safety commitments (JAK inhibitors — ORAL Surveillance follow-on studies)\nLabel expansion support for new indications (e.g., pediatric populations, new IMIDs)\nPre-specified SAPs and protocol registration are required for regulatory-grade studies",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Immunology"
+    ]
+  },
+  {
+    "objectID": "ta_immunology.html#rwaas-role-across-immunology-functions",
+    "href": "ta_immunology.html#rwaas-role-across-immunology-functions",
+    "title": "Immunology",
+    "section": "RWAA’s Role Across Immunology Functions",
+    "text": "RWAA’s Role Across Immunology Functions\n\n\n\n\n\nflowchart TD\n    RWAA[RWAA]\n\n    RWAA --&gt; HEOR[HEOR\\nCost-effectiveness inputs\\nBurden of disease\\nPRO linkage]\n    RWAA --&gt; HTA[HTA\\nComparative effectiveness\\nIndirect treatment comparisons\\nDossier evidence]\n    RWAA --&gt; GPS[GPS\\nSafety surveillance\\nInfection & malignancy monitoring\\nJAK inhibitor risk management]\n    RWAA --&gt; MA[Medical Affairs\\nTreatment patterns\\nBiologic sequencing\\nPublications]\n    RWAA --&gt; REG[Regulatory\\nRWE for label support\\nPost-market commitments]\n    RWAA --&gt; MKT[Market Access\\nBudget impact models\\nPayer-facing analyses]",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Immunology"
+    ]
+  },
+  {
+    "objectID": "ta_immunology.html#key-collaborators-contacts",
+    "href": "ta_immunology.html#key-collaborators-contacts",
+    "title": "Immunology",
+    "section": "Key Collaborators & Contacts",
+    "text": "Key Collaborators & Contacts\n\n\n\n\n\n\n\n\nFunction\nTypical Ask to RWAA\nNotes\n\n\n\n\nHEOR\nDisease burden, CER inputs, PRO linkage\nClosest collaboration; often co-lead studies\n\n\nHTA\nComparative effectiveness, NMA data inputs\nHigh demand given crowded IL-17, IL-23, JAK market\n\n\nGPS\nSafety surveillance, infection and malignancy monitoring\nJAK inhibitor safety is a standing priority\n\n\nMedical Affairs\nTreatment patterns, biologic sequencing, unmet need\nOften publication-oriented\n\n\nMarket Access\nPayer analyses, formulary support\nCompetitive positioning vs. biosimilars and new entrants\n\n\nRegulatory\nRWE study design and execution\nPost-market commitments for JAK inhibitors",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Immunology"
+    ]
+  },
+  {
+    "objectID": "ta_immunology.html#resources-links",
+    "href": "ta_immunology.html#resources-links",
+    "title": "Immunology",
+    "section": "Resources & Links",
+    "text": "Resources & Links\n\nLilly Immunology Pipeline\nHEOR Evidence Library (Internal)\nRWD Source Catalog (Internal)\nRWAA Study Request Process (Internal)\nFDA RWE Framework\nACR Clinical Guidelines\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Therapeutic Areas",
+      "Immunology"
+    ]
+  },
+  {
+    "objectID": "ci_contacts.html",
+    "href": "ci_contacts.html",
+    "title": "Key Contacts",
+    "section": "",
+    "text": "Contact\nSystem / Area\nPhone\nEmail\nTitle\n\n\n\n\nManish Sharma\nUNIX Account\n\nsharma_manish2@network.lilly.com\nGlobal Commercial Analytics\n\n\nAndrew M Craven\nLRL Group & Brainiac-Compute\n(317) 276-7221\ncraven_andrew_m@lilly.com\nConsultant-IT\n\n\nDiane C. Haldane\nAWS (including access to FSx)\n(317) 651-1898\nhaldane_diane_c@lilly.com\nSr. Research Scientist: RWA-Capabilities and Data Mart\n\n\nAlex Neher\nAWS\n\nneher_alex@lilly.com\nSr. Analyst-IT\n\n\nRateen Kumar\nAWS Redshift\n(317) 277-9475\nkumar_rateen@network.lilly.com\nGlobal Commercial Analytics\n\n\nDiane L. Hintz\nSAS EG\n(317) 651-2395\nhintz_diane_l@lilly.com\nCnslt-Comm Anlytcs Svc Mgr/Design Lead\n\n\nPriyanka Tiwari\nSAS EG\n(317) 651-5262\ntiwari_priyanka@network.lilly.com\nGlobal Commercial Analytics\n\n\nLisa Grey\nPangaea\n(317) 651-9009\ngrey_lisa_m@lilly.com\nSr Associate-RWE\n\n\nCourtney M. Vehling\nDatabase Contract Checklists\n(317) 277-7802\nvehling_courtney_michelle@lilly.com\nReal World Data Consultant – GPORWE\n\n\nGregory E. Cunningham\nAWS / STRADA Approvals\n\ncunningham_gregory_e@lilly.com\n\n\n\nJessica R. Peachey\nOncology Data (Flatiron / Guardant)\n(317) 227-1520\npeachey.jessica@lilly.com\nConsultant-RWD\n\n\nArun Pandit\nRWE IT\n\npandit_arun@network.lilly.com\n\n\n\nAkanksha Patil\nRWE IT\n\nakanksha.patil@network.lilly.com\n\n\n\nHPC Team\nR Studio / Posit issues\n\nSubmit ticket: hpc.am.lilly.com\n\n\n\nLRL Group\nCATs / Project Time Entry\n\nusmail_lrl_project_esg@lilly.com\n\n\n\nCLUWE / SAS Grid issues\nModernization support\n\nmodernizationbussupp@lilly.com\n\n\n\nAnalytical tool issues\nSQL / SAS / R support\n\nRWE_STRADA_ADMINS_NOTIFICATIONS@lists.lilly.com\n\n\n\nSDnA Sourcing\nVendor onboarding / Beeline / SOW\n\nContact your Lilly Lead\n\n\n\n\n\n\n\n\n\n\nOncology Data Access\n\n\n\nPlease send access requests to Jessica Renee Peachey (peachey.jessica@lilly.com) and copy Gregory Edward Cunningham (cunningham_gregory_e@lilly.com) on the email.",
+    "crumbs": [
+      "Critical Information",
+      "Contact List"
+    ]
+  },
+  {
+    "objectID": "step8_onboarding_complete.html",
+    "href": "step8_onboarding_complete.html",
+    "title": "Onboarding Complete!",
+    "section": "",
+    "text": "Welcome to the RWAA SA Family! You’ve completed all onboarding steps. We’re thrilled you’re here!\n\n\n  \n    \n    \n      \n        Pause GIF\n      \n    \n  \n\n\n\n\n\nYour Progress Tracker\nThe following in an interactive list to help you track your understanding progress. Thus far, you should:\n\nHave your Lilly Email works and know how it works.\nKnow difference between Full-Time Employees and Contractors.\nKnow “Who’s Who” within SDnA, what they do, and how to contact them.\nUnderstand structure and abilities of the RWAA Team.\nCompleted all on boarding steps.\nHave access, or waiting on access, to all general tools.\n\n\n\nWhat’s Next?\n\n🧬 Review the Therapeutic Area pages for the operations and scope of each Therapeutic Area.\n🔬 Read the Functional Group pages to understand the different business needs for each area.\n🧭 Visit the Teams pages to learn about the projects, priorities, and workflows across all groups.\n📊 Explore the Analytical Tools available to you.\n🗂️ Learn how to use the Administrative Tools critical to your role.\n\n\n\n\n\n\n\nTip\n\n\n\nTip: Bookmark this site! It will continue to be updated with new resources, tools, and guidance as the team grows.\n\n\n\n\nWant more confetti? We won’t judge.\n\n 🎊 MORE CONFETTI!",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding Complete"
+    ]
+  },
+  {
+    "objectID": "team_cmh_hta.html",
+    "href": "team_cmh_hta.html",
+    "title": "CMH – HTA",
+    "section": "",
+    "text": "The CMH HTA team sits within the Cardiometabolic Health (CMH) Therapeutic Area and partners closely with Health Technology Assessment (HTA) bodies, payers, and HEOR colleagues to generate and communicate the value of Lilly’s CMH portfolio.\nThe team supports a range of deliverables including comparative effectiveness analyses, indirect treatment comparisons (ITCs/NMAs), cost-effectiveness inputs, and evidence dossiers for HTA submissions globally — with particular focus on agencies such as NICE, G-BA, HAS, and CADTH.",
+    "crumbs": [
+      "Teams",
+      "CMH HTA"
+    ]
+  },
+  {
+    "objectID": "team_cmh_hta.html#overview",
+    "href": "team_cmh_hta.html#overview",
+    "title": "CMH – HTA",
+    "section": "",
+    "text": "The CMH HTA team sits within the Cardiometabolic Health (CMH) Therapeutic Area and partners closely with Health Technology Assessment (HTA) bodies, payers, and HEOR colleagues to generate and communicate the value of Lilly’s CMH portfolio.\nThe team supports a range of deliverables including comparative effectiveness analyses, indirect treatment comparisons (ITCs/NMAs), cost-effectiveness inputs, and evidence dossiers for HTA submissions globally — with particular focus on agencies such as NICE, G-BA, HAS, and CADTH.",
+    "crumbs": [
+      "Teams",
+      "CMH HTA"
+    ]
+  },
+  {
+    "objectID": "team_cmh_hta.html#people",
+    "href": "team_cmh_hta.html#people",
+    "title": "CMH – HTA",
+    "section": "People",
+    "text": "People",
+    "crumbs": [
+      "Teams",
+      "CMH HTA"
+    ]
+  },
+  {
+    "objectID": "team_cmh_hta.html#workflow",
+    "href": "team_cmh_hta.html#workflow",
+    "title": "CMH – HTA",
+    "section": "Workflow",
+    "text": "Workflow\nThe CMH HTA team follows a structured quality workflow for all programming deliverables. The workflow applies to both SAS/R and Taffy environments and covers three roles: Primary Programmer, Independent Validator, and Peer Reviewer.\n\nPrimary Programmer\n\n\n\n\n\n\nNote\n\n\n\nBefore starting any new request, review the most updated SAP and familiarise yourself with the input data and LOA.\n\n\nSAS / R\n\nFor any new request, create a project tracker and provide a List of Analyses (LOA) — either attached to the tracker or saved in the documentation folder.\nLOA should always be up to date, including titles, footnotes, abbreviations, reference program names (if available), output locations/names, and any specific requirements.\nCreate folders in QA and PRD, and create a setup program (validator to peer review it). Always include the PRD path in your program header.\nFollow best practice for program headers; include the Project Tracker ID next to the PROJECT NAME (required).\nRun the program with no errors or warnings in the log/lst. If warnings cannot be resolved in SAS, try running via the CLUWE scheduler.\nCarefully review the output TFL — including titles, abbreviations, footnotes, missing values, display truncation, and page breaks.\nIf a TFL is updated during validation, save a copy of the previous version and compare to ensure only necessary changes were made.\nOnce the PRD run is approved, move the LOA to PRD and e-sign.\nRun PRD; wait for validation to complete in PRD, then e-sign.\nUpdate the status and unique/final TFL counts in the project tracker.\nFor new members, update the BOW.\n\nTaffy\nSteps 1–2 and 5–11 follow the same process as SAS/R. Additional Taffy-specific step:\n\nCreate the TFL project in Taffy.\n\n\n\n\nIndependent Validation\n\n\n\n\n\n\nImportant\n\n\n\nIt is the validator’s responsibility to determine why a mismatch exists. Only if you are convinced your result is correct should you provide the primary programmer with details of the discrepancy.\n\n\nSAS / R\n\nFollow best practice for headers; include the Project Tracker ID next to the PROJECT NAME. Always include the PRD path in the program header.\nRun the program with no errors or warnings in the log/lst. If unresolvable, try the CLUWE scheduler.\nConfirm the primary programmer’s log/lst contains no errors or warnings.\nConfirm the big N is correctly presented in the TFL.\nCarefully review the output TFL — titles, abbreviations, footnotes, missing values, display truncation, and page breaks.\nIf a TFL is updated during validation, save a copy of the previous version and compare.\nPrimary runs in PRD first; validator runs in PRD second.\nE-sign both the primary and validation programs (sign as executor).\nFor new members, update the BOW.\n\nTaffy\nSteps 1–4 follow the same process. Additional Taffy-specific step:\n\nEither the primary programmer or the validator approves the Taffy program after the primary programmer approves the PRD run.\n\n\n\n\nPeer Review\nSAS / R\n\nCompare the reference program with the primary program and justify any changes made. For new members: understand the meaning of each setting and the reason for any changes.\nCarefully review the output TFL — titles, abbreviations, footnotes, missing values, display truncation, and page breaks.\nConfirm that big N and small n are correct (recommended: write code to verify).\nCheck the log and lst files — no errors or warnings.\nAfter the PRD run, confirm the QA version of the TFL approved for PRD is identical to the PRD version.\nE-sign the primary’s program on CLUWE.\nFor new members, update the BOW.\n\nTaffy\nSteps 1–4 follow the same process. Additional Taffy-specific step:\n\nEither the primary programmer or the validator approves the Taffy program after the primary programmer approves the PRD run.\n\n\n\n\nQuality Checklist\nBefore submitting any deliverable, verify the following:\n\nNo hardcoding in either the main program body or output settings.\nNo footnote errors — check for wrong paths, missing abbreviations, missing LOA-requested notes, or incorrect titles.\nThe validation lst file is complete, including available compare results.\nInput data has been checked against the LOA; consult the primary programmer on how to handle missing data.\nNo missing rows, columns, or values in the TFL output.\nProgram header follows good practice guidelines.\nProgram footnotes follow good practice guidelines.\nVerify the necessity of all variables in the analysis model.\nVerify the necessity of all parameters in the DM table.\nTable conveys clear information — e.g. Y/N → Yes/No, F/M → Female/Male.\nCheck convergence type in both QA and PRD environments.\nNotes are made throughout the program and in the LOA for any updates.\nPrograms are executed in the correct order.\nPay attention to rounding issues that may cause incorrect patient categorisation.\nPay attention to timepoints and populations when using reference code — parameters may differ from the reference.\nFor independent validations, the primary programmer and validator must not see each other’s code.\nWhen creating a customised ADaM dataset, write a corresponding specification.\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Teams",
+      "CMH HTA"
+    ]
+  },
+  {
+    "objectID": "step1_identity_manager.html",
+    "href": "step1_identity_manager.html",
+    "title": "Step 1 - Microsoft Identity Manager",
+    "section": "",
+    "text": "NOTES: what about the rstudio group in Windows Indentiy manager?\n⏱ Time: 15 minutes | ⏳ Approval: 3–5 business days | 🎯 Priority: CRITICAL – Do this first!\n\n\n\n\n\n\nImportant\n\n\n\nVendor / Contractor Note\nIf you are a Vendor or Contractor, you must complete Step 2 – CLUWE Access before starting this step. Lilly FTE can proceed directly with Step 1.\n\n\n\nThree sequential group memberships are required:\n\nUNIX Account (comes with CLUWE access — you may double-check from “My Group Membership”)\nLRL Group\nBrainiac Compute Group\n\n\n\nLilly FTE\n\nOpen Microsoft Identity Manager in your local browser — available from Day 1.\nApply for UNIX Account: Search unixacct → check box → click Join. Wait for approval before proceeding to next steps (3–5 days).\nJoin LRL Group: After UNIX approval, search lrlhps_users → check box → click Join. This step grants Isilon filesystem access.\nJoin Brainiac-Compute Group: After LRL approval, search brainiac-compute → check box → click Join. This step provides access to R Studio / Posit.\nTrack all statuses under Manage My Requests in portal.\n\n\n\n\nVendor / Contractor\n\n\n\n\n\n\nPre-condition\n\n\n\nComplete Step 2 (CLUWE) and Citrix setup before this step.\n\n\n\nOpen CLUWE Microsoft Edge inside Citrix (not your local browser).\nOpen Microsoft Identity Manager inside that browser.\nUNIX Account: Search unixacct → check → Join. Wait for approval.\nLRL Group: After UNIX approval, search lrlhps_users → check → Join.\nBrainiac-Compute: After LRL approval, search brainiac-compute → check → Join.\nTrack statuses under Manage My Requests.\n\n\nContent or technical issues with this site? Click here to report any issues or provide feedback.",
+    "crumbs": [
+      "Onboarding",
+      "Step 1 - Microsoft Identity Manager"
+    ]
+  }
+]

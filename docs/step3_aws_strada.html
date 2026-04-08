@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Step 3 - AWS / STRADA Access – RWAA Statistical Analysis Team Onboarding Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5d2e30ad26079c1dae90a1fd11eba2b9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./step1_identity_manager.html">Onboarding</a></li><li class="breadcrumb-item"><a href="./step3_aws_strada.html">Step 3 - AWS / STRADA Access</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">RWAA Statistical Analysis Team Onboarding Guide</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homepage</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Critical Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ci_email.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lilly Email</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ci_difference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FTE vs Vendor</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ci_contacts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contact List</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ci_rwaa_org.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RWAA Org Chart</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ci_rwaa_org_v2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RWAA Org Chart v2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ci_quick_ref.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Reference</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Onboarding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step1_identity_manager.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 1 - Microsoft Identity Manager</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step2_cluwe_access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 2 - CLUWE Access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step3_aws_strada.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Step 3 - AWS / STRADA Access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step4_pangaea.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 4 - Pangaea</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step5_personal_folder.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 5 - Personal Folder Under FSx</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step6_analytics_tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 6 - Analytics Tools Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step7_core_training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Step 7 - Core Training</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./step8_onboarding_complete.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding Complete</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Therapeutic Areas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cardiometabolic_health.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">REF ONLY - DELETE ME</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ta_cardiometabolic_health.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cardiometabolic Health</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ta_immunology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Immunology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ta_neurology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Neurology</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ta_oncology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Oncology</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Functional Groups</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fg_heor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HEOR - Health Economics &amp; Outcomes Research</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fg_hta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HTA - Health Technology Assessment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fg_gps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GPS - Global Patient Safety</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fg_rwd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RWD - Real World Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fg_capabilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Capabilities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Teams</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./team_cmh_hta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CMH HTA</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Analytical Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./at_access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accessing Analytical Tools</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./post_onboarding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pangaea</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tools and Programs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./post_onboarding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pangaea</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./maintenance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Site Maintenance</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#pre-requisite-training" id="toc-pre-requisite-training" class="nav-link active" data-scroll-target="#pre-requisite-training">Pre-requisite Training</a></li>
+  <li><a href="#lilly-fte" id="toc-lilly-fte" class="nav-link" data-scroll-target="#lilly-fte">Lilly FTE</a></li>
+  <li><a href="#this-seems-a-bit-out-of-place.-maybe-we-should-provide-more-clarity-here-or-move-to-a-different-section." id="toc-this-seems-a-bit-out-of-place.-maybe-we-should-provide-more-clarity-here-or-move-to-a-different-section." class="nav-link" data-scroll-target="#this-seems-a-bit-out-of-place.-maybe-we-should-provide-more-clarity-here-or-move-to-a-different-section.">This seems a bit out of place. Maybe we should provide more clarity here or move to a different section.</a>
+  <ul class="collapse">
+  <li><a href="#vendor-contractor" id="toc-vendor-contractor" class="nav-link" data-scroll-target="#vendor-contractor">Vendor / Contractor</a></li>
+  <li><a href="#sas-enterprise-guide-citrix-apps-and-profiles" id="toc-sas-enterprise-guide-citrix-apps-and-profiles" class="nav-link" data-scroll-target="#sas-enterprise-guide-citrix-apps-and-profiles">SAS Enterprise Guide — Citrix Apps and Profiles</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./step1_identity_manager.html">Onboarding</a></li><li class="breadcrumb-item"><a href="./step3_aws_strada.html">Step 3 - AWS / STRADA Access</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Step 3 - AWS / STRADA Access</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-body">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>⏱ <strong>Time:</strong> 45 minutes | ⏳ <strong>Approval:</strong> 10–14 business days</p>
+<hr>
+<p>AWS STRADA is the cloud-based data warehouse hosting all RWE databases. All analysts require access.</p>
+<section id="pre-requisite-training" class="level3">
+<h3 class="anchored" data-anchor-id="pre-requisite-training">Pre-requisite Training</h3>
+<p>Complete all four before requesting access:</p>
+<ul>
+<li><strong>Course 9049927:</strong> DEV-HO: RWE 301-ODM — Conducting Observational Studies</li>
+<li><strong>Course 9219012:</strong> DEV-HO: RWE 301a-ODM — PROCEDURE FOR Observational Studies (supplement)</li>
+<li><strong>Course 9277801:</strong> EC-PROC: Global Developing Real World Evidence <em>(required specifically for AWS approval)</em></li>
+<li><strong>Course 9183089:</strong> DEV-HO: RWE 201-ODM — Applying RWD for RWE Generation</li>
+</ul>
+<hr>
+</section>
+<section id="lilly-fte" class="level3">
+<h3 class="anchored" data-anchor-id="lilly-fte">Lilly FTE</h3>
+<ol type="1">
+<li><p>Complete all four training courses via <a href="https://elilily.plateau.com/learning/user/personal/landOnPortalHome.do?fromSF=Y&amp;fromDeepLink=true&amp;pageID=">Learning Plan</a>.</p></li>
+<li><p>Email <strong>Courtney Vehling</strong> (vehling_courtney_michelle@lilly.com), CC: <strong>Diane Haldane</strong> (haldane_diane_c@lilly.com) for the Database Contract Checklists link. Return completed checklist screenshot to Courtney.</p></li>
+<li><p>Log in to <a href="https://myaccess.lilly.com">MyAccess@Lilly</a> → <strong>Manage User Access</strong> → check that <strong>RWE STRADA PRD Data Assets – RWE</strong> has been assigned automatically. If not found, email <strong>Gregory Edward Cunningham</strong> (cunningham_gregory_e@lilly.com) to request.</p></li>
+<li><p>For RESTRICTED data: submit a separate request for <strong>“RWE STRADA PRD Data Assets – RESTRICTED”</strong>.</p></li>
+<li><p>After receiving Redshift account creation email, map network drives on <strong>local laptop</strong>:</p></li>
+</ol>
+<ul>
+<li><code>\\veo_fsx_prod.aws.lilly.com\veo_fsx\strada</code> (primary)</li>
+<li><code>\\ix1strdec2p4.aws.lilly.com\strada</code> (backup)</li>
+</ul>
+<ol start="6" type="1">
+<li><strong>Reset Redshift password:</strong> Open <a href="https://dssp.paas.am.lilly.com/">DSSP Application</a> in <strong>local browser</strong> → click <strong>DSS</strong> → <strong>AWS DB Account Password Management</strong> → <strong>Redshift</strong>. Fill in:</li>
+</ol>
+<ul>
+<li>AWS Account Number: <code>346644684160</code></li>
+<li>AWS Region: <code>us-east-2</code></li>
+<li>Technology: <code>Redshift</code></li>
+<li>Cluster: <code>edb-redshift-prod-01</code></li>
+<li>Database Name: <code>rwe_databases</code></li>
+<li>Request Type: <code>Individual User Password Reset</code></li>
+<li>Individual User: your Lilly system ID (<strong>upper case</strong>)</li>
+<li>Enter and confirm your new password.</li>
+</ul>
+<ol start="7" type="1">
+<li>If account is locked later: ServiceNow → unlock/reset. Search cluster “edb” and select prod.</li>
+</ol>
+</section>
+<section id="this-seems-a-bit-out-of-place.-maybe-we-should-provide-more-clarity-here-or-move-to-a-different-section." class="level1">
+<h1>This seems a bit out of place. Maybe we should provide more clarity here or move to a different section.</h1>
+<p><strong>SAS EG AWS PROD Profile:</strong> Machine: <code>gridrpmeta1.aws.lilly.com</code> | Port: <code>8561</code> | Password: Lilly SSO.</p>
+<p><strong>DSN note:</strong> Use <code>Access_Redshift_Prod</code> on AWS GRID (port 8561). Use <code>Access_Redshift</code> on CLUWE/RHEL8 (port 8564). Note: <code>/lillyce</code> is not mounted on the AWS GRID server.</p>
+<p><strong>Encrypted Password File:</strong> Open <em>Create_and_Store_Redshift_Password.sas</em> from the STRADA FSx folder, enter your Redshift password in Step 2, run, then close <strong>without saving</strong>. Creates <code>/home/&amp;sysuserid/pswd/MyEncryptedPwd.sas</code>.</p>
+<hr>
+<section id="vendor-contractor" class="level3">
+<h3 class="anchored" data-anchor-id="vendor-contractor">Vendor / Contractor</h3>
+<ol type="1">
+<li><p>Complete all four training courses via your <strong>vendor’s training platform</strong>.</p></li>
+<li><p>Email <strong>Courtney Vehling</strong> (vehling_courtney_michelle@lilly.com) and <strong>Gregory Cunningham</strong> (cunningham_gregory_e@lilly.com) stating you need STRADA access. CC: Diane Haldane. Include Course 9277801 completion screenshot.</p></li>
+<li><p>Complete the RWD Contract Checklist Form.</p></li>
+<li><p><a href="https://myaccess.lilly.com">MyAccess@Lilly</a> → <strong>Manage My Access</strong> (different button label from FTE) → search <strong>“RWE STRADA PRD Data Assets – RWE”</strong> → check → Review and Submit.</p></li>
+<li><p>After Redshift account email, map FSx drives in <strong>CLUWE Windows Explorer in Citrix</strong>: right-click “This PC” → Map Network Drive → <code>\\veo_fsx_prod.aws.lilly.com\veo_fsx\strada</code></p></li>
+<li><p><strong>Reset Redshift password:</strong> Open <code>https://dssp.paas.am.lilly.com/awsRedshiftPassManagement</code> inside <strong>CLUWE Microsoft Edge in Citrix</strong> (not local browser).</p></li>
+</ol>
+<p><strong>SAS EG AWS PROD Profile (Citrix — SAS EG PROD app):</strong></p>
+<p>Click “No profile selected” → Add. Machine: <code>gridrp9meta1.aws.lilly.com</code> | Port: <code>8561</code> | Password: Lilly SSO → Save and Connect.</p>
+<p><strong>Encrypted Password File (Citrix — SAS EG PROD):</strong> File → Open → Browse → paste path:</p>
+<p><code>\\veo_fsx_prod.aws.lilly.com\veo_fsx\strada\rwe_all_personal_folder\Gregory_Cunningham\STRADA User Documentation\New Documents\create_and_Store_Redshift_Password.sas</code></p>
+<p>Enter Redshift password in Step 2, run, close <strong>without saving</strong>.</p>
+<p><strong>Create Encrypted Password File and Test Connection:</strong></p>
+<p>Open the file at the path above (or <a href="https://veo_fsx_prod.aws.lilly.com/veo_fsx/strada/rwe_all_personal_folder/Gregory_Cunningham/STRADA%20User%20Documentation/New%20Documents/create_and_Store_Redshift_Password.sas">download here</a>), enter your Redshift password where indicated, run all steps, then close <strong>without saving</strong>.</p>
+<p>This creates two files in <code>/home/&amp;sysuserid/pswd/</code>:</p>
+<ul>
+<li><code>encrypted_redshift_pw.txt</code> — your encrypted Redshift password, stored in SAS-encrypted format</li>
+<li><code>MyEncryptedPwd.sas</code> — a SAS macro file that reads the encrypted password and assigns it to a macro variable (by default, <code>&amp;rspw</code>)</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Macro Variable Naming
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The macro variable name <code>rspw</code> used in <code>MyEncryptedPwd.sas</code> is a user-defined convention, not a system requirement. You may rename it to any valid SAS macro variable name (e.g., <code>&amp;redshift_pw</code>, <code>&amp;my_pwd</code>). However, the name used in the password generation program must match exactly in all subsequent programs that reference it. For example, if your encrypted password file assigns the password to <code>&amp;rspw</code>, then every <code>%include</code> and <code>libname</code> or <code>connect to</code> statement must also use <code>&amp;rspw</code>. Inconsistent naming will cause authentication failures at runtime.</p>
+</div>
+</div>
+<p><strong>Test the connection:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-overflow-wrap code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># SAS Code - run in SAS Enterprise Guide, not R</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># %include "/home/&amp;sysuserid/pswd/MyEncryptedPwd.sas";</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># proc sql;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   connect to ODBC as Redshift</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#     (dsn=Access_Redshift_Prod password="&amp;rspw" user=&amp;sysuserid);</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   create table Redshift_schemas_I_can_see as</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#     SELECT * from connection to Redshift</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#     (select distinct schemaname from pg_catalog.pg_tables</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#      where schemaname like 'rwe_strada_%'</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#      union</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#      select distinct schemaname from svv_external_schemas</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#      where schemaname like 'rwe_strada_%');</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># quit;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="sas-enterprise-guide-citrix-apps-and-profiles" class="level3">
+<h3 class="anchored" data-anchor-id="sas-enterprise-guide-citrix-apps-and-profiles">SAS Enterprise Guide — Citrix Apps and Profiles</h3>
+<p>Two SAS Enterprise Guide applications are available in Citrix, each serving a different primary purpose:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 38%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Citrix App</th>
+<th>Primary Use</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SAS_EG-PROD</strong></td>
+<td>RWAA / STRADA analysis</td>
+<td>Default app for all RWAA real-world data work.</td>
+</tr>
+<tr class="even">
+<td><strong>CLUWE SAS Enterprise Guide 8</strong></td>
+<td>Clinical development</td>
+<td>More stable release; can also be configured for RWAA server connections.</td>
+</tr>
+</tbody>
+</table>
+<section id="sas_eg-prod-server-profiles-rwaa-default" class="level4">
+<h4 class="anchored" data-anchor-id="sas_eg-prod-server-profiles-rwaa-default">SAS_EG-PROD — Server Profiles (RWAA Default)</h4>
+<p>The following profiles are pre-configured or should be added in <strong>SAS_EG-PROD</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 25%">
+<col style="width: 18%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Profile Name</th>
+<th>Server</th>
+<th>Port</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SAS_AWS_PROD</td>
+<td><code>gridrp9meta1.aws.lilly.com</code></td>
+<td>8561</td>
+<td>AWS STRADA production — primary RWAA work</td>
+</tr>
+<tr class="even">
+<td>SAS RHEL8</td>
+<td><code>gridmetaprd1.am.lilly.com</code></td>
+<td>8564</td>
+<td>CLUWE / RHEL8 — RWAA and CLUWE data</td>
+</tr>
+<tr class="odd">
+<td>SAS RHEL9</td>
+<td><code>gridrp9mgr01.aws.lilly.com</code></td>
+<td>8561</td>
+<td>AWS RHEL9 environment</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cluwe-sas-enterprise-guide-8-server-profiles-clinical-fallback" class="level4">
+<h4 class="anchored" data-anchor-id="cluwe-sas-enterprise-guide-8-server-profiles-clinical-fallback">CLUWE SAS Enterprise Guide 8 — Server Profiles (Clinical + Fallback)</h4>
+<p>The following profiles are pre-configured or should be added in <strong>CLUWE SAS Enterprise Guide 8</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 25%">
+<col style="width: 18%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Profile Name</th>
+<th>Server</th>
+<th>Port</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SAS Grid in AWS Cloud PROD</td>
+<td><code>gridrp9meta1.aws.lilly.com</code></td>
+<td>8561</td>
+<td>AWS STRADA — same server as SAS_EG-PROD</td>
+</tr>
+<tr class="even">
+<td>SAS RHEL9</td>
+<td><code>gridrp9mgr01.aws.lilly.com</code></td>
+<td>8561</td>
+<td>AWS RHEL9 environment</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Fallback — Use CLUWE SAS EG 8 If SAS_EG-PROD Is Unavailable
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If <strong>SAS_EG-PROD</strong> encounters connectivity issues or fails to launch, you can use <strong>CLUWE SAS Enterprise Guide 8</strong> as an alternative. Because SAS Enterprise Guide supports multiple server profiles, the RWAA servers (e.g., <code>gridrp9meta1.aws.lilly.com:8561</code>) can be added to this app as well. This provides a reliable fallback without waiting for SAS_EG-PROD to be restored.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+DSN Reminder
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>dsn=Access_Redshift_Prod</code> when connected to an AWS server (port 8561). Use <code>dsn=Access_Redshift</code> when connected to a CLUWE/RHEL8 server (port 8564). These are not interchangeable.</p>
+</div>
+</div>
+<p><strong>Setting the STRADA path in SAS:</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># SAS Code - run in SAS Enterprise Guide</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># %let PROGPATH = /veo_fsx/strada/projects/rwe_all/&lt;your_project_folder&gt;;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># libname val "&amp;PROGPATH./Validation";</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+GPS Users
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You have read-only access to <code>rwe_strada_wrk</code>. Use <code>rwe_strada_gps_wrk</code> schema instead. On CLUWE profile (not AWS PROD), use <code>dsn=Access_Redshift</code> instead of <code>Access_Redshift_Prod</code>.</p>
+</div>
+</div>
+<hr>
+<p><em>Content or technical issues with this site? <a href="./maintenance.html">Click here</a> to report any issues or provide feedback.</em></p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

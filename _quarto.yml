@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "RWAA Statistical Analysis Team Onboarding Guide"
@@ -64,7 +65,7 @@ website:
           - text: "HTA - Health Technology Assessment"
             href: fg_hta.qmd
           - text: "GPS - Global Patient Safety"
-            href: area_gps.qmd
+            href: fg_gps.qmd
           - text: "RWD - Real World Data"
             href: fg_rwd.qmd
           - text: "Capabilities"
