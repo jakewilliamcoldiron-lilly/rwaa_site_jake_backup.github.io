@@ -1,0 +1,27 @@
+.quarto-content,
+#quarto-content,
+.page-columns {
+  max-width:1500px;     
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+}
+
+.btn-bug-report {
+  background-color: #c03b2b;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn-bug-report:hover {
+  background-color: #a0302a;
+  color: white;
+}
+
+.sidebar-item-section {
+  margin-bottom: 1.5rem;
+}

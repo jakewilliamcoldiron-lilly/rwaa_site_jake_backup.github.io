@@ -1,0 +1,24 @@
+---
+title: "HEOR - Health Economics & Outcomes Research"
+---
+
+Supporting cost-effectiveness analyses, budget impact models, patient-reported outcomes, disease burden studies, and payer evidence packages.
+
+### HEOR — Additional Access
+
+HEOR analyses using RWD follow the same STRADA access (Step 3). Discuss with your Lilly Lead which schemas are needed. Ensure Pangaea access (Step 4) covers both the RWD evidence generation and the HEOR modelling components of your project.
+
+For publications, dossiers, and medical communications, complete **Course 9223356** (MedComms RWE and RIM Vaults Guide for HEOR/RWE Users). RIM access follows the same FTE vs. Vendor rules as Step 6.5 — vendors must submit their own request per compound.
+
+------------------------------------------------------------------------
+
+### HEOR — Additional Training
+
+| Course ID | Title |
+|-----------|-------|
+| 9223356 | DEV-HO: RWE 101 — MedComms RWE and RIM Vaults Guide for HEOR/RWE Users |
+| 9141872 | LRL-CDOS: DISCLOSE — Developing Medical Regulatory Documents and Payer Dossiers |
+| 9143086 | LRL-CDOS: DISCLOSE — Publications |
+| 9143114 | LRL-CDOS: DISCLOSE — Principles of Authorship |
+| 9317635 | MED-QUAL: Evaluation of Potential Data Integrity Issues in Approved Documents |
+| 9143108 | LRL-CDOS: DISCLOSE — Register Trial and Post Publicly |

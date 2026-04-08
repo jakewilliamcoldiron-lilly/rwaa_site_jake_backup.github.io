@@ -1,0 +1,104 @@
+project:
+  type: website
+
+website:
+  title: "RWAA Statistical Analysis Team Onboarding Guide"
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - text: "Homepage"
+        href: index.qmd
+
+      - section: "Critical Information"
+        contents:
+          - text: "Lilly Email"
+            href: ci_email.qmd
+          - text: "FTE vs Vendor"
+            href: ci_difference.qmd
+          - text: "Contact List"
+            href: ci_contacts.qmd
+          - text: "RWAA Org Chart"
+            href: ci_rwaa_org.qmd
+          - text: "RWAA Org Chart v2"
+            href: ci_rwaa_org_v2.qmd
+          - text: "Quick Reference"
+            href: ci_quick_ref.qmd
+
+      - section: "Onboarding"
+        contents:
+          - text: "Step 1 - Microsoft Identity Manager"
+            href: step1_identity_manager.qmd
+          - text: "Step 2 - CLUWE Access"
+            href: step2_cluwe_access.qmd
+          - text: "Step 3 - AWS / STRADA Access"
+            href: step3_aws_strada.qmd
+          - text: "Step 4 - Pangaea"
+            href: step4_pangaea.qmd
+          - text: "Step 5 - Personal Folder Under FSx"
+            href: step5_personal_folder.qmd
+          - text: "Step 6 - Analytics Tools Setup"
+            href: step6_analytics_tools.qmd
+          - text: "Step 7 - Core Training"
+            href: step7_core_training.qmd
+          - text: "Onboarding Complete"
+            href: step8_onboarding_complete.qmd
+      
+      - section: "Therapeutic Areas"
+        contents: 
+          - text: "REF ONLY - DELETE ME"
+            href: cardiometabolic_health.qmd
+          - text: "Cardiometabolic Health"
+            href: ta_cardiometabolic_health.qmd
+          - text: "Immunology"
+            href: ta_immunology.qmd
+          - text: "Neurology"
+            href: ta_neurology.qmd
+          - text: "Oncology"
+            href: ta_oncology.qmd
+
+      - section: "Functional Groups"
+        contents:
+          - text: "HEOR - Health Economics & Outcomes Research"
+            href: fg_heor.qmd
+          - text: "HTA - Health Technology Assessment"
+            href: fg_hta.qmd
+          - text: "GPS - Global Patient Safety"
+            href: area_gps.qmd
+          - text: "RWD - Real World Data"
+            href: fg_rwd.qmd
+          - text: "Capabilities"
+            href: fg_capabilities.qmd
+      
+      - section: "Teams"
+        contents: 
+          - text: "CMH HTA"
+            href: team_cmh_hta.qmd
+      
+      - section: "Analytical Tools"
+        contents:
+          - text: "Accessing Analytical Tools"
+            href: at_access.qmd
+          - text: "Pangaea"
+            href: post_onboarding.qmd
+            
+      - section: "Tools and Programs"
+        contents:
+          - text: "Pangaea"
+            href: post_onboarding.qmd
+            
+      - text: "Site Maintenance"
+        href: maintenance.qmd
+            
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    toc-location: right
+    number-sections: false
+    smooth-scroll: true
+    fig-align: center
+    page-layout: full
+    css: styles.css

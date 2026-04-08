@@ -1,0 +1,217 @@
+---
+title: "Oncology"
+subtitle: "Therapeutic Area Guide for Real World Analytics & Accelerators (RWAA)"
+date: last-modified
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    smooth-scroll: true
+    fig-align: center
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+---
+
+## Why Oncology Matters to RWAA
+
+Oncology is one of Lilly's fastest-growing Therapeutic Areas, anchored by a portfolio of targeted therapies and a pipeline spanning **breast cancer**, **lung cancer**, **colorectal cancer**, **biliary tract cancer**, and other solid tumors. The oncology RWD landscape is distinct from other TAs — driven by rapid treatment evolution, biomarker-defined patient subgroups, and a regulatory environment increasingly receptive to real-world evidence for label support and post-market commitments.
+
+RWAA supports Oncology across the full evidence lifecycle — from epidemiologic characterization of biomarker-defined populations, through treatment pattern and sequencing analyses in a fast-moving competitive market, to regulatory-grade RWE studies supporting label maintenance and expansion.
+
+---
+
+## Disease Areas & RWD Landscape
+
+### Breast Cancer
+
+Breast cancer is Lilly's largest oncology franchise, anchored by CDK4/6 inhibitors (abemaciclib, Verzenio®) in HR+/HER2- disease. RWD in breast cancer is relatively mature, with strong claims and oncology-specific EHR databases available.
+
+Key RWD considerations:
+
+- **HR/HER2 biomarker status** is not reliably captured in claims; oncology EHR databases (Flatiron) with structured pathology data are required for biomarker-stratified analyses
+- **Stage at diagnosis** (early vs. metastatic) is critical for cohort construction; claims-based staging algorithms have limited accuracy — Flatiron or SEER linkage preferred
+- **Line of therapy (LOT)** construction in metastatic breast cancer requires careful rules for gap allowances and combination regimens
+- **Adjuvant vs. metastatic** settings have distinct data needs; adjuvant analyses benefit from longer follow-up and cancer registry linkage for recurrence endpoints
+
+### Lung Cancer
+
+Lung cancer — particularly **non-small cell lung cancer (NSCLC)** — is a high-priority area driven by biomarker-directed therapies. Lilly's selpercatinib (Retevmo®) targets RET-altered NSCLC and thyroid cancer.
+
+Key RWD considerations:
+
+- **RET, EGFR, ALK, KRAS** and other driver mutation data are not available in claims; Flatiron and similar oncology EHR databases with structured genomic data are essential
+- Biomarker testing patterns and turnaround time are themselves high-value research questions for Medical Affairs
+- Small, biomarker-defined populations limit sample sizes — multi-database or registry approaches may be needed
+- **NSCLC staging** (I–IV) requires structured EHR or registry; claims-based proxies are insufficient
+
+### Colorectal Cancer (CRC)
+
+Colorectal cancer is a growing area within Lilly's oncology portfolio. RWD in CRC is increasingly important for characterizing treatment patterns and unmet need across lines of therapy.
+
+Key RWD considerations:
+
+- **MSI/MMR and RAS/BRAF mutation status** are critical for treatment eligibility and cohort definition; require oncology EHR with structured molecular data
+- Metastatic CRC (mCRC) LOT analyses are complex — regimens frequently include combinations of chemotherapy backbones with targeted agents
+- Liver metastasis status and resectability are clinically important but not well-captured in claims
+- **Sidedness** (right vs. left colon primary) is prognostically important but requires pathology or structured EHR data
+
+### Biliary Tract Cancer (BTC)
+
+Biliary tract cancer — including cholangiocarcinoma and gallbladder cancer — represents a rare tumor type with high unmet need. Lilly's portfolio includes therapies targeting FGFR and IDH alterations.
+
+Key RWD considerations:
+
+- Small patient populations require **multi-database pooling** or cancer registry linkage (SEER, NCDB) to achieve adequate sample sizes
+- BTC subtypes (intrahepatic vs. extrahepatic cholangiocarcinoma vs. gallbladder cancer) are differentiable by ICD-10 but require careful algorithm validation
+- **FGFR2 fusion and IDH1 mutation** data are not in claims; Flatiron or Foundation Medicine genomic linkages are typically required
+- Treatment patterns in BTC are rapidly evolving — historical RWD may not reflect current standard of care
+
+### Other Solid Tumors
+
+Lilly's oncology pipeline continues to expand into additional tumor types. Common RWD challenges across rare and emerging indications include small sample sizes, evolving treatment standards, and limited biomarker data availability in traditional data sources.
+
+---
+
+## Common RWAA Study Types in Oncology
+
+| Study Type | Typical Requestor | Data Source(s) | Notes |
+|---|---|---|---|
+| Treatment pattern / LOT analysis | Medical Affairs, HEOR | Flatiron, claims | Line of therapy, sequencing, time on treatment |
+| Comparative effectiveness (CER) | HEOR, HTA | Flatiron, claims | External control arms increasingly common |
+| Safety / pharmacovigilance | GPS | Claims, Flatiron | AEs, dose modifications, treatment discontinuation |
+| Epidemiology / disease burden | Pipeline teams, Medical Affairs | SEER, claims, Flatiron | Incidence, prevalence, biomarker prevalence |
+| Biomarker testing patterns | Medical Affairs, Regulatory | Flatiron, Foundation Medicine | Testing rates, turnaround, result utilization |
+| External control arm (ECA) | Regulatory, Clinical | Flatiron, registries | Supports single-arm trials; high regulatory scrutiny |
+| Budget impact / cost analyses | Market Access, HEOR | Claims | Payer-facing; total cost of care in oncology |
+| PRO / patient experience | HEOR | Survey, registry | HRQoL, symptom burden, treatment tolerability |
+| Real-world effectiveness (RWE) | Regulatory, HEOR | Flatiron, claims | Label support, post-market commitments |
+
+: Common Oncology Study Types {.striped .hover}
+
+---
+
+## Key Data Sources for Oncology
+
+### Oncology-Specific EHR Databases
+
+- **Flatiron Health** — the primary oncology RWD source at Lilly; structured EHR from ~280 oncology practices; includes LOT, biomarker results, staging, ECOG, and mortality data; Lilly has a data access agreement
+- **ConcertAI** — oncology EHR platform with structured clinical data; growing alternative to Flatiron for select tumor types
+- **Veeva Oncology** — structured oncology EHR; useful for certain tumor types and geographies
+
+### Genomic & Biomarker Databases
+
+- **Foundation Medicine (FMI)** — comprehensive genomic profiling (CGP) data; linkable to Flatiron for biomarker-stratified analyses
+- **Tempus** — AI-enabled genomic and clinical data; useful for rare biomarker-defined populations
+- **AACR GENIE** — multi-institutional genomic registry; useful for biomarker prevalence and genomic landscape studies
+
+### Cancer Registries
+
+- **SEER (NCI)** — population-based cancer registry; gold standard for incidence, prevalence, and survival; linkable to Medicare claims
+- **NCDB (ACS/CoC)** — hospital-based registry with staging, treatment, and facility-level data; broader than SEER but no claims linkage
+- **NPCR (CDC)** — complements SEER for population-level epidemiology
+
+### Claims Databases
+
+- **Optum Clinformatics** — useful for HCRU, cost, and treatment patterns when biomarker data not required
+- **SEER-Medicare** — linked registry-claims database; excellent for elderly cancer populations with longitudinal follow-up
+- **CMS Medicare** — important for older oncology populations; linkable to SEER for outcomes research
+
+::: {.callout-note}
+## Data Source Selection Tip
+Oncology studies almost always require **biomarker, staging, or LOT data** not available in claims. **Flatiron Health** is the default starting point for most Lilly oncology RWD studies. Claims are supplementary — primarily useful for HCRU, cost analyses, and populations not well-captured in Flatiron (e.g., community settings outside Flatiron's network).
+:::
+
+---
+
+## Analytic Considerations
+
+### Cohort Design
+
+- **Biomarker-defined cohorts** are the norm in oncology; cohort entry should be anchored to biomarker test result date or treatment initiation, with careful handling of patients tested at different points in their disease course
+- **Metastatic vs. early-stage** analyses have fundamentally different data requirements and analytic designs — these should not be conflated
+- LOT construction requires pre-specified rules for: gap allowances between cycles, combination vs. sequential regimens, maintenance therapy, and rechallenge
+- **Index date selection** (diagnosis, metastatic diagnosis, LOT initiation) has major implications for bias — must be pre-specified and clinically justified
+
+### Confounding Control
+
+- Oncology populations are highly heterogeneous — ECOG performance status, prior lines of therapy, metastatic sites, and biomarker profile are critical covariates
+- Traditional propensity score methods apply, but **small sample sizes** in biomarker-defined populations often limit their use
+- **Inverse probability of treatment weighting (IPTW)** with stabilized weights is preferred when sample sizes allow
+- For external control arms, FDA guidance recommends pre-specification of estimand, covariate selection, and sensitivity analyses
+
+### Endpoint Ascertainment
+
+- **Overall survival (OS)** is the most reliable endpoint in oncology RWD; Flatiron uses a validated electronic death record linkage algorithm
+- **Progression-free survival (PFS)** and **time to next treatment (TTNT)** are common surrogates; TTNT is more reliable in claims, PFS requires structured EHR
+- **Response rates** (ORR, CR, PR) require structured oncologist-recorded data; available in Flatiron but with variable completeness
+- **Adverse events** are systematically undercaptured in EHR — claims-based AE algorithms or dedicated safety databases may supplement
+
+### External Control Arms (ECAs)
+
+ECAs are a growing priority in Oncology RWAA, particularly for rare tumor types and single-arm trials seeking regulatory support. Key considerations:
+
+- FDA has issued specific guidance on ECAs — study design must be pre-specified and align with the estimand of the interventional trial
+- Flatiron is the most commonly accepted ECA data source by FDA for solid tumors
+- Contemporaneous controls (matched by calendar time to trial enrollment window) are strongly preferred
+- RWAA should engage **Regulatory** and **Biostatistics** early when ECAs are being considered
+
+### Regulatory-Grade RWE
+
+Oncology is the most active TA for regulatory use of RWE at Lilly. Key requirements:
+
+- Pre-specified protocols and SAPs registered prior to data access
+- Transparent reporting per RECORD, STROBE, or FDA-recommended templates
+- Data quality documentation for Flatiron or other sources
+- Close collaboration with Regulatory Affairs and Global Statistical Sciences (GSS)
+
+---
+
+## RWAA's Role Across Oncology Functions
+
+```{mermaid}
+flowchart TD
+    RWAA[RWAA]
+
+    RWAA --> HEOR[HEOR\nCost-effectiveness inputs\nDisease burden & epidemiology\nPRO & HRQoL linkage]
+    RWAA --> HTA[HTA\nComparative effectiveness\nExternal control arm evidence\nDossier support]
+    RWAA --> GPS[GPS\nSafety surveillance\nAE & dose modification patterns\nPost-market commitments]
+    RWAA --> MA[Medical Affairs\nTreatment patterns & LOT\nBiomarker testing rates\nPublications]
+    RWAA --> REG[Regulatory\nExternal control arms\nRWE for label support\nPost-market study commitments]
+    RWAA --> MKT[Market Access\nTotal cost of care\nBudget impact models\nPayer-facing analyses]
+```
+
+---
+
+## Key Collaborators & Contacts
+
+| Function | Typical Ask to RWAA | Notes |
+|---|---|---|
+| **HEOR** | Disease burden, CER inputs, HRQoL linkage | Closest collaboration; often co-lead studies |
+| **HTA** | Comparative effectiveness, ECA evidence, NMA inputs | High demand as oncology portfolio expands |
+| **GPS** | AE patterns, safety signal evaluation, dose modifications | Post-market commitments common in oncology |
+| **Medical Affairs** | LOT analyses, biomarker testing patterns, unmet need | Frequently publication-oriented |
+| **Market Access** | Total cost of care, payer analyses, formulary support | Oncology cost burden is a key payer concern |
+| **Regulatory** | ECA design and execution, RWE for label support | Highest-rigor studies; engage early |
+| **Global Statistical Sciences** | ECA methodology, SAP review, regulatory alignment | Required collaborator for regulatory-grade studies |
+
+---
+
+## Resources & Links
+
+- [Lilly Oncology Pipeline](https://investor.lilly.com/pipeline)
+- [Flatiron Data Access Portal (Internal)](#)
+- [HEOR Evidence Library (Internal)](#)
+- [RWD Source Catalog (Internal)](#)
+- [RWAA Study Request Process (Internal)](#)
+- [FDA RWE Framework](https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence)
+- [FDA Guidance on External Control Arms](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-use-real-world-data-and-real-world-evidence-support-regulatory-decision-making-drug)
+- [NCI SEER Database](https://seer.cancer.gov)
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

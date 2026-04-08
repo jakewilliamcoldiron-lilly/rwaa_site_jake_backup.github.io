@@ -1,0 +1,168 @@
+---
+title: "Onboarding Complete!"
+format: html
+---
+
+Welcome to the RWAA SA Family! You've completed all onboarding steps. We're thrilled you're here!
+
+```{=html}
+
+<div style="text-align: center; margin: 2rem 0;">
+  <div style="display: inline-block; position: relative;">
+    <img id="partyGif" src="./img/gif_office_celebration.gif" 
+         alt="Office Party Celebration" 
+         style="width: 100%; border-radius: 15px; display: block;">
+    <div style="margin-top: 0.5rem;">
+      <button onclick="toggleGif()" id="gifBtn"
+              style="padding: 0.4rem 1.2rem; border-radius: 10px; border: none; 
+                     background-color: #C03B2B; color: white; cursor: pointer; font-size: 0.9rem;">
+        Pause GIF
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  let gifPaused = false;
+  const gifSrc = "./img/gif_office_celebration.gif";
+
+  function toggleGif() {
+    const img = document.getElementById('partyGif');
+    const btn = document.getElementById('gifBtn');
+    if (!gifPaused) {
+      img.src = "";
+      btn.textContent = "Play GIF";
+      btn.style.backgroundColor = "#2ECC71";
+      gifPaused = true;
+    } else {
+      img.src = gifSrc;
+      btn.textContent = "Pause GIF";
+      btn.style.backgroundColor = "#C03B2B";
+      gifPaused = false;
+    }
+  }
+</script>
+
+```
+
+
+### **Your Progress Tracker**
+
+The following in an interactive list to help you track your understanding progress. Thus far, you should:
+
+- [x] Have your Lilly Email works and know how it works.
+- [ ] Know difference between Full-Time Employees and Contractors.
+- [ ] Know "Who's Who" within SDnA, what they do, and how to contact them.
+- [ ] Understand structure and abilities of the RWAA Team.
+- [ ] Completed all on boarding steps. 
+- [ ] Have access, or waiting on access, to all general tools.
+
+### What's Next?
+
+- 🧬 Review the **Therapeutic Area** pages for the operations and scope of each Therapeutic Area.
+- 🔬 Read the **Functional Group** pages to understand the different business needs for each area.
+- 🧭 Visit the **Teams** pages to learn about the projects, priorities, and workflows across all groups.
+- 📊 Explore the **Analytical Tools** available to you.
+- 🗂️ Learn how to use the **Administrative Tools** critical to your role.
+
+::: {.callout-tip}
+**Tip:** Bookmark this site! It will continue to be updated with new resources, tools, and guidance as the team grows.
+:::
+
+<div style="text-align: center; margin-top: 2rem;">
+  <p style="font-size: 1.1rem;"><em>Want more confetti? We won't judge.</em></p>
+  <button onclick="launchConfetti()" 
+          style="font-size: 1.2rem; padding: 0.75rem 2rem; border-radius: 20px; border: none;
+                 background-color: #AD1457; color: white; cursor: pointer; font-weight: bold;">
+    🎊 MORE CONFETTI!
+  </button>
+</div>
+
+```{=html}
+
+<canvas id="confetti-canvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:9999;"></canvas>
+
+<script>
+function launchConfetti() {
+  const existing = document.getElementById('confetti-canvas');
+  if (existing) existing.remove();
+
+  const canvas = document.createElement('canvas');
+  canvas.id = 'confetti-canvas';
+  canvas.style = 'position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:9999;';
+  document.body.appendChild(canvas);
+
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const confetti = Array.from({length: 150}, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * -canvas.height,
+    w: Math.random() * 10 + 5,
+    h: Math.random() * 5 + 3,
+    color: ['#D4A017','#C03B2B','#4A90D9','#2ECC71','#9B59B6','#E67E22'][Math.floor(Math.random()*6)],
+    speed: Math.random() * 3 + 2,
+    angle: Math.random() * 360,
+    spin: Math.random() * 4 - 2,
+    drift: Math.random() * 2 - 1
+  }));
+
+  let frameCount = 0;
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    confetti.forEach(c => {
+      ctx.save();
+      ctx.translate(c.x, c.y);
+      ctx.rotate(c.angle * Math.PI / 180);
+      ctx.fillStyle = c.color;
+      ctx.fillRect(-c.w/2, -c.h/2, c.w, c.h);
+      ctx.restore();
+      c.y += c.speed;
+      c.x += c.drift;
+      c.angle += c.spin;
+      if (c.y > canvas.height) {
+        c.y = -10;
+        c.x = Math.random() * canvas.width;
+      }
+    });
+    frameCount++;
+    if (frameCount < 300) {
+      requestAnimationFrame(draw);
+    } else {
+      function drain() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let remaining = 0;
+        confetti.forEach(c => {
+          if (c.y < canvas.height) {
+            remaining++;
+            ctx.save();
+            ctx.translate(c.x, c.y);
+            ctx.rotate(c.angle * Math.PI / 180);
+            ctx.fillStyle = c.color;
+            ctx.fillRect(-c.w/2, -c.h/2, c.w, c.h);
+            ctx.restore();
+            c.y += c.speed;
+            c.x += c.drift;
+            c.angle += c.spin;
+          }
+        });
+        if (remaining > 0) {
+          requestAnimationFrame(drain);
+        } else {
+          canvas.remove();
+        }
+      }
+      drain();
+    }
+  }
+
+  draw();
+}
+
+// Auto-launch on page load
+launchConfetti();
+</script>
+
+```

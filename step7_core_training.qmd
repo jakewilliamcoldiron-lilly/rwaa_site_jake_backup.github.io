@@ -1,0 +1,49 @@
+---
+title: "Step 7 - Core Training"
+---
+
+Curriculum C0160034: DEV-TPO: RWE Statistician & Analyst.
+
+### Lilly FTE
+
+All courses in [Learning Plan](https://elilily.plateau.com/learning/user/personal/landOnPortalHome.do?fromSF=Y&fromDeepLink=true&pageID=). Self-assign by searching course ID if not yet in your plan. Completion is tracked automatically. Administrative training time → **General Administration** in Prism TimeCard.
+
+### Vendor / Contractor
+
+Assigned and tracked via your **vendor's training platform** (e.g., TechData Secure Depot). Your **vendor training delegate** is responsible for assignment — you cannot self-assign in Workday. If enrolled in SuccessFactors, the Lilly Lead takes responsibility. Confirm with your Lilly Lead and SDnA Sourcing which path applies.
+
+------------------------------------------------------------------------
+
+### Required Courses
+
+| Course ID | Title | Audience |
+|-----------|-------|----------|
+| 9058907 | DEV-HO: RWE 101-ODM — What is Real World Evidence (RWE)? | All |
+| 9277801 | EC-PROC: Global Developing Real World Evidence | All |
+| 9367693 | DEV-HO: RWE 101-ALGOR — RWE Algorithms 101 | All |
+| 9183089 | DEV-HO: RWE 201-ODM — Applying RWD for RWE Generation | All |
+| 9049927 | DEV-HO: RWE 301-ODM — Conducting Observational Studies | All |
+| 9219012 | DEV-HO: RWE 301a-ODM — PROCEDURE FOR Observational Studies | All |
+| 9334085 | GL-QUAL: Data Integrity Fundamentals | All |
+| 435007 | MT 12145: PR-Privacy of Personal Information in Medical Research | All |
+| 9179755 | LRL-CDOS: DDA — End-to-End Overview: Data & Analysis Planning & Delivery | All |
+| 9181200 | LRL-CDOS: DDA — Data and Analysis Delivery Procedure | All |
+| 9181203 | LRL-CDOS: DDA — Data and Analysis Planning Procedure | All |
+| 9181209 | LRL-CDOS: DDA — Develop, Validate & Execute Code Procedure | All |
+| 9179756 | LRL-CDOS: DDA — Overview of Develop, Validate & Execute Code | All |
+| 424075 | LRLi367: Leo Overview Training | All |
+| 9352650 | LRL: Exploring Data Integrity Fundamentals in Clin Dev & Research | All |
+| 9295008 | LRL: Vault Clinical Foundations | All |
+| 9143086 | LRL-CDOS: DISCLOSE — Publications | All |
+| 9143114 | LRL-CDOS: DISCLOSE — Principles of Authorship | All |
+| 9141872 | LRL-CDOS: DISCLOSE — Developing Medical Regulatory Documents and Payer Dossiers | All |
+| 9116900 | LRL-CDOS: Clinical Development Operating System Overview | All |
+| 426818 | MT12063: PR-Use of Data on File | All |
+| 9223356 | DEV-HO: RWE 101 — MedComms RWE and RIM Vaults Guide for HEOR/RWE Users | All |
+| 9317635 | MED-QUAL: Evaluation of Potential Data Integrity Issues in Approved Documents | All |
+| C0052054 | DEV-TPO-GSS Statistical Analyst | Vendors only |
+| 9330445 | GRA-RIM: Vault RIM Basics (Access) | Vendors + RIM users |
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

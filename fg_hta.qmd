@@ -1,0 +1,93 @@
+---
+title: "HTA - Health Technology Assessment"
+---
+
+Supporting payer and regulatory evidence submissions including indirect treatment comparisons, network meta-analyses, systematic reviews, and value dossier statistical inputs.
+
+### HTA — Additional Access
+
+HTA analysts working with clinical trial data need CLUWE access to specific compound/study folders (Step 2). 
+
+Ask your Lilly Lead for the exact CLUWE path.
+
+### Vault Clinical / eTMF Access
+
+#### Lilly FTE
+
+[ServiceNow](https://lilly.service-now.com) → "eTMF account request". Lilly Lead can initiate. Accounts created within 1–2 business days.
+
+#### Vendor / Contractor
+
+[ServiceNow](https://lilly.service-now.com) → More → Accounts and Passwords → Application Accounts and Access → **eTMF account request**. Vendor or Lilly Lead can submit. 1–2 business days.
+
+------------------------------------------------------------------------
+
+### HTA — Additional Training
+
+| Course ID | Title |
+|-----------|-------|
+| 9141872 | LRL-CDOS: DISCLOSE — Developing Medical Regulatory Documents and Payer Dossiers |
+| 9295008 | LRL: Vault Clinical Foundations |
+| 9317635 | MED-QUAL: Evaluation of Potential Data Integrity Issues in Approved Documents |
+| 9143108 | LRL-CDOS: DISCLOSE — Register Trial and Post Publicly |
+
+------------------------------------------------------------------------
+
+## HTA Learning Progression Guide
+
+The following resources are drawn from the **SDnA Role-Based Learning Progression Guide (LPG)** for HTA. Work through these with your supervisor or coach to build foundational knowledge in health technology assessment and economic modelling.
+
+------------------------------------------------------------------------
+
+### Month One — HTA Introduction
+
+| Topic | Details | Comments | Resources |
+|-------|---------|----------|-----------|
+| Review resources for market access introduction | Meet with Supervisor/Coach to identify relevant introductory materials | | |
+| Select resources based on assigned projects | Meet with Supervisor/Coach to tailor learning to your project scope | | |
+| HTA Toolkit | The HTA Toolkit summarises the clinical, humanistic, and economic body of evidence for a Lilly compound and relevant comparators. | Supervisor/coach to assess which material is relevant depending on the stage of launch of the compound | [GPORWE](https://collab.lilly.com/sites/GPORWE_Learn/SitePages/HTAs.aspx) · [Introduction to Dossiers and HTAs #9100995](https://1759891.mediaspace.kaltura.com/media/GPORWE+-+Introduction+to+Health+Technology+Assessments+%28HTAs%29/1_3o2glh0z) |
+
+------------------------------------------------------------------------
+
+### Month Two — Economic Modelling
+
+| Topic | Details | Curriculum | Comments | Resources |
+|-------|---------|------------|----------|-----------|
+| Economic modelling onboarding | Series of seminars developed by GPORWE as a high-level introduction to the topic | DEV-HO: RWE 301-MOD: Working with Health Economic Models | Extensive training available in the GPORWE Learning and Development link. Supervisor/coach to assess what material is relevant for the employee. | [Economic Modeling Onboarding](https://collab.lilly.com/sites/GPORWE_Learn/Economic_Modeling/SitePages/Resource-for-VEO-Scientists.aspx) |
+| What are utilities? | Review this video with your coach to better understand an important component of economic modelling | | | [Utilities in Cost-Utility Analysis (CUA)](https://collab.lilly.com/sites/GPORWE_Learn/_layouts/15/stream.aspx?id=%2Fsites%2FGPORWE%5FLearn%2FShared%5Fdocs%2F2%5FEconomic%20%20Model%5FBullsh%20in%20bullsh%20out%5F18May2021%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E59771605%2Db33f%2D4620%2Dab56%2Dd3c08ba66e4b) |
+| Economic modelling in practice | Discuss with your supervisor/coach what literature or previous models to review. Depending on the type of support, review adaptations and country/payer requirements (such as ICER or NICE). | | Find relevant economic model for the same or similar indication/therapeutic area | [The Elk Test](https://collab.lilly.com/:p:/r/sites/GPORWE_Learn/_layouts/15/Doc.aspx?sourcedoc=%7BE494A961-2CF7-4E51-82EB-D507610D7F80%7D&file=Modelling%20-%20The%20Elk%20Test_092021.pptx&_DSL=1&action=edit&mobileredirect=true&web=1) |
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+### Month Three — SLR, ITC, and NMA
+
+| Topic | Details | Resources | Curriculum |
+|-------|---------|-----------|------------|
+| Meta-Analysis training series | Series of seminars developed by Meta-analysis Community of Practice. Contains a wide variety of useful information regarding meta-analysis. | [Meta-analysis — Continued Education — All Documents](https://collab.lilly.com/sites/METAANALYSIS/MetaAnalysis%20Continued%20Education/Forms/AllItems.aspx) | Supervisor/coach to assess what material is relevant for the employee |
+| Review a SLR/NMA protocol for a compound similar to yours | Read the protocol and discuss with supervisor and coach, so the training on NMA can be framed | | |
+| Review published NMAs, if possible on the same therapeutic area | Read the publication and discuss with supervisor and coach, so the training on NMA can be framed | | |
+| Intro to NMA | | [Network Meta-Analysis (NMA)](https://collab.lilly.com/:p:/r/sites/METAANALYSIS/_layouts/15/Doc.aspx?sourcedoc=%7B7C6A1E5C-F685-4CA4-AC4E-FC24B6D72A16%7D&file=5_SLR_NMA_Network_Meta_Analysis.pptx&action=edit&mobileredirect=true) | |
+| SLR & NMA process map | | [NMA PROTOCOL, ANALYSIS & REPORTING](https://collab.lilly.com/sites/EUStats/SLR_NMA_PROCESS_MAPPING/SitePages/NMA_Protocol_Analysis_Reporting.aspx) | Conducting Literature Reviews & Meta-Analysis/Data Synthesis ID C0027420 · Course #9068330 · PROCEDURE FOR Systematic Literature Reviews #9256308 (supplement to #9068330) · PROCEDURE FOR Literature Reviews for Health Outcomes Research #9259287 (supplement to #9068330) |
+| Intro to ITC | | [Indirect_Comparisons.pptx](https://collab.lilly.com/:p:/r/sites/METAANALYSIS/MetaAnalysis%20Continued%20Education/Indirect_Comparisons.pptx?d=w5fc7a7a3062b4df1bce56af679feeefa&csf=1&web=1&e=wWBapS) | |
+| Intro to Matching Adjusted Indirect Comparison (MAIC) | | [Matching adjusted Indirect comparisons.pptx](https://collab.lilly.com/:p:/r/sites/METAANALYSIS/_layouts/15/Doc.aspx?sourcedoc=%7B4EF82C71-D518-4999-B64F-738D05C6C739%7D&file=Matching%20adjusted%20Indirect%20comparisons.pptx&action=edit&mobileredirect=true) | |
+
+### Month Four — HTA Market Access
+
+#### HTA Market Access | Review Guidelines
+
+| Topic | Details |
+|-------|---------|
+| Review Country requirements/guidelines for HTA | According to the work that the employee will be facing select relevant guidelines to be reviewed: • Cochrane Handbook for Systematic Review of Interventions ([https://training.cochrane.org/handbook](https://training.cochrane.org/handbook)) • IQWiG General Methods ([https://www.iqwig.de/en/about-us/methods/methods-paper/](https://www.iqwig.de/en/about-us/methods/methods-paper/)) • GRADE recommendations ([https://www.gradeworkinggroup.org/](https://www.gradeworkinggroup.org/)) |
+
+------------------------------------------------------------------------
+
+#### HTA Market Access | Literature Review
+
+| Topic | Details |
+|-------|---------|
+| Review Existing data | Review protocols, CSRs, past payer interactions (hta advice, past requests/responses) |
+| Review competitive landscape | Review published NMAs to understand competitive landscape |
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

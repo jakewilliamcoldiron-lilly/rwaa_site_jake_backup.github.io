@@ -1,0 +1,108 @@
+---
+title: "Step 2 - CLUWE Access"
+---
+
+CLUWE is the secure computing environment for SAS Grid, clinical study data, and Citrix access.
+
+**Vendors must complete this step before Step 1**. It is the gateway to all other Lilly systems.
+
+### Pre-requisite Training
+
+-   **Course 9174776:** CLUWE Versioning (DEV-SDnA: CLUWE Training — Versioning Files)
+-   **Course 9174777:** CLUWE Security and Directory Structure (DEV-SDnA: CLUWE Training — Projects & Security)
+-   Save proof of completion — you will be asked to provide this when the request is reviewed.
+
+---
+
+<details>
+<summary><strong>🏢 Lilly FTE — Click to Expand</strong></summary>
+
+1.  Complete courses 9174776 and 9174777 in [Learning Plan](https://elilily.plateau.com/learning/user/personal/landOnPortalHome.do?fromSF=Y&fromDeepLink=true&pageID=). Self-assign if not yet in your plan by searching the course ID.
+
+2.  Visit [ServiceNow](https://lilly.service-now.com) → search **LRL Statistical Analysis Account Requests**
+
+3.  Select **CLUWE Repository (lillyce)** as Application. Form auto-fills — verify entries are correct. Key fields:
+
+    -   Select Type of Request: **Add Access**
+    -   What access type do you require?: **Contribute (Read/Write)**
+    -   Do you require CLUWE GRID/SAS Programming Access?: **Yes**
+    -   Required training completed?: **Yes – Contribute: ID 9174776 and 9174777**
+
+4.  Fill in: Therapeutic area, Compound name (full name, not just LY#), LY#, Study name, Lilly PS/SA requesting.
+
+5.  Select **Contributor (Read/Write)** and **Yes** for CLUWE GRID / SAS Programming Access.
+
+6.  Click **Order Now** → **Check Out**. Provide course completion proof when contacted.
+
+7.  After approval: access [CLUWE login](https://cluwe.am.lilly.com/login)
+
+8.  Map `lillyce` on local laptop: `\\statsclstr\lillyce`
+
+**SAS EG CLUWE Profile (local SAS EG — Version 8.2 64-bit):**
+
+To install SAS EG locally, submit a ticket via [ServiceNow Employee Self-Service Portal](https://lilly.service-now.com). You will receive an email to schedule a remote installation session.
+
+After installation: Tools → Connections → Profiles → Add:
+
+-   **Profile name:** SAS RHEL8
+-   **Machine:** `gridprodmeta2.am.lilly.com`
+-   **Port:** `8564`
+-   **User:** &sysuserid
+-   **Password:** Lilly SSO password
+
+Click **Save** and **Set Active**. Allow 3–5 business days after CLUWE approval before the connection succeeds.
+
+Alternatively, you may access a virtualized version of SAS via Citrix.
+
+</details>
+
+---
+
+<details>
+<summary><strong>🏭 Vendor / Contractor — Click to Expand</strong></summary>
+
+1.  Complete courses 9174776 and 9174777 via your **vendor's training platform**. Your vendor training delegate assigns these. You cannot self-assign in Workday.
+
+2.  [ServiceNow](https://lilly.service-now.com) → search **LRL Statistical Analysis Account Requests**
+
+3.  Form does not auto-fill fully. Ask your supervisor for:
+
+    -   CLUWE path: e.g., `lillyce:\qa\LY######\folder_name`
+    -   Compound full name, LY#, study name, Lilly PS/SA justification
+
+4.  Select **Contributor (Read/Write)**, **Yes** for CLUWE GRID access. Pick a **US delivery location**.
+
+5.  Click **Order Now → Submit**. Approval: 1–2 business days.
+
+**After CLUWE approval — Citrix setup**
+
+1. Install [Citrix Workspace](virtuallilly.cloud.com) on your vendor laptop. Store URL.
+
+2. Visit [CLUWE Support](https://collab.lilly.com/sites/ModSupport/) → click **Virtual Lilly** → Open in Citrix Workspace.
+
+**Map Network Drives (inside CLUWE Windows Explorer in Citrix):**
+
+- `K:` → `\\statsclstr\lillyce` (CLUWE file system)
+- `Y:` → `\\brick.d51.lilly.com\`
+
+**Map lillyce in Posit (inside Citrix console)**
+
+- `file.symlink("/lillyce", "~/lillyce")`
+
+**SAS EG CLUWE Profile (Citrix — DEV CLUWE SAS EG app)**
+
+Click "No profile selected" → Add. Profile: `SAS CLUWE` | Machine: `gridmetaprd1.am.lilly.com` | Port: `8564` | Password: Lilly SSO → Save and Connect.
+
+</details>
+
+---
+
+::: {.callout-note}
+### What if the request is urgent?
+
+Submit a ticket at [CLUWE Support](https://collab.lilly.com/sites/ModSupport/) → **Submit an Issue**. Describe your issue and provide the RITM number of your ticket from ServiceNow.
+:::
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

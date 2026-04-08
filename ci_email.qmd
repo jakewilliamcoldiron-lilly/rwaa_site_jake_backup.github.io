@@ -1,0 +1,97 @@
+---
+title: "Lilly Email"
+---
+
+::: {.callout-important}
+**🚧 Page Under Active Development**
+
+This page is under active development. Material may be missing, incomplete or incorrect. Please check again later or email someone from the [maintenance team](maintenance.qmd) for more information.
+:::
+
+::: {.callout-note}
+**📋 Development Plan**
+
+- **Planned Content:**
+- **Add drop down menus to separate FTEs and Contractors.**
+- **Ensure that contact information pull from master list**
+- **Owner:** *Jake -- jake.coldiron@lilly.com*
+- **Target Completion:** *10 April 2026*
+:::
+
+::: {.callout-important}
+### Before You Begin — Verify Your Email Configuration
+
+Before initiating any access requests, please verify that the email address associated with your Lilly account is correct. An incorrect or duplicate email address is one of the most common causes of **Redshift account provisioning failures**, which in turn blocks access to AWS STRADA data. Resolving email-related issues can take **up to one month** — early verification prevents significant onboarding delays.
+:::
+
+------------------------------------------------------------------------
+
+### Lilly FTE — Check for Duplicate Email Addresses
+
+Some FTE accounts may have **two Lilly email addresses** associated with them. This can cause access provisioning to fail silently.
+
+**Action required:**
+
+1.  Verify whether your account has more than one Lilly email address on file.
+
+2.  If a duplicate exists, contact the **Lilly IT team** immediately and request that only your **current, valid Lilly email address** be retained.
+
+3.  Confirm the correction is complete **before** proceeding with Step 3 (AWS / STRADA Access).
+
+------------------------------------------------------------------------
+
+### Vendor / Contractor — Confirm Your Lilly-Issued Email Address
+
+::: {.callout-caution}
+### 🚩 Critical — Do Not Skip This Step
+
+Vendor accounts must be associated with your **Lilly-issued email address** (typically in the form `firstname_lastname@network.lilly.com`). Your vendor company email address (e.g., `name@vendorcompany.com`) **must not** be the primary email on your Lilly account.
+
+If the wrong email address is associated with your account, your **Redshift account will fail to provision**, blocking access to all AWS STRADA data. This issue often takes **up to one month** to resolve and is the single most common cause of extended onboarding delays for vendors.
+:::
+
+**Action required:**
+
+1.  Contact your **vendor company IT** and confirm which email address is registered in Lilly systems for your account.
+
+2.  Contact **Lilly IT** to verify the email on file matches your Lilly-issued `@network.lilly.com` address.
+
+3.  If the email is incorrect, work with both your vendor IT and Lilly IT to correct it **before** submitting any access requests.
+
+4.  Notify your **vendor supervisor** if you encounter any discrepancies so they can escalate as needed.
+
+------------------------------------------------------------------------
+
+### Vendor / Contractor — Ensure Lilly Email Forwarding Is Configured
+
+::: {.callout-caution}
+### 🚩 Verify That All Lilly Platform Emails Reach Your Inbox
+
+Vendors must ensure that emails sent to their Lilly address (`@network.lilly.com`) are properly **forwarded to and received in** their vendor company mailbox. If email forwarding is not correctly configured, you may fail to receive critical notifications — including verification codes from Lilly platforms such as **Pangaea (Salesforce)**, **ServiceNow**, **MyAccess**, and other provisioning systems. Missing these emails can silently block your onboarding progress.
+:::
+
+**Action required:**
+
+1.  Contact your **vendor company IT department** and request confirmation that your Lilly-issued email (`@network.lilly.com`) is properly configured to forward all incoming messages to your vendor inbox.
+
+2.  Ask your vendor IT to verify that **no email filtering rules or spam policies** are blocking messages from Lilly domains, including `@lilly.com`, `@network.lilly.com`, `@salesforce.com`, and `@service-now.com`.
+
+3.  If you are not receiving expected verification or notification emails, request your vendor IT to **review and reset your mailbox forwarding rules** — including any exemptions needed for automated platform emails.
+
+4.  Confirm receipt by sending a test email from your Lilly account to your vendor mailbox, and verify it arrives without delay.
+
+5.  If the issue persists, escalate through your **vendor supervisor** and contact **Lilly IT** for further investigation.
+
+------------------------------------------------------------------------
+
+### Contacts for Email and Redshift Issues
+
+| Contact | Role | Email |
+|---------|------|-------|
+| Redshift IT Support Team | Redshift account provisioning and troubleshooting | TCS_DM_DSSP@lists.lilly.com |
+| Rateen Kumar | AWS Redshift / IT support | kumar_rateen@network.lilly.com |
+| Tina Ruth | Vendor Supervisor (RM90740) | ruth_tina_d@lilly.com |
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

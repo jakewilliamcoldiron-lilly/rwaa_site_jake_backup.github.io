@@ -1,0 +1,210 @@
+---
+title: "Immunology"
+subtitle: "Therapeutic Area Guide for Real World Analytics & Accelerators (RWAA)"
+date: last-modified
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    smooth-scroll: true
+    fig-align: center
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+---
+
+## Why Immunology Matters to RWAA
+
+Immunology is one of Lilly's most dynamic and rapidly expanding Therapeutic Areas, encompassing treatments for immune-mediated inflammatory diseases (IMIDs) including **rheumatoid arthritis**, **psoriatic arthritis**, **axial spondyloarthritis**, **psoriasis**, **atopic dermatitis**, and **inflammatory bowel disease**. These conditions share dysregulated immune pathways and frequently overlap in patient populations, creating rich opportunities for cross-indication real-world research.
+
+RWAA supports Immunology across the full evidence lifecycle — from characterizing treatment patterns in a highly competitive biologic market, through comparative effectiveness and safety studies, to generating evidence that informs payer and HTA decisions in an increasingly crowded therapeutic landscape.
+
+---
+
+## Disease Areas & RWD Landscape
+
+### Rheumatoid Arthritis (RA)
+
+RA is among the most mature disease areas in real-world data, with well-established disease registries, validated claims-based algorithms, and decades of longitudinal data available. The competitive biologic and JAK inhibitor market makes treatment sequencing and switching analyses particularly high-value.
+
+Key RWD considerations:
+
+- **Claims data** (Optum, MarketScan, IQVIA): Strong for treatment patterns, biologic cycling, adherence, and HCRU
+- **EHR data** (Optum EHR, TriNetX): Adds lab values (CRP, ESR, RF, anti-CCP) and disease activity proxies
+- **Specialty registries** (CORRONA/Adelphi): Clinical depth including DAS28, HAQ scores, and patient-reported outcomes
+- **Linkage opportunities**: Registry-claims linkages provide the richest evidence base for CER in RA
+
+### Psoriasis & Psoriatic Arthritis (PsO / PsA)
+
+Psoriasis and psoriatic arthritis frequently co-occur and share treatment pathways, making joint analyses common. Dermatology and rheumatology data sources differ, and studies often need to span both specialties.
+
+Key RWD considerations:
+
+- Diagnosis code algorithms for PsO are reliable in claims; PsA requires additional specificity criteria
+- Skin clearance outcomes (PASI, IGA) are not captured in claims — EHR or registry data required
+- Joint disease activity in PsA (tender/swollen joint counts) requires specialty registry or structured EHR
+- Biologic sequencing analyses are high-priority given multiple approved IL-17, IL-23, and TNF inhibitors
+
+### Axial Spondyloarthritis (axSpA)
+
+axSpA, including ankylosing spondylitis (AS) and non-radiographic axSpA (nr-axSpA), presents unique RWD challenges due to diagnostic delays and undercoding of nr-axSpA in administrative data.
+
+Key RWD considerations:
+
+- **AS is well-coded** in claims (ICD-10: M45); nr-axSpA is significantly undercoded and hard to identify without imaging data
+- Symptom onset-to-diagnosis delay (often 7–10 years) complicates cohort construction and washout design
+- MRI findings, HLA-B27 status, and BASDAI/ASDAS scores require registry or structured EHR linkage
+- Time-to-diagnosis and healthcare journey analyses are high-value for this indication
+
+### Atopic Dermatitis (AD)
+
+AD is a growing priority within Immunology, with increasing biologic and JAK inhibitor options entering the market. RWD in AD is less mature than in RA, and endpoint ascertainment presents unique challenges.
+
+Key RWD considerations:
+
+- Claims-based AD cohort identification is reliable (ICD-10: L20); moderate-to-severe classification requires additional proxies (e.g., systemic therapy use, specialist visits)
+- Skin outcome measures (EASI, IGA, SCORAD) are not available in claims — registry or EHR required
+- Itch and sleep disruption PROs are important for patient-centered evidence; require survey or registry linkage
+- Dupilumab entry has reshaped the treatment landscape — biologic naïve vs. experienced analyses are common
+
+### Inflammatory Bowel Disease (IBD)
+
+IBD — encompassing Crohn's disease (CD) and ulcerative colitis (UC) — is a complex area with high unmet need, frequent treatment cycling, and growing regulatory interest in RWE to support label expansions.
+
+Key RWD considerations:
+
+- CD and UC are reliably identified in claims (ICD-10: K50, K51); disease severity proxies require hospitalization, steroid use, or biologic history
+- Endoscopic outcomes (mucosal healing) are not available in claims — EHR or registry linkage needed
+- Fistulizing CD and extraintestinal manifestations require additional code-based algorithms with validation
+- Biosimilar uptake and switching analyses are increasingly requested
+
+---
+
+## Common RWAA Study Types in Immunology
+
+| Study Type | Typical Requestor | Data Source(s) | Notes |
+|---|---|---|---|
+| Treatment pattern analysis | Medical Affairs, HEOR | Claims, EHR | Biologic cycling, switching, persistence, LOT |
+| Comparative effectiveness (CER) | HEOR, HTA | Claims, EHR, registry | Active comparator new-user design preferred |
+| Safety/pharmacovigilance | GPS | Claims, EHR, registries | Infections, malignancies, CV events |
+| Unmet need / disease burden | Pipeline teams, Medical Affairs | Claims, EHR | Supports label expansion or pipeline asset |
+| Budget impact / cost analyses | Market Access, HEOR | Claims | Payer-facing; may feed HTA dossiers |
+| PRO / patient experience | HEOR | Survey, registry | Disease activity, QoL, itch, fatigue |
+| Real-world effectiveness (RWE) | Regulatory, HEOR | Claims, EHR | Increasing regulatory use; requires protocol rigor |
+| Biologic sequencing / LOT | Medical Affairs, Market Access | Claims | High demand given crowded competitive landscape |
+
+: Common Immunology Study Types {.striped .hover}
+
+---
+
+## Key Data Sources for Immunology
+
+### Claims Databases
+
+- **Optum Clinformatics** — large commercially insured + Medicare Advantage population; good for HCRU and biologic utilization
+- **IBM MarketScan** — employer-sponsored insurance; well-suited for working-age RA, PsO, and AD populations
+- **IQVIA PharMetrics Plus** — broad commercial; strong for specialty pharmacy linkage and biologic dispensing
+- **CMS Medicare / Medicaid** — important for elderly RA patients and Medicaid-covered IBD populations
+
+### EHR Databases
+
+- **Optum EHR** — includes labs (CRP, ESR), vital signs, and some structured disease activity data
+- **TriNetX** — federated EHR network; useful for feasibility, cohort sizing, and rapid turnaround studies
+- **Veeva Iqvia** — structured EHR with specialty focus; useful for rheumatology and dermatology practices
+
+### Specialty Registries
+
+- **CORRONA (Adelphi) RA Registry** — gold standard for RA RWD; includes DAS28, HAQ, and biologic history
+- **CORRONA PsA/SpA Registry** — clinical depth for joint disease activity and biologic sequencing
+- **CorEvitas AD Registry** — growing registry with EASI, IGA, PROs for atopic dermatitis
+- **TREAT Registry** (Crohn's disease) — long-term CD outcomes with endoscopic and clinical data
+
+### Specialty / Linked Sources
+
+- **Specialty Pharmacy Data** — critical for biologics dispensed outside retail; Accredo, CVS Specialty
+- **Linked Claims + Registry** — preferred for CER when clinical endpoints (disease activity scores) are needed alongside utilization
+
+::: {.callout-note}
+## Data Source Selection Tip
+Immunology studies frequently require **disease activity scores and clinical endpoints** not available in claims. When these are primary endpoints (e.g., DAS28 remission, PASI 90, mucosal healing), specialty registries or linked EHR sources are required. Claims alone are sufficient for treatment patterns, HCRU, and event-based safety endpoints.
+:::
+
+---
+
+## Analytic Considerations
+
+### Cohort Design
+
+- **New-user active comparator design** is the gold standard for CER across all Immunology indications; reduces channeling bias in a market with many available biologics
+- Biologic-naïve vs. biologic-experienced analyses are often requested separately given differences in prognosis and treatment response
+- Line of therapy (LOT) construction requires careful rules for gaps in therapy, switching, and add-on therapies
+- Washout periods should account for long half-lives of biologic therapies (typically 6–12 months)
+
+### Confounding Control
+
+- Immunology populations have complex channeling — disease severity, prior biologic history, comorbidities, and prescriber specialty all drive treatment selection
+- Propensity score methods (IPTW, matching) are standard; include biologic history and disease severity proxies as key covariates
+- Prescriber-level clustering should be accounted for (biologics are specialty-prescribed; practice patterns vary)
+
+### Endpoint Ascertainment
+
+- Infection endpoints (serious infections, opportunistic infections, herpes zoster) are high-priority for JAK inhibitor safety studies; validated claims algorithms exist
+- Malignancy endpoints require extended follow-up and cancer registry linkage where possible
+- Joint replacement surgery is a useful long-term disease progression endpoint in RA and PsA — well-captured in claims
+- Flare ascertainment (steroid bursts, ER visits, hospitalizations) is the most common claims-based disease activity proxy
+
+### Regulatory-Grade RWE
+
+Immunology is seeing growing regulatory interest in RWE, particularly for:
+
+- Post-market safety commitments (JAK inhibitors — ORAL Surveillance follow-on studies)
+- Label expansion support for new indications (e.g., pediatric populations, new IMIDs)
+- Pre-specified SAPs and protocol registration are required for regulatory-grade studies
+
+---
+
+## RWAA's Role Across Immunology Functions
+
+```{mermaid}
+flowchart TD
+    RWAA[RWAA]
+
+    RWAA --> HEOR[HEOR\nCost-effectiveness inputs\nBurden of disease\nPRO linkage]
+    RWAA --> HTA[HTA\nComparative effectiveness\nIndirect treatment comparisons\nDossier evidence]
+    RWAA --> GPS[GPS\nSafety surveillance\nInfection & malignancy monitoring\nJAK inhibitor risk management]
+    RWAA --> MA[Medical Affairs\nTreatment patterns\nBiologic sequencing\nPublications]
+    RWAA --> REG[Regulatory\nRWE for label support\nPost-market commitments]
+    RWAA --> MKT[Market Access\nBudget impact models\nPayer-facing analyses]
+```
+
+---
+
+## Key Collaborators & Contacts
+
+| Function | Typical Ask to RWAA | Notes |
+|---|---|---|
+| **HEOR** | Disease burden, CER inputs, PRO linkage | Closest collaboration; often co-lead studies |
+| **HTA** | Comparative effectiveness, NMA data inputs | High demand given crowded IL-17, IL-23, JAK market |
+| **GPS** | Safety surveillance, infection and malignancy monitoring | JAK inhibitor safety is a standing priority |
+| **Medical Affairs** | Treatment patterns, biologic sequencing, unmet need | Often publication-oriented |
+| **Market Access** | Payer analyses, formulary support | Competitive positioning vs. biosimilars and new entrants |
+| **Regulatory** | RWE study design and execution | Post-market commitments for JAK inhibitors |
+
+---
+
+## Resources & Links
+
+- [Lilly Immunology Pipeline](https://investor.lilly.com/pipeline)
+- [HEOR Evidence Library (Internal)](#)
+- [RWD Source Catalog (Internal)](#)
+- [RWAA Study Request Process (Internal)](#)
+- [FDA RWE Framework](https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence)
+- [ACR Clinical Guidelines](https://www.rheumatology.org/Practice-Quality/Clinical-Support/Clinical-Practice-Guidelines)
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

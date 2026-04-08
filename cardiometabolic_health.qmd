@@ -1,0 +1,173 @@
+---
+title: "Cardiometabolic Health"
+subtitle: "Therapeutic Area Overview · Eli Lilly and Company"
+date: last-modified
+author: "Lilly CMH Team"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    smooth-scroll: true
+    code-fold: true
+    fig-align: center
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+---
+
+## Overview
+
+Cardiometabolic Health (CMH) is one of Eli Lilly's core Therapeutic Areas, encompassing a portfolio of medicines and pipeline programs that address **cardiovascular disease**, **type 2 diabetes**, **obesity**, and related metabolic conditions. These diseases are deeply interconnected — sharing pathophysiology, risk factors, and patient populations — and represent a significant and growing global health burden.
+
+Lilly's CMH strategy is anchored in a commitment to treating the whole patient: not just individual risk factors, but the full spectrum of cardiometabolic disease from prevention through advanced illness.
+
+---
+
+## Disease Areas
+
+### Type 2 Diabetes (T2D)
+
+Type 2 diabetes affects more than **500 million people** worldwide and is a leading driver of cardiovascular disease, kidney failure, and premature death. Lilly has been a pioneer in diabetes care for over a century — dating back to the commercialization of the first insulin in 1923.
+
+Key focus areas include:
+
+- **Glycemic control** with reduced hypoglycemia risk
+- **Cardiovascular risk reduction** in patients with T2D
+- **Weight management** as a component of diabetes care
+- **Combination and simplified dosing regimens**
+
+### Obesity
+
+Obesity is now recognized as a chronic, complex disease — not a lifestyle choice — affecting more than **1 billion people globally**. It is a root cause of type 2 diabetes, heart disease, sleep apnea, certain cancers, and reduced quality of life.
+
+Lilly's obesity program leverages cutting-edge incretin biology to deliver meaningful, sustained weight reduction while addressing associated metabolic complications.
+
+### Cardiovascular Disease (CVD)
+
+Cardiovascular disease remains the **#1 cause of death worldwide**. Many patients with diabetes or obesity carry substantially elevated CV risk. Lilly's CMH portfolio is designed to deliver cardiovascular outcomes benefits alongside metabolic improvements — a "two-for-one" value proposition for patients and payers.
+
+### Heart Failure
+
+Heart failure, particularly **heart failure with preserved ejection fraction (HFpEF)**, is an area of significant unmet need and growing scientific interest within CMH. GLP-1-based therapies have shown promising signals in this population.
+
+---
+
+## Key Pipeline & Portfolio Highlights
+
+| Asset | Mechanism | Indication(s) | Stage |
+|---|---|---|---|
+| **Tirzepatide** (Mounjaro® / Zepbound®) | GIP/GLP-1 dual agonist | T2D, Obesity, HFpEF | Approved + Phase III |
+| **Orforglipron** | Small molecule GLP-1 RA | T2D, Obesity | Phase III |
+| **Retatrutide** | GIP/GLP-1/Glucagon triple agonist | Obesity, MASH | Phase III |
+| **LY3849891** | GLP-1/FGF21 dual agonist | Obesity, Dyslipidemia | Phase II |
+
+: CMH Pipeline Summary {.striped .hover}
+
+---
+
+## Science & Innovation
+
+Lilly's CMH research is built on a foundation of **incretin biology** — the study of gut-derived hormones (GIP and GLP-1) that regulate glucose, appetite, and metabolism. This platform has enabled Lilly to move beyond single-target approaches to design molecules that simultaneously address multiple aspects of cardiometabolic disease.
+
+### The Incretin Platform
+
+```{mermaid}
+flowchart LR
+  A[GIP Receptor\nAgonism] --> D[Tirzepatide\nDual Agonist]
+  B[GLP-1 Receptor\nAgonism] --> D
+  D --> E1[Glycemic Control]
+  D --> E2[Weight Reduction]
+  D --> E3[CV Risk Reduction]
+  D --> E4[Organ Protection]
+  B --> F[Orforglipron\nOral GLP-1]
+  A --> G[Retatrutide\nTriple Agonist]
+  C[Glucagon Receptor\nAgonism] --> G
+```
+
+### Differentiation Strategy
+
+Lilly's CMH differentiation rests on three pillars:
+
+1. **Efficacy depth** — achieving meaningful weight loss and glycemic targets beyond what was previously possible
+2. **Mechanism diversity** — building a portfolio across single, dual, and triple agonism to address different patient needs
+3. **Modality breadth** — injectable and **oral** formulations (orforglipron) to expand access and patient preference
+
+---
+
+## Patient & Market Context
+
+### Epidemiology
+
+- ~537 million adults with diabetes globally (IDF, 2021); projected to reach 783 million by 2045
+- >1 billion adults living with obesity (WHO)
+- Cardiovascular disease causes ~17.9 million deaths per year globally
+- Estimated $1+ trillion annual economic burden from obesity-related conditions in the US alone
+
+### Unmet Need
+
+Despite decades of treatment advances, large gaps remain:
+
+- Majority of T2D patients do not reach individualized A1C targets
+- Weight loss durability remains a challenge — most patients regain weight after stopping medication
+- CV outcomes remain poor for patients with obesity + T2D
+- Oral, convenient options have been limited
+
+---
+
+## HEOR & Value Narrative
+
+Health Economics and Outcomes Research (HEOR) plays a critical role in demonstrating the value of CMH therapies to **payers, HTA bodies, and health systems**. Key themes include:
+
+- **Real-world evidence** demonstrating outcomes in broader patient populations
+- **Cost-effectiveness modeling** for obesity interventions (QALY-based and beyond)
+- **Budget impact analysis** — especially as GLP-1 therapies face formulary access challenges
+- **Patient-reported outcomes** (PROs) capturing quality of life, functional status, and treatment satisfaction
+
+::: {.callout-note}
+## HEOR & HTA Collaboration
+Given coverage challenges across payers and HTA bodies (particularly NICE, G-BA, HAS), CMH is one of the highest-priority TAs for HEOR and HTA engagement at Lilly.
+:::
+
+---
+
+## Strategic Priorities
+
+::: {.callout-tip}
+## FY2025–2027 CMH Focus Areas
+1. **Maximize tirzepatide** across approved and new indications (HFpEF, MASH, OSA)
+2. **Advance orforglipron** to regulatory submission — establishing oral GLP-1 leadership
+3. **Build retatrutide** data package — differentiate in severe obesity and metabolic liver disease
+4. **Strengthen access & affordability** narrative in collaboration with Market Access and HEOR
+5. **Invest in precision medicine** approaches to identify patients most likely to benefit
+:::
+
+---
+
+## Key Stakeholders & Cross-Functional Partners
+
+| Function | Role in CMH |
+|---|---|
+| **HEOR** | Value evidence generation, RWE, cost-effectiveness |
+| **HTA** | Early scientific advice, dossier development, HTA submissions |
+| **GPS (Global Patient Safety)** | Safety surveillance, pharmacovigilance |
+| **Market Access** | Payer strategy, formulary negotiations |
+| **Medical Affairs** | KOL engagement, publication strategy, MSL deployment |
+| **Regulatory** | IND/NDA/BLA submissions, label negotiations |
+
+---
+
+## Resources & Links
+
+- [Lilly CMH Pipeline](https://investor.lilly.com/pipeline)
+- [Tirzepatide Clinical Data Hub](#)
+- [HEOR Evidence Library (Internal)](#)
+- [CMH Publication Strategy (Internal)](#)
+- [IDF Diabetes Atlas](https://diabetesatlas.org)
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

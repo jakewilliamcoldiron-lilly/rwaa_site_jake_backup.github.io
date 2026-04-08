@@ -1,0 +1,215 @@
+---
+title: "CMH – HTA"
+subtitle: "Team Page · Real World Analytics & Accelerators (RWAA)"
+date: last-modified
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    toc-title: "On this page"
+    smooth-scroll: true
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(dplyr)
+library(reactable)
+library(htmltools)
+
+team <- readRDS("./ci_rwaa_org_v2/dat_rwaa_sa_team.rds")
+
+cmh_hta <- team |>
+  filter(ta == "cmh", fg == "hta") |>
+  arrange(factor(role, levels = c("head", "lead", "member")), name)
+```
+
+## Overview
+
+The CMH HTA team sits within the **Cardiometabolic Health (CMH)** Therapeutic Area and partners closely with Health Technology Assessment (HTA) bodies, payers, and HEOR colleagues to generate and communicate the value of Lilly's CMH portfolio.
+
+The team supports a range of deliverables including comparative effectiveness analyses, indirect treatment comparisons (ITCs/NMAs), cost-effectiveness inputs, and evidence dossiers for HTA submissions globally — with particular focus on agencies such as NICE, G-BA, HAS, and CADTH.
+
+---
+
+## People
+
+```{r people-table}
+score_cols <- c("optum","health_verity","ibd_plexus","komodo","truveta","flatiron",
+                "iqvia","tri_net_x","nhis","welldoc","meps","nhanes","cprd",
+                "ihd","aetion","sas","r")
+
+score_label <- function(x) {
+  dplyr::case_when(x == 3 ~ "Professional", x == 2 ~ "User", TRUE ~ "")
+}
+
+display <- cmh_hta |>
+  mutate(
+    name       = stringr::str_to_title(stringr::str_replace_all(name, "_", " ")),
+    employment = dplyr::case_when(
+      emp == "ft" ~ "Full-Time",
+      emp == "pt" ~ "Part-Time",
+      emp == "ct" ~ "Contractor",
+      TRUE        ~ emp
+    ),
+    role = stringr::str_to_title(role),
+    across(any_of(score_cols), score_label)
+  ) |>
+  select(name, role, employment, any_of(score_cols))
+
+badge_cell <- function(value) {
+  if (is.na(value) || value == "") return("")
+  color <- if (value == "Professional") list(bg="#ede9fe", fg="#6d28d9") else list(bg="#dbeafe", fg="#1d4ed8")
+  tags$span(
+    value,
+    style = paste0(
+      "font-size:10px;padding:1px 7px;border-radius:999px;font-weight:500;",
+      "background:", color$bg, ";color:", color$fg, ";"
+    )
+  )
+}
+
+reactable(
+  display,
+  searchable       = TRUE,
+  filterable       = TRUE,
+  striped          = TRUE,
+  highlight        = TRUE,
+  defaultPageSize  = 20,
+  columnGroups     = list(
+    colGroup(name = "Databases", columns = intersect(score_cols[1:13], names(display))),
+    colGroup(name = "Tools",     columns = intersect(score_cols[14:17], names(display)))
+  ),
+  columns = c(
+    list(
+      name       = colDef(name = "Name",       minWidth = 160, sticky = "left"),
+      role       = colDef(name = "Role",       minWidth = 100, filterable = TRUE),
+      employment = colDef(name = "Employment", minWidth = 110, filterable = TRUE)
+    ),
+    setNames(
+      lapply(intersect(score_cols, names(display)), function(col) {
+        colDef(
+          name   = toupper(gsub("_", " ", col)),
+          cell   = function(value) badge_cell(value),
+          minWidth = 90
+        )
+      }),
+      intersect(score_cols, names(display))
+    )
+  ),
+  theme = reactableTheme(
+    headerStyle      = list(background = "#185FA5", color = "#fff"),
+    groupHeaderStyle = list(background = "#1e75c8", color = "#fff", fontWeight = 500)
+  )
+)
+```
+
+---
+
+## Workflow
+
+The CMH HTA team follows a structured quality workflow for all programming deliverables. The workflow applies to both **SAS/R** and **Taffy** environments and covers three roles: Primary Programmer, Independent Validator, and Peer Reviewer.
+
+### Primary Programmer
+
+::: {.callout-note}
+Before starting any new request, review the most updated SAP and familiarise yourself with the input data and LOA.
+:::
+
+**SAS / R**
+
+1. For any new request, create a project tracker and provide a List of Analyses (LOA) — either attached to the tracker or saved in the documentation folder.
+2. LOA should always be up to date, including titles, footnotes, abbreviations, reference program names (if available), output locations/names, and any specific requirements.
+3. Create folders in QA and PRD, and create a setup program (validator to peer review it). Always include the PRD path in your program header.
+4. Follow best practice for program headers; include the Project Tracker ID next to the PROJECT NAME (required).
+5. Run the program with no errors or warnings in the log/lst. If warnings cannot be resolved in SAS, try running via the CLUWE scheduler.
+6. Carefully review the output TFL — including titles, abbreviations, footnotes, missing values, display truncation, and page breaks.
+7. If a TFL is updated during validation, save a copy of the previous version and compare to ensure only necessary changes were made.
+8. Once the PRD run is approved, move the LOA to PRD and e-sign.
+9. Run PRD; wait for validation to complete in PRD, then e-sign.
+10. Update the status and unique/final TFL counts in the project tracker.
+11. For new members, update the BOW.
+
+**Taffy**
+
+Steps 1–2 and 5–11 follow the same process as SAS/R. Additional Taffy-specific step:
+
+4. Create the TFL project in Taffy.
+
+---
+
+### Independent Validation
+
+::: {.callout-important}
+It is the validator's responsibility to determine why a mismatch exists. Only if you are convinced your result is correct should you provide the primary programmer with details of the discrepancy.
+:::
+
+**SAS / R**
+
+1. Follow best practice for headers; include the Project Tracker ID next to the PROJECT NAME. Always include the PRD path in the program header.
+2. Run the program with no errors or warnings in the log/lst. If unresolvable, try the CLUWE scheduler.
+3. Confirm the primary programmer's log/lst contains no errors or warnings.
+4. Confirm the big N is correctly presented in the TFL.
+5. Carefully review the output TFL — titles, abbreviations, footnotes, missing values, display truncation, and page breaks.
+6. If a TFL is updated during validation, save a copy of the previous version and compare.
+7. Primary runs in PRD first; validator runs in PRD second.
+8. E-sign both the primary and validation programs (sign as executor).
+9. For new members, update the BOW.
+
+**Taffy**
+
+Steps 1–4 follow the same process. Additional Taffy-specific step:
+
+5. Either the primary programmer or the validator approves the Taffy program after the primary programmer approves the PRD run.
+
+---
+
+### Peer Review
+
+**SAS / R**
+
+1. Compare the reference program with the primary program and justify any changes made. For new members: understand the meaning of each setting and the reason for any changes.
+2. Carefully review the output TFL — titles, abbreviations, footnotes, missing values, display truncation, and page breaks.
+3. Confirm that big N and small n are correct (recommended: write code to verify).
+4. Check the log and lst files — no errors or warnings.
+5. After the PRD run, confirm the QA version of the TFL approved for PRD is identical to the PRD version.
+6. E-sign the primary's program on CLUWE.
+7. For new members, update the BOW.
+
+**Taffy**
+
+Steps 1–4 follow the same process. Additional Taffy-specific step:
+
+5. Either the primary programmer or the validator approves the Taffy program after the primary programmer approves the PRD run.
+
+---
+
+### Quality Checklist
+
+Before submitting any deliverable, verify the following:
+
+1. No hardcoding in either the main program body or output settings.
+2. No footnote errors — check for wrong paths, missing abbreviations, missing LOA-requested notes, or incorrect titles.
+3. The validation lst file is complete, including available compare results.
+4. Input data has been checked against the LOA; consult the primary programmer on how to handle missing data.
+5. No missing rows, columns, or values in the TFL output.
+6. Program header follows good practice guidelines.
+7. Program footnotes follow good practice guidelines.
+8. Verify the necessity of all variables in the analysis model.
+9. Verify the necessity of all parameters in the DM table.
+10. Table conveys clear information — e.g. Y/N → Yes/No, F/M → Female/Male.
+11. Check convergence type in both QA and PRD environments.
+12. Notes are made throughout the program and in the LOA for any updates.
+13. Programs are executed in the correct order.
+14. Pay attention to rounding issues that may cause incorrect patient categorisation.
+15. Pay attention to timepoints and populations when using reference code — parameters may differ from the reference.
+16. For independent validations, the primary programmer and validator must not see each other's code.
+17. When creating a customised ADaM dataset, write a corresponding specification.
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

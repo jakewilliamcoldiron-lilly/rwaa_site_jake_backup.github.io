@@ -1,0 +1,56 @@
+---
+title: "Time Entry & Quick Reference"
+---
+
+## Time Entry
+
+### Lilly FTE
+
+-   Use **Prism TimeCard (CATs)** for project hours. See Appendix 7.1 and 7.2 in the FTE onboarding document.
+-   Four categories: Molecule time · Multi-molecule time · General Administration · Vacation/Out of Office.
+-   Log daily; submit weekly. Compliance training → **General Administration**.
+-   Compound not in CATs? Email **usmail_lrl_project_esg@lilly.com**.
+-   Track vacation in **Workday**: [now.lilly.com/page/US-entering-time-off](https://now.lilly.com/page/US-entering-time-off).
+
+### Vendor / Contractor
+
+-   Use your **vendor's own time entry / invoicing system** — not Prism TimeCard.
+-   Your **Lilly Lead** provides the compound name, study name, and LY# required for billing.
+-   Lilly shutdown periods: **Week of July 4th** and **December 26–31**. Coordinate with vendor management and your Lilly Lead.
+-   Email access: [email.lilly.com](https://email.lilly.com/mail/inbox) or Outlook in CLUWE Citrix (avoids 20-min timeout).
+
+------------------------------------------------------------------------
+
+## Quick Reference
+
+| Resource | Link |
+|----------|------|
+| R Studio / Posit | [rstudio.am.lilly.com](https://posit.am.lilly.com/) |
+| Python / Jupyter | [jupyterhub.am.lilly.com](https://jupyterhub.am.lilly.com/hub/login) |
+| CLUWE | [cluwe.am.lilly.com/login](https://cluwe.am.lilly.com/login) |
+| CLUWE Support | [collab.lilly.com/sites/ModSupport](https://collab.lilly.com/sites/ModSupport/) |
+| Redshift Password Reset | [dssp.paas.am.lilly.com](https://dssp.paas.am.lilly.com/awsRedshiftPassManagement) (FTE: local browser · Vendor: CLUWE Citrix Edge) |
+| MyAccess | [myaccess.lilly.com](https://myaccess.lilly.com) |
+| ServiceNow | [lilly.service-now.com](https://lilly.service-now.com) |
+| Identity Manager | [idmportal.rf.lilly.com](https://idmportal.rf.lilly.com/IdentityManagement/default.aspx) (Vendor: CLUWE Citrix Edge only) |
+| Pangaea — FTE | [gso.lightning.force.com](https://gso.lightning.force.com/lightning/o/Dashboard/home) |
+| Pangaea — Vendor | [gso--c.vf.force.com](https://gso--c.vf.force.com/apex/PANG_HomePage) |
+| HPC Support | [hpc.am.lilly.com](http://hpc.am.lilly.com) |
+| Vendor Email | [email.lilly.com](https://email.lilly.com/mail/inbox) |
+
+------------------------------------------------------------------------
+
+## Helpful Links and Materials
+
+-   [RWAA2 Onboarding documentation](https://collab.lilly.com/sites/ModSupport/)
+-   [Request for Hardware, Software, Accessories](https://lilly.service-now.com)
+-   [SDTM/ADaM/TFL Support](https://collab.lilly.com)
+-   [CLUWE Support](https://collab.lilly.com/sites/ModSupport/)
+-   [Vault Clinical Knowledge Site](https://collab.lilly.com)
+-   [Spotfire team site](https://collab.lilly.com)
+-   [Lilly chatbot](https://now.lilly.com)
+
+::: {.callout-tip}
+### Onboarding complete
+If you encounter issues at any stage, refer to the Key Contacts table on the Homepage or ask your Lilly Lead for guidance.
+:::

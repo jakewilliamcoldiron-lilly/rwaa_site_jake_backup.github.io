@@ -1,0 +1,126 @@
+---
+title: "Home"
+---
+
+::: {.callout-important}
+**🚧 Page Under Active Development**
+
+This page is actively being developed. Material may be missing, incomplete or incorrect. Please check again later or email someone from the [maintenance team](maintenance.qmd) for more information.
+:::
+
+::: {.callout-note}
+**📋 Development Plan**
+
+- **Planned Content:** 
+
+> *Remove static contacts. With the exception of the maintenance page, all people, positions, and email links should be centralized in "Contacts" and every reference to that reaching out to someone should refer to their position, and that should refer to that position in "Contacts". This is to prevent any issues if someone leaves or changes roles. We only have to update one person, one contact email, in one place.*
+
+> *Ibid for all people and names, bar maintenance page.*
+
+> *To clarify, enumerating names on a page are fine on the html page, but the code should never refer to someone specific, only to the position so that if no matter who the person is the position remains the same.*
+
+
+- **Owner:** *Jake -- jake.coldiron@lilly.com*
+- **Target Completion:** *10 April 2026*
+:::
+
+
+---
+
+<div style="text-align: center; margin-top: 1.5rem;">
+<img src="./img/img_lcc.webp" alt="Modern Lilly Headquaters" style="width: 100%; border-radius: 10px;">
+  <p style="margin-top: 1rem;"><em>"It is you, not bricks and mortar and machines, who are Eli Lilly and Company"</em><br> J.K. Lilly, Jr., 1950 (approx.)</p>
+</div>
+
+Welcome to the **RWAA Statistical Analysis Team Onboarding Guide**.
+ 
+This guide helps new analysts set up systems, access data environments, and complete required training.
+ 
+---
+ 
+# Start Here
+ 
+New members should begin based on their employment type.
+ 
+## Lilly Full-Time Employees (FTEs)
+👉 Start with  
+**Common Foundation → Step 1 – Identity Manager**
+ 
+## Lilly Vendor / Contractor
+👉 Start with  
+**Common Foundation → Step 2 – CLUWE Access**
+ 
+The onboarding sequence differs between **FTEs** and **Vendors**.
+ 
+See [Key Differences at a Glance](key_difference.qmd) for a detailed comparison of the two tracks.
+ 
+---
+ 
+# Overview
+ 
+This guide is divided into two parts:
+ 
+**Part A – Common Foundation**  
+
+Core steps all members must complete.
+ 
+**Part B – Specialization Tracks**  
+
+RWD · HTA · GPS · HEOR specific steps.
+ 
+---
+ 
+::: {.callout-warning}
+
+# Two distinct onboarding tracks
+ 
+Lilly **FTEs** and **Vendors (contractors)** follow **materially different processes** across most steps.
+ 
+Key differences include:
+ 
+- System access
+
+- Step order
+
+- Training platforms
+
+- Tools
+
+- Time entry systems
+ 
+Each step includes separate **FTE** and **Vendor** tabs.
+ 
+Always follow the tab matching your employment type.
+
+:::
+ 
+---
+ 
+# Quick Links
+ 
+- [Key Reminder — Verify Email Before You Start](key_reminder.qmd)
+- [Key Differences at a Glance](key_difference.qmd)
+- [Key Contacts](key_contacts.qmd)
+- [Step 1 – Identity Manager](step1_identity_manager.qmd)
+- [ServiceNow](https://lilly.service-now.com)
+--- 
+
+# Document Information
+ 
+**Maintained by:** RWAA Statistical Analysis Team  
+
+**Last updated:** March 2026
+  
+**For questions or updates, please contact:**
+
+| Name | Email |
+|------|------|
+| Isabella Yali Wang | wang_yali@lilly.com |
+| Lili Huang | lili.huang@lilly.com |
+| Xiaoliu Xu | xu_xiaoliu@network.lilly.com |
+| Jake William Coldiron | jake.coldiron@lilly.com |
+| Fei Xu | fei.xu@network.lilly.com |
+
+
+
+ 

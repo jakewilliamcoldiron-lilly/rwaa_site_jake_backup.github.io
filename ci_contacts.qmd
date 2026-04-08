@@ -1,0 +1,29 @@
+---
+title: "Key Contacts"
+---
+
+| Contact | System / Area | Phone | Email | Title |
+|---------|--------------|-------|-------|-------|
+| Manish Sharma | UNIX Account | | sharma_manish2@network.lilly.com | Global Commercial Analytics |
+| Andrew M Craven | LRL Group & Brainiac-Compute | (317) 276-7221 | craven_andrew_m@lilly.com | Consultant-IT |
+| Diane C. Haldane | AWS (including access to FSx) | (317) 651-1898 | haldane_diane_c@lilly.com | Sr. Research Scientist: RWA-Capabilities and Data Mart |
+| Alex Neher | AWS | | neher_alex@lilly.com | Sr. Analyst-IT |
+| Rateen Kumar | AWS Redshift | (317) 277-9475 | kumar_rateen@network.lilly.com | Global Commercial Analytics |
+| Diane L. Hintz | SAS EG | (317) 651-2395 | hintz_diane_l@lilly.com | Cnslt-Comm Anlytcs Svc Mgr/Design Lead |
+| Priyanka Tiwari | SAS EG | (317) 651-5262 | tiwari_priyanka@network.lilly.com | Global Commercial Analytics |
+| Lisa Grey | Pangaea | (317) 651-9009 | grey_lisa_m@lilly.com | Sr Associate-RWE |
+| Courtney M. Vehling | Database Contract Checklists | (317) 277-7802 | vehling_courtney_michelle@lilly.com | Real World Data Consultant – GPORWE |
+| Gregory E. Cunningham | AWS / STRADA Approvals | | cunningham_gregory_e@lilly.com | |
+| Jessica R. Peachey | Oncology Data (Flatiron / Guardant) | (317) 227-1520 | peachey.jessica@lilly.com | Consultant-RWD |
+| Arun Pandit | RWE IT | | pandit_arun@network.lilly.com | |
+| Akanksha Patil | RWE IT | | akanksha.patil@network.lilly.com | |
+| HPC Team | R Studio / Posit issues | | Submit ticket: [hpc.am.lilly.com](http://hpc.am.lilly.com) | |
+| LRL Group | CATs / Project Time Entry | | usmail_lrl_project_esg@lilly.com | |
+| CLUWE / SAS Grid issues | Modernization support | | modernizationbussupp@lilly.com | |
+| Analytical tool issues | SQL / SAS / R support | | RWE_STRADA_ADMINS_NOTIFICATIONS@lists.lilly.com | |
+| SDnA Sourcing | Vendor onboarding / Beeline / SOW | | Contact your Lilly Lead | |
+
+::: {.callout-note}
+### Oncology Data Access
+Please send access requests to Jessica Renee Peachey (peachey.jessica@lilly.com) and copy Gregory Edward Cunningham (cunningham_gregory_e@lilly.com) on the email.
+:::

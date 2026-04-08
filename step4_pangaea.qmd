@@ -1,0 +1,61 @@
+---
+title: "Step 4 - Pangaea"
+---
+
+Pangaea is Lilly's RWE/RWD knowledge management system. Note the **different URLs, training requirements, and ServiceNow form names** between FTEs and Vendors.
+
+------------------------------------------------------------------------
+
+### Pre-requisite Training
+
+**Lilly FTE** 
+
+- 9182923 — Pangaea Overview & Getting Started.
+
+**Vendor / Contractor** 
+
+-   9182923 — Pangaea Overview & Getting Started
+-   9282629 — Working with Pangaea REQUESTS
+-   9282637 — Working with Pangaea PROJECTS
+-   9513570 — RWD: STRADA Platform — Analyzing Data
+
+------------------------------------------------------------------------
+
+### Pangaea Support Team
+
+| Contact | Role | Email |
+|---------|------|-------|
+| Lisa Grey | General Information/System Owner, Operations, Reporting, Training | grey_lisa_m@lilly.com |
+| Heidi Cline | Project/Study Support, RIM/MedComms Vault | davis_heidi@lilly.com |
+| Prix Berry | HEOR TPO Management | berry_prix@lilly.com |
+| David Ott | HEOR Project Management, HEOR Financials | david.ott@lilly.com |
+| Karen Morgan | HEOR Business Operations | morgan_karen_sue@lilly.com |
+
+### Lilly FTE
+
+1.  [ServiceNow](https://lilly.service-now.com) → search **Pangaea request form**. Do **not** request Manager access.
+
+2.  Select **Contributing User** and **STRADA Member** under RWE Request Related Roles.
+
+3.  Order Now → Check Out.
+
+4.  After approval: [gso.lightning.force.com](https://gso.lightning.force.com/lightning/o/Dashboard/home)
+
+------------------------------------------------------------------------
+
+### Vendor / Contractor
+
+1.  [ServiceNow](https://lilly.service-now.com) → search **"RWE-IT BUIT Pangaea Support Consulting Request"** (different form from FTE).
+
+2.  Complete all four courses before submitting.
+
+3.  After approval: [gso--c.vf.force.com/apex/PANG_HomePage](https://gso--c.vf.force.com/apex/PANG_HomePage) → click **Log in with GSO**.
+
+::: {.callout-warning}
+### Note
+Vendor Pangaea URL differs from the FTE URL. Bookmarking the wrong link is a common source of confusion.
+:::
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

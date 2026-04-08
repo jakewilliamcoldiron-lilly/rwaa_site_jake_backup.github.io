@@ -1,0 +1,38 @@
+---
+title: "ci_quick_ref"
+format: html
+---
+
+# Quick Reference
+
+| Resource | Link |
+|----------|------|
+| R Studio / Posit | [rstudio.am.lilly.com](https://posit.am.lilly.com/) |
+| Python / Jupyter | [jupyterhub.am.lilly.com](https://jupyterhub.am.lilly.com/hub/login) |
+| CLUWE | [cluwe.am.lilly.com/login](https://cluwe.am.lilly.com/login) |
+| CLUWE Support | [collab.lilly.com/sites/ModSupport](https://collab.lilly.com/sites/ModSupport/) |
+| Redshift Password Reset | [dssp.paas.am.lilly.com](https://dssp.paas.am.lilly.com/awsRedshiftPassManagement) (FTE: local browser · Vendor: CLUWE Citrix Edge) |
+| MyAccess | [myaccess.lilly.com](https://myaccess.lilly.com) |
+| ServiceNow | [lilly.service-now.com](https://lilly.service-now.com) |
+| Identity Manager | [idmportal.rf.lilly.com](https://idmportal.rf.lilly.com/IdentityManagement/default.aspx) (Vendor: CLUWE Citrix Edge only) |
+| Pangaea — FTE | [gso.lightning.force.com](https://gso.lightning.force.com/lightning/o/Dashboard/home) |
+| Pangaea — Vendor | [gso--c.vf.force.com](https://gso--c.vf.force.com/apex/PANG_HomePage) |
+| HPC Support | [hpc.am.lilly.com](http://hpc.am.lilly.com) |
+| Vendor Email | [email.lilly.com](https://email.lilly.com/mail/inbox) |
+
+------------------------------------------------------------------------
+
+# Helpful Links and Materials
+
+-   [RWAA2 Onboarding documentation](https://collab.lilly.com/sites/ModSupport/)
+-   [Request for Hardware, Software, Accessories](https://lilly.service-now.com)
+-   [SDTM/ADaM/TFL Support](https://collab.lilly.com)
+-   [CLUWE Support](https://collab.lilly.com/sites/ModSupport/)
+-   [Vault Clinical Knowledge Site](https://collab.lilly.com)
+-   [Spotfire team site](https://collab.lilly.com)
+-   [Lilly chatbot](https://now.lilly.com)
+
+::: {.callout-tip}
+### Onboarding complete
+If you encounter issues at any stage, refer to the Key Contacts table on the Homepage or ask your Lilly Lead for guidance.
+:::

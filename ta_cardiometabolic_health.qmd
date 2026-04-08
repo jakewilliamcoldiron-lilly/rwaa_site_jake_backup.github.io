@@ -1,0 +1,177 @@
+---
+title: "Cardiometabolic Health v2"
+subtitle: "Therapeutic Area Guide for Real World Analytics & Accelerators (RWAA)"
+date: last-modified
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    smooth-scroll: true
+    fig-align: center
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+---
+
+## Why CMH Matters to RWAA
+
+Cardiometabolic Health (CMH) is one of the highest-volume and highest-priority Therapeutic Areas for real-world analytics at Lilly. The combination of large, well-established patient populations, mature real-world data (RWD) sources, and intense payer and HTA scrutiny makes CMH a primary driver of RWAA's workload and strategic impact.
+
+RWAA supports CMH across the full evidence lifecycle — from early pipeline characterization of treatment patterns and unmet need, through post-approval effectiveness and safety studies, to ongoing payer and HTA submissions.
+
+---
+
+## Disease Areas & RWD Landscape
+
+### Type 2 Diabetes (T2D)
+
+T2D is one of the best-characterized disease areas in real-world data. Large, longitudinal claims and EHR datasets provide rich opportunity for treatment pattern analyses, adherence studies, and comparative effectiveness research.
+
+Key RWD considerations:
+
+- **Claims data** (Optum, MarketScan, IQVIA): Strong for treatment patterns, adherence, switching, and CV event rates
+- **EHR data** (Optum EHR, TriNetX): Adds lab values (A1C, eGFR, lipids) critical for endpoint ascertainment
+- **Registry data**: Useful for long-term outcomes and patient-reported data
+- **Linkage opportunities**: CMS Medicare/Medicaid linkages important for older and dual-eligible populations
+
+### Obesity
+
+Obesity as a standalone indication is a newer RWD challenge. Diagnosis codes are historically undercoded in claims — **BMI-based cohort identification using EHR data** is often preferred over ICD-10 codes alone.
+
+Key RWD considerations:
+
+- BMI and weight trajectories require EHR or registry sources; claims alone are insufficient
+- Treatment discontinuation and regain patterns are high-priority for HEOR and payers
+- Comorbidity burden (T2D, HFpEF, OSA, MASH) is critical for characterizing the treated population
+- Weight loss as a primary endpoint requires careful validation in RWD settings
+
+### Cardiovascular Disease (CVD) & Heart Failure
+
+CV outcomes are among the most important — and most complex — endpoints to ascertain from RWD. MACE (major adverse cardiovascular events) and HHF (hospitalization for heart failure) are common primary endpoints requiring validated algorithms.
+
+Key RWD considerations:
+
+- **MACE ascertainment**: Validated ICD-10 algorithms exist but require careful adaptation by data source
+- **HFpEF vs HFrEF differentiation**: Challenging in claims; EHR + echocardiogram data often needed
+- **Cardiovascular event adjudication**: May be required for regulatory-grade RWE studies
+
+---
+
+## Common RWAA Study Types in CMH
+
+| Study Type | Typical Requestor | Data Source(s) | Notes |
+|---|---|---|---|
+| Treatment pattern analysis | Medical Affairs, HEOR | Claims, EHR | Line of therapy, switching, persistence |
+| Comparative effectiveness (CER) | HEOR, HTA | Claims, EHR | Active comparator new-user design preferred |
+| Safety/pharmacovigilance | GPS | Claims, EHR, registries | Often GPS-initiated; may be regulatory commitment |
+| Unmet need / disease burden | Pipeline teams, Medical Affairs | Claims, EHR | Supports label expansion or pipeline asset |
+| Budget impact / cost analyses | Market Access, HEOR | Claims | Payer-facing; may feed HTA dossiers |
+| PRO / patient experience | HEOR | Survey, registry | Linked to claims when possible |
+| Real-world effectiveness (RWE) | Regulatory, HEOR | Claims, EHR | Increasing regulatory use; requires protocol rigor |
+
+: Common CMH Study Types {.striped .hover}
+
+---
+
+## Key Data Sources for CMH
+
+### Claims Databases
+
+- **Optum Clinformatics** — large commercially insured + Medicare Advantage population; good for CV events
+- **IBM MarketScan** — employer-sponsored insurance; useful for working-age T2D population
+- **IQVIA PharMetrics Plus** — broad commercial; strong pharmacy linkage
+- **CMS Medicare / Medicaid** — essential for elderly and low-income populations with high cardiometabolic burden
+
+### EHR Databases
+
+- **Optum EHR** — large de-identified EHR; includes labs (A1C, BMI, lipids), vital signs, structured notes
+- **TriNetX** — federated EHR network; useful for feasibility and rapid cohort sizing
+- **Flatiron** — oncology-focused but used for comorbidity analyses in CMH/oncology overlap patients
+
+### Specialty / Linked Sources
+
+- **PINNACLE Registry** (ACC) — cardiovascular registry with clinical depth for HF and CVD
+- **Linked Claims + EHR** — preferred design when lab data or weight is needed alongside utilization/cost
+
+::: {.callout-note}
+## Data Source Selection Tip
+For CMH studies requiring both **clinical endpoints** (A1C, BMI, eGFR) and **utilization/cost outcomes**, linked claims-EHR datasets are strongly preferred. Pure claims studies are adequate for treatment patterns and event-based endpoints with validated algorithms.
+:::
+
+---
+
+## Analytic Considerations
+
+### Cohort Design
+
+- **New-user active comparator design** is the gold standard for CER in CMH; reduces channeling and indication bias
+- T2D cohort entry is typically anchored to first dispensing of index therapy with a washout period (commonly 6–12 months)
+- Obesity cohorts require careful BMI eligibility criteria; consider sensitivity analyses with and without diagnosis code inclusion
+
+### Confounding Control
+
+- CMH populations have high comorbidity burden — propensity score methods (IPTW, matching) are standard
+- High-dimensional propensity scores (hdPS) are used when variable lists are large
+- Disease severity proxies (prior A1C levels, insulin use, prior CV events) are critical covariates
+
+### Endpoint Ascertainment
+
+- MACE and HHF algorithms should be pre-specified and cite published validation literature
+- Hypoglycemia ascertainment in claims is known to be **underestimated** — sensitivity analyses recommended
+- Weight change as an endpoint requires EHR or linked data; cannot be derived from claims alone
+
+### Regulatory-Grade RWE
+
+RWAA is increasingly involved in studies intended to support or supplement regulatory submissions. For CMH assets (particularly tirzepatide indications), this means:
+
+- Pre-specified statistical analysis plans (SAPs)
+- Transparent protocol registration (e.g., EU PAS Register, ClinicalTrials.gov)
+- Adherence to FDA RWE frameworks and EMA guidance on RWD/RWE
+
+---
+
+## RWAA's Role Across CMH Functions
+
+```{mermaid}
+flowchart TD
+    RWAA[RWAA]
+
+    RWAA --> HEOR[HEOR\nCost-effectiveness inputs\nBurden of disease\nPRO linkage]
+    RWAA --> HTA[HTA\nComparative effectiveness\nIndirect treatment comparisons\nDossier evidence]
+    RWAA --> GPS[GPS\nSafety surveillance\nPharmacovigilance studies\nRisk management]
+    RWAA --> MA[Medical Affairs\nTreatment patterns\nKOL data generation\nPublications]
+    RWAA --> REG[Regulatory\nRWE for label support\nPost-market commitments]
+    RWAA --> MKT[Market Access\nBudget impact models\nPayer-facing analyses]
+```
+
+---
+
+## Key Collaborators & Contacts
+
+| Function | Typical Ask to RWAA | Notes |
+|---|---|---|
+| **HEOR** | Disease burden, CER inputs, PRO linkage | Closest collaboration; often co-lead studies |
+| **HTA** | Comparative effectiveness, NMA data inputs | Increasing demand as GLP-1 market matures |
+| **GPS** | Pharmacovigilance, safety signal evaluation | May involve regulatory timelines |
+| **Medical Affairs** | Treatment patterns, adherence, unmet need | Often publication-oriented |
+| **Market Access** | Payer analyses, formulary support | Shorter turnaround often expected |
+| **Regulatory** | RWE study design and execution | High rigor; protocol registration required |
+
+---
+
+## Resources & Links
+
+- [Lilly CMH Pipeline](https://investor.lilly.com/pipeline)
+- [HEOR Evidence Library (Internal)](#)
+- [RWD Source Catalog (Internal)](#)
+- [RWAA Study Request Process (Internal)](#)
+- [FDA RWE Framework](https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence)
+- [IDF Diabetes Atlas](https://diabetesatlas.org)
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

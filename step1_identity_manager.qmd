@@ -1,0 +1,65 @@
+# NOTES: what about the rstudio group in Windows Indentiy manager? 
+
+---
+title: "Step 1 - Microsoft Identity Manager"
+---
+
+⏱ **Time:** 15 minutes | ⏳ **Approval:** 3–5 business days | 🎯 **Priority:** <span style="color:#c00000;"><strong>CRITICAL – Do this first!</strong></span>
+
+::: {.callout-important}
+**Vendor / Contractor Note** 
+
+If you are a **Vendor or Contractor**, you must complete **Step 2 – CLUWE Access** **before** starting this step.
+Lilly FTE can proceed directly with Step 1.
+:::
+
+--- 
+
+Three sequential group memberships are required:
+
+1.  **UNIX Account** *(comes with CLUWE access — you may double-check from "My Group Membership")*
+
+2.  **LRL Group**
+
+3.  **Brainiac Compute Group**
+
+------------------------------------------------------------------------
+
+### Lilly FTE
+
+1.  Open [Microsoft Identity Manager](https://idmportal.rf.lilly.com/IdentityManagement/default.aspx) in your local browser — available from Day 1.
+
+2.  **Apply for UNIX Account:** Search `unixacct` → check box → click **Join**. 
+    Wait for approval before proceeding to next steps (3–5 days).
+
+3.  **Join LRL Group:** After UNIX approval, search `lrlhps_users` → check box → click **Join**. This step grants Isilon filesystem access.
+
+4.  **Join Brainiac-Compute Group:** After LRL approval, search `brainiac-compute` → check box → click **Join**. This step provides access to R Studio / Posit.
+
+5.  Track all statuses under **Manage My Requests** in portal.
+
+------------------------------------------------------------------------
+
+### Vendor / Contractor
+
+::: {.callout-warning}
+### Pre-condition
+
+Complete **Step 2 (CLUWE)** and **Citrix setup** before this step.
+:::
+
+1.  Open **CLUWE Microsoft Edge** inside Citrix (not your local browser).
+
+2.  Open [Microsoft Identity Manager](https://idmportal.rf.lilly.com/IdentityManagement/default.aspx) inside that browser.
+
+3.  **UNIX Account:** Search `unixacct` → check → **Join**. Wait for approval.
+
+4.  **LRL Group:** After UNIX approval, search `lrlhps_users` → check → **Join**.
+
+5.  **Brainiac-Compute:** After LRL approval, search `brainiac-compute` → check → **Join**.
+
+6.  Track statuses under **Manage My Requests**.
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

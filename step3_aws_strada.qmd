@@ -1,0 +1,172 @@
+---
+title: "Step 3 - AWS / STRADA Access"
+---
+
+⏱ **Time:** 45 minutes | ⏳ **Approval:** 10–14 business days
+ 
+---
+
+AWS STRADA is the cloud-based data warehouse hosting all RWE databases. All analysts require access.
+
+### Pre-requisite Training
+
+Complete all four before requesting access:
+
+-   **Course 9049927:** DEV-HO: RWE 301-ODM — Conducting Observational Studies
+-   **Course 9219012:** DEV-HO: RWE 301a-ODM — PROCEDURE FOR Observational Studies (supplement)
+-   **Course 9277801:** EC-PROC: Global Developing Real World Evidence *(required specifically for AWS approval)*
+-   **Course 9183089:** DEV-HO: RWE 201-ODM — Applying RWD for RWE Generation
+
+------------------------------------------------------------------------
+
+### Lilly FTE
+
+1.  Complete all four training courses via [Learning Plan](https://elilily.plateau.com/learning/user/personal/landOnPortalHome.do?fromSF=Y&fromDeepLink=true&pageID=).
+
+2.  Email **Courtney Vehling** (vehling_courtney_michelle@lilly.com), CC: **Diane Haldane** (haldane_diane_c@lilly.com) for the Database Contract Checklists link. Return completed checklist screenshot to Courtney.
+
+3.  Log in to [MyAccess@Lilly](https://myaccess.lilly.com) → **Manage User Access** → check that **RWE STRADA PRD Data Assets – RWE** has been assigned automatically. If not found, email **Gregory Edward Cunningham** (cunningham_gregory_e@lilly.com) to request.
+
+4.  For RESTRICTED data: submit a separate request for **"RWE STRADA PRD Data Assets – RESTRICTED"**.
+
+5.  After receiving Redshift account creation email, map network drives on **local laptop**:
+
+-   `\\veo_fsx_prod.aws.lilly.com\veo_fsx\strada` (primary)
+-   `\\ix1strdec2p4.aws.lilly.com\strada` (backup)
+
+6.  **Reset Redshift password:** Open [DSSP Application](https://dssp.paas.am.lilly.com/) in **local browser** → click **DSS** → **AWS DB Account Password Management** → **Redshift**. Fill in:
+
+-   AWS Account Number: `346644684160`
+-   AWS Region: `us-east-2`
+-   Technology: `Redshift`
+-   Cluster: `edb-redshift-prod-01`
+-   Database Name: `rwe_databases`
+-   Request Type: `Individual User Password Reset`
+-   Individual User: your Lilly system ID (**upper case**)
+-   Enter and confirm your new password.
+
+7.  If account is locked later: ServiceNow → unlock/reset. Search cluster "edb" and select prod.
+
+# This seems a bit out of place. Maybe we should provide more clarity here or move to a different section. 
+
+**SAS EG AWS PROD Profile:** Machine: `gridrpmeta1.aws.lilly.com` | Port: `8561` | Password: Lilly SSO.
+
+**DSN note:** Use `Access_Redshift_Prod` on AWS GRID (port 8561). Use `Access_Redshift` on CLUWE/RHEL8 (port 8564). Note: `/lillyce` is not mounted on the AWS GRID server.
+
+**Encrypted Password File:** Open *Create_and_Store_Redshift_Password.sas* from the STRADA FSx folder, enter your Redshift password in Step 2, run, then close **without saving**. Creates `/home/&sysuserid/pswd/MyEncryptedPwd.sas`.
+
+------------------------------------------------------------------------
+
+### Vendor / Contractor
+
+1.  Complete all four training courses via your **vendor's training platform**.
+
+2.  Email **Courtney Vehling** (vehling_courtney_michelle@lilly.com) and **Gregory Cunningham** (cunningham_gregory_e@lilly.com) stating you need STRADA access. CC: Diane Haldane. Include Course 9277801 completion screenshot.
+
+3.  Complete the RWD Contract Checklist Form.
+
+4.  [MyAccess@Lilly](https://myaccess.lilly.com) → **Manage My Access** (different button label from FTE) → search **"RWE STRADA PRD Data Assets – RWE"** → check → Review and Submit.
+
+5.  After Redshift account email, map FSx drives in **CLUWE Windows Explorer in Citrix**: right-click "This PC" → Map Network Drive → `\\veo_fsx_prod.aws.lilly.com\veo_fsx\strada`
+
+6.  **Reset Redshift password:** Open `https://dssp.paas.am.lilly.com/awsRedshiftPassManagement` inside **CLUWE Microsoft Edge in Citrix** (not local browser).
+
+**SAS EG AWS PROD Profile (Citrix — SAS EG PROD app):**
+
+Click "No profile selected" → Add. Machine: `gridrp9meta1.aws.lilly.com` | Port: `8561` | Password: Lilly SSO → Save and Connect.
+
+**Encrypted Password File (Citrix — SAS EG PROD):** File → Open → Browse → paste path:
+
+`\\veo_fsx_prod.aws.lilly.com\veo_fsx\strada\rwe_all_personal_folder\Gregory_Cunningham\STRADA User Documentation\New Documents\create_and_Store_Redshift_Password.sas`
+
+Enter Redshift password in Step 2, run, close **without saving**.
+
+**Create Encrypted Password File and Test Connection:**
+
+Open the file at the path above (or [download here](https://veo_fsx_prod.aws.lilly.com/veo_fsx/strada/rwe_all_personal_folder/Gregory_Cunningham/STRADA%20User%20Documentation/New%20Documents/create_and_Store_Redshift_Password.sas)), enter your Redshift password where indicated, run all steps, then close **without saving**.
+
+This creates two files in `/home/&sysuserid/pswd/`:
+
+-   `encrypted_redshift_pw.txt` — your encrypted Redshift password, stored in SAS-encrypted format
+-   `MyEncryptedPwd.sas` — a SAS macro file that reads the encrypted password and assigns it to a macro variable (by default, `&rspw`)
+
+::: {.callout-note}
+### Macro Variable Naming
+The macro variable name `rspw` used in `MyEncryptedPwd.sas` is a user-defined convention, not a system requirement. You may rename it to any valid SAS macro variable name (e.g., `&redshift_pw`, `&my_pwd`). However, the name used in the password generation program must match exactly in all subsequent programs that reference it. For example, if your encrypted password file assigns the password to `&rspw`, then every `%include` and `libname` or `connect to` statement must also use `&rspw`. Inconsistent naming will cause authentication failures at runtime.
+:::
+
+**Test the connection:**
+
+```{r}
+#| eval: false
+#| code-overflow: wrap
+# SAS Code - run in SAS Enterprise Guide, not R
+# %include "/home/&sysuserid/pswd/MyEncryptedPwd.sas";
+# proc sql;
+#   connect to ODBC as Redshift
+#     (dsn=Access_Redshift_Prod password="&rspw" user=&sysuserid);
+#   create table Redshift_schemas_I_can_see as
+#     SELECT * from connection to Redshift
+#     (select distinct schemaname from pg_catalog.pg_tables
+#      where schemaname like 'rwe_strada_%'
+#      union
+#      select distinct schemaname from svv_external_schemas
+#      where schemaname like 'rwe_strada_%');
+# quit;
+```
+
+### SAS Enterprise Guide — Citrix Apps and Profiles
+
+Two SAS Enterprise Guide applications are available in Citrix, each serving a different primary purpose:
+
+| Citrix App | Primary Use | Notes |
+|------------|------------|-------|
+| **SAS_EG-PROD** | RWAA / STRADA analysis | Default app for all RWAA real-world data work. |
+| **CLUWE SAS Enterprise Guide 8** | Clinical development | More stable release; can also be configured for RWAA server connections. |
+
+#### SAS_EG-PROD — Server Profiles (RWAA Default)
+
+The following profiles are pre-configured or should be added in **SAS_EG-PROD**:
+
+| Profile Name | Server | Port | Use |
+|-------------|--------|------|-----|
+| SAS_AWS_PROD | `gridrp9meta1.aws.lilly.com` | 8561 | AWS STRADA production — primary RWAA work |
+| SAS RHEL8 | `gridmetaprd1.am.lilly.com` | 8564 | CLUWE / RHEL8 — RWAA and CLUWE data |
+| SAS RHEL9 | `gridrp9mgr01.aws.lilly.com` | 8561 | AWS RHEL9 environment |
+
+#### CLUWE SAS Enterprise Guide 8 — Server Profiles (Clinical + Fallback)
+
+The following profiles are pre-configured or should be added in **CLUWE SAS Enterprise Guide 8**:
+
+| Profile Name | Server | Port | Use |
+|-------------|--------|------|-----|
+| SAS Grid in AWS Cloud PROD | `gridrp9meta1.aws.lilly.com` | 8561 | AWS STRADA — same server as SAS_EG-PROD |
+| SAS RHEL9 | `gridrp9mgr01.aws.lilly.com` | 8561 | AWS RHEL9 environment |
+
+::: {.callout-tip}
+### Fallback — Use CLUWE SAS EG 8 If SAS_EG-PROD Is Unavailable
+If **SAS_EG-PROD** encounters connectivity issues or fails to launch, you can use **CLUWE SAS Enterprise Guide 8** as an alternative. Because SAS Enterprise Guide supports multiple server profiles, the RWAA servers (e.g., `gridrp9meta1.aws.lilly.com:8561`) can be added to this app as well. This provides a reliable fallback without waiting for SAS_EG-PROD to be restored.
+:::
+
+::: {.callout-note}
+### DSN Reminder
+Use `dsn=Access_Redshift_Prod` when connected to an AWS server (port 8561). Use `dsn=Access_Redshift` when connected to a CLUWE/RHEL8 server (port 8564). These are not interchangeable.
+:::
+
+**Setting the STRADA path in SAS:**
+
+```{r}
+#| eval: false
+# SAS Code - run in SAS Enterprise Guide
+# %let PROGPATH = /veo_fsx/strada/projects/rwe_all/<your_project_folder>;
+# libname val "&PROGPATH./Validation";
+```
+
+::: {.callout-note}
+### GPS Users
+You have read-only access to `rwe_strada_wrk`. Use `rwe_strada_gps_wrk` schema instead. On CLUWE profile (not AWS PROD), use `dsn=Access_Redshift` instead of `Access_Redshift_Prod`.
+:::
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

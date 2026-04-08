@@ -1,0 +1,40 @@
+---
+title: "Step 5 - Personal Folder Under FSx"
+---
+
+Your personal folder on the STRADA FSx file system is used for storing work outputs. Complete **after** your Redshift account is created (Step 3).
+
+------------------------------------------------------------------------
+
+### Lilly FTE
+
+1.  [ServiceNow](https://lilly.service-now.com) → search **"BUIT GSS IT Access Request"**.
+
+2.  Fill the form with by inputing the following text in the select fields:*Access Request* | Application: *RWE STRADA Data Platform* | Request Type: *Other* | Description: *Personal Folder creation* | User Type: *Business user* | Description field: *"Please get the personal folder created with the name YOUR FULL NAME inside the rwe_all_personal_folder on FSx"*
+
+::: {.callout-note}
+### Folder Naming Convention
+Use the format **Firstname_Lastname** (e.g., `Lili_Huang`). This is the standard naming convention for personal folders under `rwe_all_personal_folder`.
+:::
+
+3.  Order Now → Check Out.
+
+Folder path: `\\veo_fsx_prod.aws.lilly.com\veo_fsx\strada\rwe_all_personal_folder\[Firstname_Lastname]`
+
+------------------------------------------------------------------------
+
+### Vendor / Contractor
+
+1.  [ServiceNow](https://lilly.service-now.com) → search **"BUIT GSS IT Access Request"**.
+
+2.  Fill the form identically: What to do: *Access Request* | Application: *RWE STRADA Data Platform* | Request Type: *Other* | Description: *Personal Folder creation* | User Type: *Business user* | Description: *"Please get the personal folder created with the name YOUR FULL NAME inside the rwe_all_personal_folder on FSx"*
+
+Use the **Firstname_Lastname** format (e.g., `Lili_Huang`) for your folder name.
+
+3.  Order Now → Check Out.
+
+Folder path: `\\veo_fsx_prod.aws.lilly.com\veo_fsx\strada\rwe_all_personal_folder\[Firstname_Lastname]`
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

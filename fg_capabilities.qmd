@@ -1,0 +1,71 @@
+---
+title: "Statistical Analysis Capabilities"
+subtitle: "Functional Group Guide for Real World Analytics & Accelerators (RWAA)"
+date: last-modified
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    smooth-scroll: true
+    fig-align: center
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+---
+
+## Overview
+
+The Statistical Analysis Capabilities group within RWAA builds and maintains the **technical infrastructure, dashboards, and analytical tools** that power real-world evidence generation across all Therapeutic Areas. The group translates complex RWD pipelines into scalable, reproducible, and user-facing products — enabling internal stakeholders to access, explore, and act on real-world insights efficiently.
+
+---
+
+## Core Responsibilities
+
+- Designing and developing **interactive dashboards** for internal stakeholders across TAs and functions
+- Building and maintaining **reusable analytical pipelines** and code libraries for RWD processing
+- Creating **self-service tools** that allow HEOR, Medical Affairs, and Market Access teams to explore data without requiring bespoke analyses
+- Automating recurring analyses and report generation to reduce turnaround time
+- Managing **version control and deployment** of analytical tools across RWAA's cloud environment
+- Ensuring **reproducibility and documentation standards** across all tool and dashboard outputs
+
+---
+
+## Key Tools & Technologies
+
+| Area | Tools / Technologies |
+|---|---|
+| **Dashboard development** | R Shiny, Quarto, Power BI |
+| **Programming languages** | R, Python, SQL |
+| **Cloud & compute** | AWS, STRADA |
+| **Version control** | Git, internal code repositories |
+| **Data access & wrangling** | Spark, dbt, internal data lake connections |
+| **Visualization libraries** | ggplot2, Plotly, Highcharter |
+
+: {.striped .hover}
+
+---
+
+## How to Engage
+
+Statistical Analysis Capabilities is the right team to engage when a **repeatable, scalable, or interactive** output is needed — rather than a one-time study deliverable. Common engagement triggers include recurring reporting needs, multi-TA data exploration tools, and automation of manual analytical workflows.
+
+::: {.callout-note}
+## When to Engage This Team
+Reach out to Statistical Analysis Capabilities when you need a dashboard, a reusable analytical tool, or an automated pipeline — rather than a single study analysis. The earlier they are engaged in scoping, the better the final product can be designed for the end user.
+:::
+
+---
+
+## Resources & Links
+
+- [RWAA Study Request Process (Internal)](#)
+- [Tool & Dashboard Catalog (Internal)](#)
+- [STRADA / AWS Access Guide (Internal)](#)
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

@@ -1,0 +1,149 @@
+---
+title: "Step 6 - Analytics Tools Setup"
+---
+
+⏱ **Time:** 60 minutes *(immediate)* | ⏳ **Approval:** None
+ 
+::: {.callout-note}
+### Prerequisites
+
+Prerequisites: Steps 1–5 completed, Redshift password set.
+:::
+
+### 6.1 R Studio / Posit Workbench
+
+**Lilly FTE**
+
+1.   Access at [rstudio.am.lilly.com](https://posit.am.lilly.com/) in local browser.
+
+2.   Login: standard Lilly ID + SSO password.
+
+3.   Requires Brainiac-Compute group (Step 1) to be approved.
+
+4.   Issues: submit HPC Incident at [hpc.am.lilly.com](http://hpc.am.lilly.com).
+
+Alternatively, you may access R Studio in Citrix. 
+
+**Vendor / Contractor**
+
+1.   Open **Posit Workbench app in Citrix** (server migrated from RStudio — use Posit).
+
+2.   Login: **Global Lilly ID with first digit replaced by 'l'** (e.g., `l012345`) + SSO password.
+
+3.   Map lillyce in Posit console: `file.symlink("/lillyce", "~/lillyce")`
+
+4.   If lillyce not visible in Files pane: run `setwd('/lillyce')` → Go To Working Directory.
+
+#### Connect R/Posit to AWS Redshift (both tracks)
+
+```{r}
+#| eval: false
+library(DBI)
+con <- dbConnect(odbc::odbc(),
+  .connection_string = "Driver={Redshift};
+  Server=edb-redshift-prod-01.carpdwnmaayt.us-east-2.redshift.amazonaws.com;
+  Database=rwe_databases; UID=<Lilly SSO ID lower case>;
+  PWD=<Redshift password>; Port=5439"
+)
+library(RPostgres)
+my_data <- dbGetQuery(con, "SELECT * FROM <schema>.<table>")
+```
+
+#### Posit Workbench Access to STRADA (Veo_fsx)
+
+::: {.callout-warning}
+### Connection In Progress
+The direct STRADA connection from Posit is still being set up. Once complete, you can use `setwd()` to change working directory directly to STRADA. For now, please use the workaround below.
+:::
+
+**Read in files from STRADA:** Use the File Exporter to copy files over to `/lrlhps/` or `/home/` on Posit.
+
+**Save code files to STRADA:**
+
+1.  Write your results to `/home/<your system id>/<project name>` or `/lrlhps/users/<your system id>/<project name>`
+2.  Export from the Posit environment: Select file → click **More** → **Export...** If you already have `veo_fsx` mapped to your computer, it will appear as a destination in the file explorer.
+
+------------------------------------------------------------------------
+
+### 6.2 Python / Jupyter Notebook
+
+**Lilly FTE**
+
+- Access at [jupyterhub.am.lilly.com](https://jupyterhub.am.lilly.com/hub/login) in local browser with standard Lilly credentials.
+
+**Vendor / Contractor**
+
+- Open **JupyterHub app in Citrix**, or navigate to [jupyterhub.am.lilly.com](https://jupyterhub.am.lilly.com/hub/login) in CLUWE Microsoft Edge in Citrix. Login: `l[ID]` + SSO password.
+
+------------------------------------------------------------------------
+
+### 6.3 SAS Enterprise Guide
+
+**Lilly FTE**
+
+1.  Request SAS EG installation via ServiceNow → install from Software Center after approval.
+
+2.  CLUWE profile: Tools → Connections → Add. Machine: `gridprodmeta2.am.lilly.com` \| Port: `8564` \| Password: Lilly SSO.
+
+3.  AWS PROD profile: Machine: `gridrpmeta1.aws.lilly.com` \| Port: `8561` \| Password: Lilly SSO.
+
+*Contacts:* 
+
+Priyanka Tiwari · Diane L. Hintz
+
+**Vendor / Contractor**
+
+::: {.callout-note}
+No local SAS EG installation. Use Citrix apps only. 
+:::
+
+1.   **CLUWE SAS Enterprise Guide 8** (Citrix) — supports both clinical and RWAA server connections. Default profile: `gridprodmeta2.am.lilly.com` | Port: `8564`
+
+2.   **SAS_EG-PROD** (Citrix) — primary app for RWAA / STRADA work. Default profile: `gridrp9meta1.aws.lilly.com` | Port: `8561`
+
+*How to add a profile?*
+
+Tools → Connections → Add Profile → fill in Name, Machine, and Port → enter Lilly ID + Lilly SSO password → Save and Connect. See Step 3 for the full list of available server profiles.
+
+*Contacts:* 
+
+Priyanka Tiwari · Diane L. Hintz
+
+------------------------------------------------------------------------
+
+### 6.4 DBeaver / SQL Workbench
+
+# This is far too short. We should assume that individuals do not know how to bulid a connection in DBeaver or SQL Workbench. We should follow old guide and/or reach out to Rateen for add'l guidence. 
+
+Connection parameters (both tracks, via Citrix):
+
+-   **Host:** `edb-redshift-prod-01.carpdwnmaayt.us-east-2.redshift.amazonaws.com`
+-   **Port:** 5439
+-   **Database:** `rwe_databases`
+-   **Driver:** Amazon Redshift JDBC from `C:\Program Files\Amazon Redshift ODBC Driver\`
+-   **Username:** Lilly SSO ID (lower case)
+-   **Password:** Your Redshift password
+
+------------------------------------------------------------------------
+
+### 6.5 RIM Vault Access (when required)
+
+**Lilly FTE**
+
+Complete courses 9330445, 9330442, 9335358. Submit via ServiceNow → "RIM Account Request". A Lilly Lead may submit on behalf of the FTE.
+
+**Vendor / Contractor**
+
+::: {.callout-warning}
+### Must be submitted by vendor directly
+
+Lilly Lead submissions are rejected. Specify compound per study. Access is per-study, not global.
+:::
+
+Required courses (vendor platform): 9330445 (Vault RIM Basics Access) · 9330442 (Intro to Vault RIM) · 9335358 (RIM Operations).
+
+Submit via ServiceNow → "RIM Account Request".
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

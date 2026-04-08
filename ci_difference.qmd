@@ -1,0 +1,28 @@
+---
+title: "FTE vs. Vendor — Key Differences at a Glance"
+---
+
+Review this table before starting. It captures the most material structural differences between the two onboarding tracks.
+ 
+| Topic | Lilly FTE | Lilly Vendor / Contractor |
+|-------|------------|----------------------------|
+| **System access on Day 1** | Lilly intranet, Workday, ServiceNow, MyAccess, and Identity Manager accessible on a Lilly laptop from Day 1. | No system access until vendor enters you in **Beeline** (24–48 hrs before start). Must first receive Lilly System ID, temporary password, and PingID setup. |
+| **Order of first steps** | **Step 1** → **Step 2** → **Step 3** | **Reversed:** **Step 2** → **Citrix setup** → **Step 1 (inside Citrix)** → **Step 3** |
+| **Microsoft Identity Manager** | Access directly in local browser: [idmportal.rf.lilly.com](https://idmportal.rf.lilly.com/IdentityManagement/default.aspx) | **Cannot access from vendor laptop.** Must open inside **CLUWE Microsoft Edge in Citrix**. |
+| **Training platform** | Internal **Workday Learning Plan** (self-assign). | **Vendor training platform**. Cannot self-assign in Workday. |
+| **CLUWE access request** | ServiceNow → “LRL Statistical Analysis Account Requests” → select CLUWE. Mostly auto-fills. | Same form but does not auto-fill fully. Supervisor must provide CLUWE path (e.g., `lillyce:\qa\LY######\folder`). |
+| **Computing environment** | Citrix via Workspace ONE. SAS EG may be installed locally. | Citrix Workspace (Store: `virtuallilly.cloud.com`). **All work runs inside Citrix.** |
+| **SAS Enterprise Guide** | Installed locally via ServiceNow. | **No local SAS EG.** Use DEV/PROD CLUWE SAS EG apps. |
+| **Network drive mapping** | Map STRADA FSx drives locally. | Map inside **CLUWE Windows Explorer in Citrix**. Also map home drive: `\\brick.d51.lilly.com\[ID]`. |
+| **Redshift password reset** | Open in local browser: [dssp.paas.am.lilly.com](https://dssp.paas.am.lilly.com/) | Must open in **CLUWE Microsoft Edge in Citrix**. |
+| **Pangaea URL** | [gso.lightning.force.com](https://gso.lightning.force.com/lightning/o/Dashboard/home) | [gso--c.vf.force.com/apex/PANG_HomePage](https://gso--c.vf.force.com/apex/PANG_HomePage) — **different URL.** |
+| **Pangaea training** | 1 course: **9182923** | **4 courses:** 9182923, 9282629, 9282637, 9513570 |
+| **Pangaea ServiceNow form** | Standard Pangaea request form | Search “RWE-IT BUIT Pangaea Support Consulting Request” |
+| **RIM Vault access** | Lilly Lead may submit on behalf | **Vendor must submit directly.** Per-study, per-compound. |
+| **Posit / R Studio login** | Standard Lilly ID + SSO | First digit replaced by “l” (e.g., `l012345`) + SSO via Citrix Posit app |
+| **lillyce in Posit/R** | Usually accessible; if not: `setwd('/lillyce')` | Run `file.symlink("/lillyce", "~/lillyce")` in Citrix Posit |
+| **Time entry** | **Prism TimeCard (CATs)** | Vendor invoicing system |
+| **Email access** | Standard Outlook | [email.lilly.com](https://email.lilly.com/mail/inbox) or Outlook in CLUWE |
+| **Calendar sharing** | No extra steps | Requires **Federated Calendaring** via Identity Manager |
+| **Lilly site visits** | Badge from start date | Visitor or contractor badge (background check required) |
+ 

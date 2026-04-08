@@ -1,0 +1,199 @@
+---
+title: "Neurology"
+subtitle: "Therapeutic Area Guide for Real World Analytics & Accelerators (RWAA)"
+date: last-modified
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    smooth-scroll: true
+    fig-align: center
+    page-layout: full
+execute:
+  echo: false
+  warning: false
+---
+
+## Why Neurology Matters to RWAA
+
+Neurology is an emerging and strategically important Therapeutic Area for Lilly, anchored by a growing portfolio in **Alzheimer's disease**, **migraine**, and **pain** — with a pipeline extending into additional neurological conditions. The neurology RWD landscape presents unique challenges: neurological diagnoses are often delayed or imprecise in administrative data, disease progression is difficult to capture outside of clinical settings, and biomarker-defined patient populations (particularly in Alzheimer's) are not well-represented in traditional claims or EHR sources.
+
+RWAA supports Neurology across the full evidence lifecycle — from characterizing the burden of disease and current treatment landscape, through post-approval effectiveness and safety studies, to generating evidence that supports payer access and HTA decisions in a rapidly evolving market.
+
+---
+
+## Disease Areas & RWD Landscape
+
+### Alzheimer's Disease (AD)
+
+Alzheimer's disease is Lilly's highest-profile neurology investment, anchored by donanemab (Kisunla®), a targeted amyloid-clearing therapy for early symptomatic AD. RWD in Alzheimer's is significantly less mature than in other TAs — largely because biomarker confirmation (amyloid PET, CSF testing) is required for diagnosis and treatment eligibility but is rarely captured in administrative data.
+
+Key RWD considerations:
+
+- **Claims-based AD identification** (ICD-10: G30, F02) captures diagnosed dementia but cannot distinguish amyloid-confirmed AD from other dementias — significant misclassification risk
+- **Amyloid biomarker data** (PET imaging, CSF Aβ42/tau) are not available in standard claims or EHR; specialty registries or linked imaging databases are required
+- **Disease staging** (preclinical, MCI, mild dementia, moderate dementia) requires cognitive assessments (MMSE, CDR) captured only in structured clinical or registry data
+- **Caregiver and care setting data** are important for burden-of-illness analyses; linkage to long-term care databases (e.g., MDS) may be needed
+- APOE ε4 genotype is a key risk modifier and treatment response predictor — available only in biobank-linked or research cohort data
+- The **ARIA (amyloid-related imaging abnormalities)** safety signal requires MRI monitoring data not present in claims
+
+### Migraine
+
+Migraine is the most commercially mature area in Lilly's neurology portfolio, anchored by lasmiditan (Reyvow®) for acute treatment and galcanezumab (Emgality®) for prevention. Claims data are relatively well-suited for migraine research given reliable ICD-10 coding and established treatment algorithms.
+
+Key RWD considerations:
+
+- **Migraine diagnosis** is reasonably well-coded in claims (ICD-10: G43); episodic vs. chronic migraine differentiation requires frequency proxies (headache days, acute medication use)
+- **Chronic migraine** (≥15 headache days/month) is difficult to ascertain from claims alone — EHR with structured visit notes or patient-reported data needed for precision
+- **Acute vs. preventive treatment** analyses are distinct; triptans, gepants, and ditans for acute care vs. CGRP monoclonal antibodies and other agents for prevention
+- **Medication overuse headache (MOH)** is a common comorbidity and confounder — requires careful operationalization using acute medication fill frequency
+- Treatment patterns, adherence, and switching among preventive therapies are high-priority for Medical Affairs and Market Access
+
+### Pain
+
+Pain — including **diabetic peripheral neuropathy (DPN)**, **musculoskeletal pain**, and other chronic pain conditions — represents a growing area within Lilly's neurology and broader portfolio. RWD in pain is challenging due to heterogeneity of the patient population and subjective nature of the primary endpoint.
+
+Key RWD considerations:
+
+- **DPN** is identifiable in claims (ICD-10: E11.40–E11.49) and is particularly relevant given CMH/Neurology overlap in the T2D population
+- **Pain severity and numeric rating scales** are not available in claims; EHR with structured pain assessments or PRO-linked data required for outcome measurement
+- Opioid use patterns, opioid use disorder comorbidity, and concomitant medication use are important covariates and safety endpoints
+- **Chronic pain conditions** are frequently undercoded or inconsistently coded — algorithm validation is recommended before cohort construction
+
+---
+
+## Common RWAA Study Types in Neurology
+
+| Study Type | Typical Requestor | Data Source(s) | Notes |
+|---|---|---|---|
+| Treatment pattern analysis | Medical Affairs, HEOR | Claims, EHR | Switching, persistence, LOT for migraine & pain |
+| Comparative effectiveness (CER) | HEOR, HTA | Claims, EHR, registry | Active comparator design; small AD populations a challenge |
+| Safety / pharmacovigilance | GPS | Claims, EHR, registries | ARIA monitoring for donanemab; CV events in migraine |
+| Epidemiology / disease burden | Pipeline teams, Medical Affairs | Claims, EHR, registry | Incidence, prevalence, healthcare utilization |
+| Biomarker testing patterns | Medical Affairs, Regulatory | Specialty registries, imaging DBs | Amyloid PET uptake, CSF testing rates |
+| Unmet need characterization | Pipeline teams, Medical Affairs | Claims, EHR | Diagnosis delays, treatment gaps, care setting |
+| Budget impact / cost analyses | Market Access, HEOR | Claims | AD total cost of care is a major payer concern |
+| PRO / patient & caregiver experience | HEOR | Survey, registry | Cognitive outcomes, caregiver burden, QoL |
+| Real-world effectiveness (RWE) | Regulatory, HEOR | Registry, EHR | Emerging; AD registry data critical |
+
+: Common Neurology Study Types {.striped .hover}
+
+---
+
+## Key Data Sources for Neurology
+
+### Claims Databases
+
+- **Optum Clinformatics** — useful for migraine and pain treatment patterns, HCRU, and cost analyses; AD identification limited to diagnosed dementia without biomarker confirmation
+- **IBM MarketScan** — well-suited for working-age migraine population; employer-sponsored coverage
+- **IQVIA PharMetrics Plus** — broad commercial; strong pharmacy data for acute and preventive migraine therapy analyses
+- **CMS Medicare** — essential for AD and dementia populations; older age skew aligns with AD epidemiology; linkable to MDS for care setting data
+
+### EHR Databases
+
+- **Optum EHR** — includes cognitive assessments in some structured fields; useful for dementia staging proxies and DPN with linked lab data
+- **TriNetX** — federated EHR network; useful for feasibility and cohort sizing across neurology indications
+- **Komodo Health** — longitudinal patient journey data with strong neurology coverage; useful for diagnosis delay and care pathway analyses
+
+### Specialty Registries & Research Cohorts
+
+- **Alzheimer's Disease Neuroimaging Initiative (ADNI)** — longitudinal research cohort with amyloid PET, CSF biomarkers, MRI, cognitive assessments; gold standard for AD biomarker research but limited generalizability
+- **National Alzheimer's Coordinating Center (NACC)** — multi-site clinical registry with harmonized cognitive and neuropathologic data
+- **Alzheimer's Disease Research Centers (ADRCs)** — NIA-funded network; useful for biomarker-confirmed cohort studies
+- **FORWARD (migraine registry)** — AHS-supported registry with clinical depth for migraine characterization and PROs
+- **CorEvitas Neurology Registry** — growing registry for neurological conditions including MS and migraine
+
+### Linked & Specialty Sources
+
+- **MDS (Minimum Data Set)** — CMS long-term care assessment data; linkable to Medicare claims for AD patients in nursing home settings
+- **Medicare OASIS** — home health assessment data; useful for AD care setting and functional status analyses
+- **Amyloid PET imaging databases** — emerging sources for biomarker-confirmed AD cohorts; access typically requires research partnerships
+
+::: {.callout-note}
+## Data Source Selection Tip
+Neurology studies vary dramatically by indication. **Migraine and pain** analyses can often be conducted in claims with high confidence. **Alzheimer's disease** studies almost always require specialty registry, research cohort, or linked imaging data to appropriately characterize biomarker-confirmed populations — claims alone will substantially misclassify the AD population and should be used only for broad burden-of-illness or HCRU analyses with explicit acknowledgment of this limitation.
+:::
+
+---
+
+## Analytic Considerations
+
+### Cohort Design
+
+- **AD cohort construction** is the most complex in Neurology — absent biomarker data, claims-based dementia cohorts will include non-AD dementias (vascular, Lewy body, frontotemporal); sensitivity analyses with narrower ICD-10 code sets are recommended
+- **Migraine cohort entry** is typically anchored to first diagnosis code or first preventive therapy initiation; episodic vs. chronic migraine stratification should be pre-specified
+- **Disease duration and prior treatment history** are critical for neurology cohorts — long washout periods (12+ months) are often needed given infrequent diagnosis coding
+- **Care setting** (outpatient neurology, primary care, memory care center) is an important variable for AD studies and should be captured where possible
+
+### Confounding Control
+
+- Neurology populations present strong **confounding by indication** — particularly in AD, where disease severity, caregiver support, and care setting all influence treatment decisions
+- Cognitive status proxies (prior dementia-related HCRU, neuropsychiatric medication use, care setting) are essential covariates in claims-based AD studies
+- For migraine CER, headache frequency proxies, prior preventive therapy failure, and comorbid psychiatric conditions are key confounders
+- Propensity score methods apply; **small sample sizes** in biomarker-confirmed AD populations may limit their utility
+
+### Endpoint Ascertainment
+
+- **Cognitive outcomes** (MMSE, CDR, ADAS-Cog) are not available in claims and have limited structured capture in EHR — registry data required
+- **ARIA** (amyloid-related imaging abnormalities) monitoring is a donanemab-specific safety endpoint requiring MRI data; not capturable in claims
+- **Migraine frequency reduction** requires patient-reported headache diary data or structured EHR entries; not ascertainable from claims alone
+- **Healthcare utilization** (ED visits, hospitalizations, neurology visits) is reliably captured in claims and is a common proxy outcome for disease burden and treatment effectiveness
+- **Mortality** in AD is well-captured via Social Security Death Master File linkage in claims databases
+
+### Regulatory-Grade RWE
+
+Regulatory use of RWE in Neurology is earlier-stage than in Oncology but growing, particularly for:
+
+- Post-market safety commitments for donanemab (ARIA monitoring, longer-term safety)
+- Label expansion studies in earlier AD populations (preclinical, MCI)
+- Real-world treatment effectiveness in populations underrepresented in clinical trials (older patients, those with vascular comorbidities)
+- Pre-specified SAPs and protocol registration are required; early engagement with Regulatory Affairs is essential
+
+---
+
+## RWAA's Role Across Neurology Functions
+
+```{mermaid}
+flowchart TD
+    RWAA[RWAA]
+
+    RWAA --> HEOR[HEOR\nDisease burden & cost of care\nCognitive outcome proxies\nCaregiver burden evidence]
+    RWAA --> HTA[HTA\nComparative effectiveness\nAD dossier evidence\nCost-effectiveness inputs]
+    RWAA --> GPS[GPS\nARIA safety surveillance\nLong-term donanemab safety\nMigraine CV safety monitoring]
+    RWAA --> MA[Medical Affairs\nTreatment patterns & gaps\nBiomarker testing uptake\nPublications]
+    RWAA --> REG[Regulatory\nPost-market RWE commitments\nLabel expansion support\nSafety study execution]
+    RWAA --> MKT[Market Access\nAD total cost of care\nBudget impact models\nPayer-facing analyses]
+```
+
+---
+
+## Key Collaborators & Contacts
+
+| Function | Typical Ask to RWAA | Notes |
+|---|---|---|
+| **HEOR** | Disease burden, caregiver burden, CER inputs | Closest collaboration; AD cost of care is a major focus |
+| **HTA** | Comparative effectiveness, NMA data inputs | AD HTA submissions are high-complexity and high-stakes |
+| **GPS** | ARIA safety surveillance, long-term donanemab safety | Novel safety endpoint requiring non-claims data sources |
+| **Medical Affairs** | Treatment patterns, biomarker testing uptake, unmet need | Often publication-oriented; migraine and AD both active |
+| **Market Access** | AD total cost of care, payer analyses, formulary support | Payer access for donanemab is a major strategic focus |
+| **Regulatory** | Post-market RWE, label expansion support | Engage early; AD registry data partnerships may be needed |
+
+---
+
+## Resources & Links
+
+- [Lilly Neurology Pipeline](https://investor.lilly.com/pipeline)
+- [HEOR Evidence Library (Internal)](#)
+- [RWD Source Catalog (Internal)](#)
+- [RWAA Study Request Process (Internal)](#)
+- [FDA RWE Framework](https://www.fda.gov/science-research/science-and-research-special-topics/real-world-evidence)
+- [Alzheimer's Disease Neuroimaging Initiative (ADNI)](https://adni.loni.usc.edu)
+- [National Alzheimer's Coordinating Center (NACC)](https://naccdata.org)
+- [American Headache Society (AHS)](https://americanheadachesociety.org)
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

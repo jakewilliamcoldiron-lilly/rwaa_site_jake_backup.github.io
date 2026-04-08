@@ -1,0 +1,41 @@
+---
+title: "GPS - Global Patient Safety"
+---
+
+Supporting pharmacovigilance, PASS, DSUR/PSUR/PBRER safety reporting, and signal detection analyses.
+
+::: {.callout-warning}
+### GPS Schema Restriction
+GPS analysts have **read-only access to `rwe_strada_wrk`**. Use `rwe_strada_gps_wrk` as the working schema in all SAS and SQL programs.
+:::
+
+### GPS — CLUWE for Safety Data
+
+#### Lilly FTE
+
+Request CLUWE access (Step 2) with the compound safety study folder path from your Lilly Lead. On the CLUWE/RHEL8 SAS profile (port 8564), use `dsn=Access_Redshift` (not `Access_Redshift_Prod`).
+
+#### Vendor / Contractor
+
+Same CLUWE request process as Step 2, but compound safety folder details must come from your Lilly Lead. Safety study folders are per-compound — request access separately for each compound you support. All CLUWE work runs inside Citrix.
+
+------------------------------------------------------------------------
+
+### GPS — DSUR / PSUR Statistical Tables
+
+-   Tables **EXPOS1, DEMOG1, DEMOG2** required for DSUR are also required for PSUR. If reporting periods align, the same tables may serve both reports.
+-   If DSUR and PSUR are on differing schedules, PSUR deliverables follow the DSUR process — but reports on deaths and discontinuations due to adverse events are **not required for PSUR**.
+
+------------------------------------------------------------------------
+
+### GPS — Additional Training
+
+| Course ID | Title |
+|-----------|-------|
+| 9295008 | LRL: Vault Clinical Foundations |
+| 9352650 | LRL: Exploring Data Integrity Fundamentals in Clin Dev & Research |
+| 9317635 | MED-QUAL: Evaluation of Potential Data Integrity Issues in Approved Documents |
+
+---
+
+*Content or technical issues with this site? [Click here](maintenance.qmd) to report any issues or provide feedback.*

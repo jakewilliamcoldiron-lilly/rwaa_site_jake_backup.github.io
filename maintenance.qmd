@@ -1,0 +1,71 @@
+---
+title: "Site Maintenance, Development, and Feedback"
+format: 
+  html: 
+    from: markdown+autolink_bare_uris
+---
+
+# Maintainence 
+
+This site was reviewed on **April 2026** and last updated **April 2026**. It is currently maintained by:
+
+| Name | Email |
+|------|------|
+| Jake William Coldiron | [jake.coldiron@lilly.com](mailto:jake.coldiron@lilly.com) |
+
+If there are any issues with content or function of this website, please reach out to this team using the bug report widget below.
+
+<div style="text-align: center;">
+<a href="mailto: jake.coldiron@lilly.com; jakewcoldiron@gmail.com ?subject=[RWAA Site Issue] PLACE DESCRIPTION HERE&body=Thanks for reaching out about the RWAA Site! Please change the subject of this email, and describe the issue below:"
+   class="btn btn-primary"
+   style="font-size: 2rem; padding: 1rem 3rem; border-radius: 20px; background-color: #C8102E; border-color: #C8102E;">
+   🐛 Submit Bug Report
+</a>
+</div>
+
+# Development
+
+This site was developed by the combined efforts of: 
+
+| Name | Email | Area ^[TA and Functional Group at the time of first publication.] |
+|------|------|------|
+| Isabella Yali Wang | wang_yali@lilly.com | RWAA Senior Director |
+| Lili Huang | lili.huang@lilly.com | Immunology HTA, Lead |
+| Xiaoliu Xu | xu_xiaoliu@network.lilly.com | CMH HTA | 
+| Jake William Coldiron | jake.coldiron@lilly.com | Statistical Analysis Capabilities | 
+| Fei Xu | fei.xu@network.lilly.com | Immunology HTA |
+
+Further, many thanks to all of the TA Leads for taking time out of their busy schedule and working with the dev team to provide information about their TA and workflows. Many thanks to these individuals and their contributions! 
+
+# Feedback
+
+<div style="text-align: center; margin-top: 1.5rem;">
+  <p><em>"Take what you find here and make it better and better . . ."</em><br>Eli Lilly, 1876</p>
+<img src="./img/eli_lilly.jpg" alt="Colonel Eli Lilly, 1885" style="width:40%; border-radius: 10px; margin-top: 1rem;">
+</div>
+
+Please provide feedback on how we can improve the material on this site and its format. All suggestions are welcome!
+
+```{=html}
+<div style="margin-top: 2rem; padding: 20px; border: 1px solid #ddd; border-radius: 15px; background-color: #f9f9f9;">
+  <h3>Direct Feedback</h3>
+  <p>Have a quick suggestion? Type it here and click submit to send it via email.</p>
+  <textarea id="feedbackText" rows="4" style="width: 100%; border-radius: 10px; padding: 10px; border: 1px solid #ccc;" placeholder="Enter your feedback here..."></textarea>
+  <div style="text-align: right; margin-top: 10px;">
+    <input type="button" onclick="sendFeedback()" value="Submit Feedback" style="border-radius: 10px; padding: 8px 16px; cursor: pointer;">
+  </div>
+</div>
+
+<script>
+function sendFeedback() {
+  const feedback = document.getElementById('feedbackText').value;
+  const subject = encodeURIComponent("[RWAA Site Feedback]");
+  const body = encodeURIComponent(feedback);
+  window.location.href = `mailto:jake.coldiron@lilly.com; xu_xiaoliu@network.lilly.com?subject=${subject}&body=${body}`;
+}
+</script>
+```
+
+---
+
+*Content or technical issues with this site? Please see the above material to report any issues or provide feedback.*

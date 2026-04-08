@@ -1,0 +1,88 @@
+RWAA Org Chart — Workflow Guide
+=================================
+ 
+ 
+FILE DESCRIPTIONS
+-----------------
+ 
+RAW DATA (Excel — versioned by date)
+  20260407_rwaa_sa_expert_cleaned.xlsx
+      Self-reported expertise scores for each team member (1/2/3) across databases and tools.
+      The date prefix (YYYYMMDD) is the version. When you update this file, rename it with
+      today's date so previous versions are preserved (e.g. 20260501_rwaa_sa_expert_cleaned.xlsx).
+ 
+  20260407_rwaa_sa_roles_cleaned.xlsx
+      Org structure data — one row per person per assignment, containing TA, functional group,
+      employment type, and role (head/lead/member). Same date-prefix versioning applies.
+ 
+ 
+R SCRIPTS (run in order)
+  script_expertise_excel_to_rds.R
+      Reads the expertise Excel file, cleans and standardises column names, filters out
+      incomplete rows, and saves the result as dat_rwaa_sa_expert_all.rds.
+ 
+  script_roles_excel_to_rds.R
+      Reads the roles Excel file, cleans column names, and saves the result as
+      dat_rwaa_sa_roles.rds.
+ 
+  script_join_expertise_and_roles.R
+      Joins the expertise and roles RDS files on name, and saves the combined dataset as
+      dat_rwaa_sa_team.rds. Also produces diagnostic outputs:
+        - dat_rwaa_sa_expert_completed.rds  — people with complete expertise scores
+        - dat_rwaa_sa_expert_missing.rds    — people missing scores (not yet submitted)
+        - dat_rwaa_sa_expert_other.rds      — records that did not match between files
+ 
+ 
+PYTHON SCRIPT
+  build_org_chart.py
+      Reads dat_rwaa_sa_team.rds (via CSV export) and generates rwaa-org-chart.html.
+      Run this after the R scripts have completed.
+ 
+ 
+OUTPUT
+  dat_rwaa_sa_team.rds      — Final joined dataset used to build the org chart
+  rwaa-org-chart.html       — The interactive org chart, ready to embed in Quarto
+ 
+ 
+STEP-BY-STEP WORKFLOW
+----------------------
+ 
+Step 1 — Update your Excel files
+  Edit the appropriate versioned Excel files. If making significant changes, rename the
+  file with today's date before editing to preserve the previous version.
+ 
+Step 2 — Run the R scripts in order in RStudio
+  1. script_expertise_excel_to_rds.R
+  2. script_roles_excel_to_rds.R
+  3. script_join_expertise_and_roles.R
+ 
+  Check dat_rwaa_sa_expert_missing.rds after Step 3 to see who has not yet submitted scores.
+ 
+Step 3 — Generate the org chart
+  Either run build_org_chart.py directly, or add this line to the bottom of
+  script_join_expertise_and_roles.R to run the full pipeline in one shot:
+ 
+      system("python3 build_org_chart.py")
+ 
+Step 4 — Embed in Quarto
+  Copy the code from the HTML file into the html chunk. Do not point to the file. If the html is directly in quarto, it will fill the page as required. If quarto merely point to an html file in the files, it will restrict the size of the html element and require and scroll bar.
+ 
+SCORE REFERENCE
+---------------
+1 = Little to no experience  (no badge shown)
+2 = User                     (blue badge)
+3 = Professional             (purple badge)
+ 
+ 
+EMPLOYMENT CODES
+----------------
+ft = Full-Time
+pt = Part-Time
+ct = Contractor
+ 
+ 
+ROLE CODES
+----------
+head   = Group head (centered, bold, above first divider)
+lead   = Lead (bold, second partition)
+member = Member (plain text, third partition)
