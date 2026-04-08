@@ -20,8 +20,6 @@ website:
             href: ci_difference.qmd
           - text: "Contact List"
             href: ci_contacts.qmd
-          - text: "RWAA Org Chart"
-            href: ci_rwaa_org.qmd
           - text: "RWAA Org Chart v2"
             href: ci_rwaa_org_v2.qmd
           - text: "Quick Reference"
